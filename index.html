@@ -8,66 +8,113 @@
 
 	<style>
 
-		/* Background image */
-		.container {
+		/* Right side of nagivation menu */
+		.main_screen {
 			top:0;
 			left:0;
 			height: 100%;
-			margin-left: 15%;
+			padding-left: 15%;
 			width: 85%;
 			position: fixed;
 			background-image: url(photos/background.jpg);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-		 	z-index: -1;
+		 	z-index: 0;
+			overflow: hidden; 
 		}
-		
+
+		/* Profile name */
+		.name {
+			color: white;
+			text-align: center;
+			padding-bottom: 20px;
+			font-size: 25px;
+		}
+
+		/* Navigation bar */
+		.menu {
+			height: 100%;
+			width: 15%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow: hidden; 
+		}
+
+		/* Side navigation entries */
+		.entry {
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			font-size: 24px;
+			color: #707070;
+			transition: 0.3s;
+		}
+
+		/* Change color on hover */
+		.entry:hover {
+			font-size: 26px;
+			color: #80f1f1;
+		}
+
+		/* Profile image */
+		.profile img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			height: 140px;
+			width: 140px;
+			border-radius: 50%;
+			border-width: 3px;
+			border-color: black;
+		}
+
+		.profile img:hover {
+			border-color: green;
+		}
+
+		.icon img {
+			margin-left: 15px;
+			border-radius: 50%;
+			height: 45px;
+			width: 45px;
+			border-style: solid;
+			border-color: red;
+			border-width: 1px;
+		}
+
+		.icon img:hover {
+			border-color: green;
+			border-width: 3px;
+		}
+
 		/* The box around the bird */
 		.bird-container {
 			position: absolute;
 			top: 40%;
-			left: -12%;
+			left: 0%;
 			animation-name: fly-right;
 
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			animation-duration: 9s;
 			animation-delay: 0;
+			z-index: -1;
 		}
 			
 		@keyframes fly-right {
-			0% {
-				transform: scale(0.3) translateX(-10vw);
-			}
-			
-			10% {
-				transform: translateY(2vh) translateX(10vw) scale(0.4);
-			}
-			
-			20% {
-				transform: translateY(0vh) translateX(30vw) scale(0.5);
-			}
-			
-			30% {
-				transform: translateY(4vh) translateX(50vw) scale(0.6);
-			}
-			
-			40% {
-				transform: translateY(2vh) translateX(70vw) scale(0.6);
-			}
-			
-			50% {
-				transform: translateY(0vh) translateX(90vw) scale(0.6);
-			}
-			
-			60% {
-				transform: translateY(0vh) translateX(110vw) scale(0.6);
-			}
-			
-			100% {
-				transform: translateY(0vh) translateX(110vw) scale(0.6);
-			}
+			0% {transform: scale(0.4) translateX(-10vw);}
+			10% {transform: translateY(2vh) translateX(10vw) scale(0.5);}
+			20% {transform: translateY(0vh) translateX(30vw) scale(0.6);}
+			30% {transform: translateY(4vh) translateX(50vw) scale(0.7);}
+			40% {transform: translateY(2vh) translateX(70vw) scale(0.7);}
+			50% {transform: translateY(0vh) translateX(90vw) scale(0.7);}
+			60% {transform: translateY(0vh) translateX(110vw) scale(0.7);}
+			100% {transform: translateY(0vh) translateX(110vw) scale(0.7);}
 		}
 
 		/* The actual bird */
@@ -90,80 +137,16 @@
 			}
 		}
 
-		/* Profile name */
-		.name {
-			color: white;
-			text-align: center;
-			padding-bottom: 20px;
-			font-size: 25px;
-		}
-
-		/* Navigation bar */
-		.menu {
-			height: 100%;
-			width: 15%;
-			position: fixed;
-			top: 0;
-			left: 0;
-			background-color: #111;
-			overflow-x: hidden;
-			overflow-y: hidden;
-		}
-
-		/* Side navigation entries */
-		.entry {
-			display: block;
-			text-align: center;
-			text-decoration: none;
-			font-size: 23px;
-			color: #707070;
-			transition: 0.3s;
-		}
-
-		/* Change color on hover */
-		.entry:hover {
-			color: #80f1f1;
-		}
-
-		/* Profile image */
-		.profile img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 20px;
-			margin-bottom: 20px;
-			border-radius: 50%;
-			height: 140px;
-			width: 140px;
-			border-color: black;
-		}
-
-		.icon img {
-			margin-left: 10px;
-			border-radius: 50%;
-			height: 30px;
-			width: 30px;
-			border-style: solid;
-			border-color: yellow;
-			border-width: 1px;
-		}
-
-		/* Place holder for the iframe_right */
-		.main {
-			height: 100%;
-			width: 100%;
-			position: fixed;
-			top: 0;
-			left: 15%;
-		}
-	
 	</style>
 
 </head>
 
 <body>
-	<div class="main">
-		<iframe height="100%" width="100%" name="iframe_right"></iframe>
+	<div class="main_screen">
+		<iframe height="100%" width="100%" name="iframe_right" frameBorder="0"></iframe>
+		<div class="bird-container">
+			<div class="bird"></div>
+		</div>
 	</div>
 
 	<div class="menu">
@@ -180,22 +163,15 @@
 
 		<div class="icon">
 			<div id="social" style="position:absolute; bottom:10px;">
-				<a href="https://www.facebook.com/jon.bon.johny" target="_blank" >
+				<a href="https://www.facebook.com/jon.bon.johny" target="_self" >
 					<img src="photos/facebook.png"></a>
-
+				
+				<a href="https://github.com/johneliades" target="_self" >
+					<img src="photos/github.png"></a>
+			
 				<a href="documents/grades.pdf" target="iframe_right" >
 					<img src="photos/uth.png"></a>
-
-				<a href="https://github.com/johneliades" target="_blank" >
-					<img src="photos/github.png"></a>
-
 			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="bird-container">
-			<div class="bird"></div>
 		</div>
 	</div>
 

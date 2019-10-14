@@ -7,14 +7,17 @@
 	<title>John's Biography</title>
 
 	<style>
+		::-webkit-scrollbar { 
+    		display: none; 
+		}
 
 		/* Right side of nagivation menu */
 		.main_screen {
 			top:0;
 			left:0;
 			height: 100%;
-			padding-left: 15%;
-			width: 85%;
+			margin-left: 250px;
+			width: calc(100% - 250px);
 			position: fixed;
 			background-image: url(photos/background.jpg);
 			background-position: center;
@@ -28,14 +31,15 @@
 		.name {
 			color: white;
 			text-align: center;
-			padding-bottom: 20px;
+			text-decoration: underline;
+			margin-bottom: 50px;
 			font-size: 25px;
 		}
 
 		/* Navigation bar */
 		.menu {
 			height: 100%;
-			width: 15%;
+			width: 250px;
 			position: fixed;
 			top: 0;
 			left: 0;
@@ -55,19 +59,18 @@
 
 		/* Change color on hover */
 		.entry:hover {
-			font-size: 26px;
+			font-size: 28px;
 			color: #80f1f1;
 		}
 
 		/* Profile image */
 		.profile img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
+			margin-left: 25%;
+			margin-right: 25%;
 			margin-top: 20px;
-			margin-bottom: 20px;
-			height: 140px;
-			width: 140px;
+			margin-bottom: 0px;
+			height: 50%;
+			width: 50%;
 			border-radius: 50%;
 			border-width: 3px;
 			border-color: black;
@@ -79,6 +82,8 @@
 
 		.icon img {
 			margin-left: 15px;
+			margin-bottom: 7px;
+			margin-top: 7px;
 			border-radius: 50%;
 			height: 45px;
 			width: 45px;
@@ -88,6 +93,8 @@
 		}
 
 		.icon img:hover {
+			height: 50px;
+			width: 50px;
 			border-color: green;
 			border-width: 3px;
 		}
@@ -162,7 +169,7 @@
 		</div>
 
 		<div class="icon">
-			<div id="social" style="position:absolute; bottom:10px;">
+			<div id="social" style="position:absolute; bottom: 20px; margin-left:20px;">
 				<a href="https://www.facebook.com/jon.bon.johny" target="_self" >
 					<img src="photos/facebook.png"></a>
 				

@@ -4,6 +4,41 @@
 <head>
 	<link rel='icon' type='image/x-icon' href='photos/favicon.ico'>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150100041-1"></script>
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-150100041-1');
+
+		function myFunction() {
+
+			var myArray = [
+				"A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila. - Mitch Ratliff",
+				"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live - John Woods",
+				"Any sufficiently advanced bug is indistinguishable from a feature. - Rich Kulawiec",
+				"Any fool can write code that a computer can understand. Good programmers write code that humans can understand. - Martin Fowler",
+				"If privacy is outlawed, only outlaws will have privacy. - Philip Zimmermann",
+				"Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime. - Muhammad Waseem",
+				"Never say anything on the phone that you wouldn't want your mother to hear at your trial. - Sydney Biddle Barrows",
+				"Perl – The only language that looks the same before and after RSA encryption. - Keith Bostic",
+				"The trouble with quotes on the Internet is that you never know if they are genuine. - Benjamin Franklin",
+				"Using encryption on the Internet is the equivalent of arranging an armored car to deliver credit card information from someone living in a cardboard box to someone living on a park bench. - Gene Spafford",
+				"What one programmer can do in one month, two programmers can do in two months. - Fred Brooks",
+				"Security in IT is like locking your house or car – it doesn't stop the bad guys, but if it's good enough they may move on to an easier target. - Paul Herbka",
+				"In theory, one can build provably secure systems. In theory, theory can be applied to practice but in practice, it can't. - M.Dacier, Eurecom Institute",
+				"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it. - Patrick McKenzie",
+				"One of the best programming skills you can have is knowing when to walk away for awhile. - Oscar Godson"
+			];
+
+			var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+			alert(randomItem);
+		}
+	</script>​
+
 	<title>John's Biography</title>
 
 	<style>
@@ -108,7 +143,7 @@
 
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
-			animation-duration: 9s;
+			animation-duration: 8s;
 			animation-delay: 0;
 			z-index: -1;
 		}
@@ -120,8 +155,7 @@
 			30% {transform: translateY(4vh) translateX(50vw) scale(0.7);}
 			40% {transform: translateY(2vh) translateX(70vw) scale(0.7);}
 			50% {transform: translateY(0vh) translateX(90vw) scale(0.7);}
-			60% {transform: translateY(0vh) translateX(110vw) scale(0.7);}
-			100% {transform: translateY(0vh) translateX(110vw) scale(0.7);}
+			60%, 100% {transform: translateY(0vh) translateX(110vw) scale(0.7);}
 		}
 
 		/* The actual bird */
@@ -150,7 +184,7 @@
 
 <body>
 	<div class="main_screen">
-		<iframe height="100%" width="100%" name="iframe_right" frameBorder="0"></iframe>
+		<iframe id="iframe_right" height="100%" width="100%" name="iframe_right" frameBorder="0"></iframe>
 		<div class="bird-container">
 			<div class="bird"></div>
 		</div>
@@ -165,7 +199,9 @@
 		<div class="nav">
 			<a href="work.html" target="iframe_right" class="entry">Work</a>
 			<a href="about.html" target="iframe_right" class="entry">About Me</a>
-			<a href="quotes.html" target="iframe_right" class="entry">Quotes</a>
+			
+			<button onclick="myFunction()">Show Quote</button>		
+
 		</div>
 
 		<div class="icon">

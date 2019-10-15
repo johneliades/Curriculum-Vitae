@@ -1,0 +1,160 @@
+::-webkit-scrollbar { 
+	display: none; 
+}
+
+.bird-container {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	animation-name: fly-right;
+
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-delay: 0;
+	z-index: 0;
+}
+	
+@keyframes fly-right {
+	0% {transform: scale(0.4) translateX(-10vw);}
+	10% {transform: translateY(2vh) translateX(10vw) scale(0.5);}
+	20% {transform: translateY(0vh) translateX(30vw) scale(0.6);}
+	30% {transform: translateY(4vh) translateX(50vw) scale(0.7);}
+	40% {transform: translateY(2vh) translateX(70vw) scale(0.7);}
+	50% {transform: translateY(0vh) translateX(90vw) scale(0.7);}
+	60%, 100% {transform: translateY(0vh) translateX(110vw) scale(0.7);}
+}
+
+.bird {
+	background-image: url(../photos/bird-cells.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	animation-name: fly-cycle;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-delay: -0.5s;	
+	z-index: 0;
+}
+
+@keyframes fly-cycle {
+	100% {
+		background-position: -900px 0;
+	}
+}
+
+.main_screen {
+	top:0;
+	left:0;
+	height: 100%;
+	margin-left: 240px;
+	width: calc(100% - 240px);
+	position: fixed;
+	background-image: url(../photos/background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 0;
+	overflow: hidden; 
+}
+
+/* Navigation bar */
+.menu {
+	position: absolute;
+	height: 100%;
+	width: 240px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow: hidden; 
+}
+
+.menu_entry_wrapper {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Side navigation entries */
+.menu_entry {
+	position: relative;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+	color: #707070;
+	transition: 0.3s;
+}
+
+/* Change color on hover */
+.menu_entry:hover {
+	font-size: 28px;
+	color: #80f1f1;
+}
+
+.profile img {
+	position: relative;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	height: 50%;
+	width: 50%;
+	border-radius: 50%;
+	border-width: 3px;
+	border-color: black;
+}
+
+.profile img:hover {
+	border-color: green;
+}
+
+.name {
+	position: relative;
+	margin-top: 5px;
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 25px;
+	width: 100%;
+}
+
+.icon-wrapper {
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+}
+
+.icon img {
+	position: relative;
+	margin-left: 10px;
+	border-radius: 50%;
+	height: 45px;
+	width: 45px;
+	border-style: solid;
+	border-color: red;
+	border-width: 1px;
+}
+
+.icon img:hover {
+	height: 50px;
+	width: 50px;
+	border-color: green;
+	border-width: 3px;
+}
+
+.quote {
+	position: absolute;
+	width: 100px;
+	height: 25px;
+	bottom: 0px;
+}
+
+.explain {
+	position: relative;
+	left: -30px;
+}

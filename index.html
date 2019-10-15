@@ -23,11 +23,11 @@
 				"If privacy is outlawed, only outlaws will have privacy. - Philip Zimmermann",
 				"Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime. - Muhammad Waseem",
 				"Never say anything on the phone that you wouldn't want your mother to hear at your trial. - Sydney Biddle Barrows",
-				"Perl – The only language that looks the same before and after RSA encryption. - Keith Bostic",
+				"Perl - The only language that looks the same before and after RSA encryption. - Keith Bostic",
 				"The trouble with quotes on the Internet is that you never know if they are genuine. - Benjamin Franklin",
 				"Using encryption on the Internet is the equivalent of arranging an armored car to deliver credit card information from someone living in a cardboard box to someone living on a park bench. - Gene Spafford",
 				"What one programmer can do in one month, two programmers can do in two months. - Fred Brooks",
-				"Security in IT is like locking your house or car – it doesn't stop the bad guys, but if it's good enough they may move on to an easier target. - Paul Herbka",
+				"Security in IT is like locking your house or car - it doesn't stop the bad guys, but if it's good enough they may move on to an easier target. - Paul Herbka",
 				"In theory, one can build provably secure systems. In theory, theory can be applied to practice but in practice, it can't. - M.Dacier, Eurecom Institute",
 				"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it. - Patrick McKenzie",
 				"One of the best programming skills you can have is knowing when to walk away for awhile. - Oscar Godson"
@@ -35,9 +35,20 @@
 
 			var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
-			alert(randomItem);
-		}
+			iframe=document.getElementById('iframe_right')
+			iframe.contentWindow.document.open();
+			iframe.contentWindow.document.write("");
+			iframe.contentWindow.document.close();
 
+			html="<html><body>\
+							<br><br><br><br>\
+								<font size='10'>"+randomItem+
+								"</font>\
+						</body>\
+					</html>"
+
+			iframe.contentWindow.document.write(html);
+		}
 	</script>​
 
 	<title>John's Biography</title>
@@ -165,7 +176,7 @@
 
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
-			animation-duration: 8s;
+			animation-duration: 10s;
 			animation-delay: 0;
 			z-index: 0;
 		}
@@ -190,6 +201,7 @@
 			animation-iteration-count: infinite;
 			animation-duration: 1s;
 			animation-delay: -0.5s;	
+			z-index: 0;
 		}
 
 		@keyframes fly-cycle {
@@ -207,7 +219,7 @@
 		<iframe id="iframe_right" height="100%" width="100%" name="iframe_right" frameBorder="0"></iframe>
 		<div class="bird-container">
 			<div class="bird" onclick="get_quote()"></div>
-				<h2 style="color:white;">Catch the bird watch the magic</h2>
+			<h2 style="color:white;">Catch the bird<br>watch the magic</h2>
 		</div>
 	</div>
 

@@ -13,7 +13,7 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-150100041-1');
 
-		function myFunction() {
+		function get_quote() {
 
 			var myArray = [
 				"A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila. - Mitch Ratliff",
@@ -37,6 +37,7 @@
 
 			alert(randomItem);
 		}
+
 	</script>​
 
 	<title>John's Biography</title>
@@ -46,7 +47,6 @@
 			display: none; 
 		}
 
-		/* Right side of nagivation menu */
 		.main_screen {
 			top:0;
 			left:0;
@@ -150,7 +150,13 @@
 			border-width: 3px;
 		}
 
-		/* The box around the bird */
+		.quote {
+			position: absolute;
+			width: 100px;
+			height: 25px;
+			bottom: 0px;
+		}
+
 		.bird-container {
 			position: absolute;
 			top: 40%;
@@ -161,7 +167,7 @@
 			animation-iteration-count: infinite;
 			animation-duration: 8s;
 			animation-delay: 0;
-			z-index: -1;
+			z-index: 0;
 		}
 			
 		@keyframes fly-right {
@@ -174,13 +180,11 @@
 			60%, 100% {transform: translateY(0vh) translateX(110vw) scale(0.7);}
 		}
 
-		/* The actual bird */
 		.bird {
 			background-image: url(photos/bird-cells.svg);
 			background-size: auto 100%;
 			width: 88px;
 			height: 125px;
-			
 			animation-name: fly-cycle;
 			animation-timing-function: steps(10);
 			animation-iteration-count: infinite;
@@ -199,13 +203,11 @@
 </head>
 
 <body>
-	<div class="main_screen">
-
-		<button onclick="myFunction()">Show Quote</button>		
-
+	<div id="form" class="main_screen">
 		<iframe id="iframe_right" height="100%" width="100%" name="iframe_right" frameBorder="0"></iframe>
 		<div class="bird-container">
-			<div class="bird"></div>
+			<div class="bird" onclick="get_quote()"></div>
+				<h2 style="color:white;">Catch the bird watch the magic</h2>
 		</div>
 	</div>
 

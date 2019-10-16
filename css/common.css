@@ -14,3 +14,30 @@
 p.comic_font {
 	font-family: "Comic Sans MS"
 }
+
+.breaking{
+	position: absolute;
+
+	margin-top: 20vh;
+
+	margin-left: 10vw;
+	margin-right: 10vw;
+	width: 80vw;
+
+	font-size: 3vw;
+
+	word-wrap: break-word;
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+	.breaking {
+		position: absolute;
+
+		margin-top: 20vh;
+
+		margin-left: 10vw;
+		margin-right: 10vw;
+		width: 80vw;
+
+		font-size: 5vw;
+	}

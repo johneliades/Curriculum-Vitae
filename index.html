@@ -48,31 +48,26 @@
 				<html>
 					<head>
 					<style>
+						::-webkit-scrollbar { 
+							display: none; 
+						}
 
-					.unselectable_center_font {
-						-webkit-touch-callout: none;
-						-webkit-user-select: none;
-						-khtml-user-select: none;
-						-moz-user-select: none;
-						-ms-user-select: none;
-						user-select: none;
-						
-						font-family: "Comic Sans MS"
+						.unselectable: none;
+							-webkit-user-select: none;
+							-khtml-user-select: none;
+							-moz-user-select: none;
+							-ms-user-select: none;
+							user-select: none;
+							
+							font-family: "Comic Sans MS"
 
-						position: relative;
-						margin-top: 10vw;
-						margin-bot: 10vw;
-						margin-left: 10vw;
-						margin-right: 10vw;
-
-						word-wrap: break-word;
-					}
-
+							word-wrap: break-word;
+						}
 					</style>
 					</head>
 					<body>
-						<div class="unselectable_center_font">
-							<font size="5vw">
+						<div class="unselectable">
+							<p style="font-size:5vh; position: relative; margin-left:5vw; margin-right:5vw; top: 8vw;">
 								<b>`
 									+ randomItem + `
 								</b>
@@ -103,7 +98,6 @@
 	</script>
 
 	<title>John's Biography</title>
-
 </head>
 
 <body>
@@ -114,14 +108,11 @@
 		
 		<div class="name">John Eliades</div>
 
-	<!--
 		<div class="entry_wrapper">
-			<p class="comic_font">
-				<a href="work.html" onclick="remove_help()" target="iframe_right" class="menu_entry">Work</a>
-				<a href="about.html" onclick="remove_help()" target="iframe_right" class="menu_entry">About Me</a>
-			</p>
+			<a href="work.html" onclick="remove_help()" target="iframe_main" class="entry">Work</a>
+			<a href="about.html" onclick="remove_help()" target="iframe_main" class="entry">About Me</a>
 		</div>
-
+	<!--
 	<div class="icon-wrapper">
 			<div class="icon">
 				<a href="https://www.facebook.com/jon.bon.johny" target="_blank" >
@@ -130,7 +121,7 @@
 				<a href="https://github.com/johneliades/Curriculum-Vitae" target="_blank" >
 					<img src="photos/github.png"></a>
 			
-				<a href="documents/grades.pdf" target="iframe_right" onclick="remove_help()">
+				<a href="documents/grades.pdf" target="iframe_main" onclick="remove_help()">
 					<img src="photos/uth.png"></a>
 			</div>
 		</div> -->

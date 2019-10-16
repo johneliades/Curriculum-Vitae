@@ -1,0 +1,41 @@
+.bird-container {
+	position: absolute;
+	top: 20vh;
+	left: 0%;
+	animation-name: fly-right;
+
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 12s;
+	animation-delay: 0;
+	z-index: 0;
+}
+	
+@keyframes fly-right {
+	0% {transform: scale(0.4) translateX(-10vw);}
+	10% {transform: translateY(2vh) translateX(10vw) scale(0.5);}
+	20% {transform: translateY(0vh) translateX(30vw) scale(0.6);}
+	30% {transform: translateY(4vh) translateX(50vw) scale(0.7);}
+	40% {transform: translateY(2vh) translateX(70vw) scale(0.7);}
+	50% {transform: translateY(0vh) translateX(90vw) scale(0.7);}
+	60%, 100% {transform: translateY(0vh) translateX(110vw) scale(0.7);}
+}
+
+.bird {
+	background-image: url(../photos/bird-cells.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	animation-name: fly-cycle;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-delay: -0.5s;	
+	z-index: 0;
+}
+
+@keyframes fly-cycle {
+	100% {
+		background-position: -900px 0;
+	}
+}

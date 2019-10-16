@@ -2,13 +2,14 @@
 <html lang="en-US">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel='icon' type='image/x-icon' href='photos/favicon.ico'>
 	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/bird.css">
+	<link rel="stylesheet" href="css/commom.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150100041-1"></script>
-
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -16,7 +17,7 @@
 		gtag('config', 'UA-150100041-1');
 
 		function get_quote() {
-			remove_help();
+			remove_help(0);
 
 			var myArray = [
 				"A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila. - Mitch Ratliff",
@@ -38,56 +39,90 @@
 
 			var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
-			iframe=document.getElementById('iframe_right')
+			iframe=document.getElementById('iframe_main')
 			iframe.contentWindow.document.open();
 			iframe.contentWindow.document.write("");
-			iframe.contentWindow.document.close();
 
-			html="<html><body>\
-							<br><br><br><br>\
-								<font size='10'>"+randomItem+
-								"</font>\
-						</body>\
-					</html>"
+			const html= 
+				`
+				<html>
+					<head>
+					<style>
+
+					.unselectable_center_font {
+						-webkit-touch-callout: none;
+						-webkit-user-select: none;
+						-khtml-user-select: none;
+						-moz-user-select: none;
+						-ms-user-select: none;
+						user-select: none;
+						
+						font-family: "Comic Sans MS"
+
+						position: relative;
+						margin-top: 10vw;
+						margin-bot: 10vw;
+						margin-left: 10vw;
+						margin-right: 10vw;
+
+						word-wrap: break-word;
+					}
+
+					</style>
+					</head>
+					<body>
+						<div class="unselectable_center_font">
+							<font size="5vw">
+								<b>`
+									+ randomItem + `
+								</b>
+							</font>
+						</div>
+					</body>
+				</html>
+				`
 
 			iframe.contentWindow.document.write(html);
+			iframe.contentWindow.document.close();
 		}
 
-		function remove_help() {
-			var element = document.getElementById("explain");
-			if(element)
+		function remove_help(x=1) {
+			var element = document.getElementById("bird_tip");
+			if(element)			
 				element.parentNode.removeChild(element);
+
+			if(x==1) {
+				var bird = document.getElementById("bird");
+				if(bird)
+					bird.style.zIndex = -1;
+				var bird_container = document.getElementById("bird_container");
+				if(bird_container)
+					bird_container.style.zIndex = -1;
+			}
 		}
-	</script>​
+	</script>
 
 	<title>John's Biography</title>
 
 </head>
 
 <body>
-	<div id="form" class="main_screen">
-
-		<iframe id="iframe_right" height="100%" width="100%" name="iframe_right" frameBorder="0"></iframe>
-		<div class="bird-container">
-			<div class="bird" onclick="get_quote()"></div>
-			<div id="explain" class="explain">
-				<h2 style="color:magenta;">Catch the bird<br>watch the magic</h2>
-			</div>
-		</div>
-	</div>
-
 	<div class="menu">
-		<div class="profile"><a href="index.html"><img src="photos/profile.jpg" border=""></a></div>
-		<p class="comic_font"><div class="name">John Eliades</div></p>
+		<a href="index.html">
+			<img src="photos/profile.jpg" class="profile_pic" border="">
+		</a>
+		
+		<div class="name">John Eliades</div>
 
-		<div class="menu_entry_wrapper">
+	<!--
+		<div class="entry_wrapper">
 			<p class="comic_font">
 				<a href="work.html" onclick="remove_help()" target="iframe_right" class="menu_entry">Work</a>
 				<a href="about.html" onclick="remove_help()" target="iframe_right" class="menu_entry">About Me</a>
 			</p>
 		</div>
 
-		<div class="icon-wrapper">
+	<div class="icon-wrapper">
 			<div class="icon">
 				<a href="https://www.facebook.com/jon.bon.johny" target="_blank" >
 					<img src="photos/facebook.png"></a>
@@ -97,6 +132,18 @@
 			
 				<a href="documents/grades.pdf" target="iframe_right" onclick="remove_help()">
 					<img src="photos/uth.png"></a>
+			</div>
+		</div> -->
+
+	</div>
+
+	<div id="main_screen" class="main_screen">
+		<iframe id="iframe_main" height="100%" width="100%" name="iframe_main" frameBorder="0"></iframe>
+		
+		<div id="bird_container" class="bird-container">
+			<div id="bird" class="bird" onclick="get_quote()"></div>
+			<div id="bird_tip">
+				<h2 style="color:magenta;">Catch the bird<br>watch the magic</h2>
 			</div>
 		</div>
 	</div>

@@ -11,10 +11,6 @@
 	user-select: none;
 }
 
-p.comic_font {
-	font-family: "Comic Sans MS"
-}
-
 .breaking{
 	position: absolute;
 
@@ -27,6 +23,10 @@ p.comic_font {
 	font-size: 3vw;
 
 	word-wrap: break-word;
+}
+
+p.comic_font {
+	font-family: "Comic Sans MS"
 }
 
 @media screen and (max-width: 500px) and (orientation: portrait) {

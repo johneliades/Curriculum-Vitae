@@ -95,6 +95,27 @@
 					bird_container.style.zIndex = -1;
 			}
 		}
+
+		function clearFrame() {
+			var iframe=document.getElementById('iframe_main')
+
+			if(iframe) {
+				iframe.contentWindow.document.open();
+				iframe.contentWindow.document.write(" ");
+				iframe.contentWindow.document.close();
+
+				var bird = document.getElementById("bird");
+				if(bird)
+					bird.style.zIndex = 0;
+				var bird_container = document.getElementById("bird_container");
+				if(bird_container)
+					bird_container.style.zIndex = 0;
+
+				frameDoc = iframe.contentDocument || iframe.contentWindow.document;
+				if(frameDoc)
+					frameDoc.removeChild(frameDoc.documentElement);
+			}
+		}
 	</script>
 
 	<title>John's Biography</title>
@@ -102,29 +123,25 @@
 
 <body>
 	<div class="menu">
-		<a href="index.html">
-			<img src="photos/profile.jpg" class="profile_pic" border="">
-		</a>
+		<img src="photos/profile.jpg" class="profile_pic" border="" alt="Enables Bird" onclick="clearFrame()">
 		
-		<div class="name">John Eliades</div>
+		<div class="name unselectable">John Eliades</div>
 
 		<div class="entry_wrapper">
 			<a href="work.html" onclick="remove_help()" target="iframe_main" class="entry">Work</a>
 			<a href="about.html" onclick="remove_help()" target="iframe_main" class="entry">About Me</a>
 		</div>
-	<!--
-	<div class="icon-wrapper">
-			<div class="icon">
-				<a href="https://www.facebook.com/jon.bon.johny" target="_blank" >
-					<img src="photos/facebook.png"></a>
-				
-				<a href="https://github.com/johneliades/Curriculum-Vitae" target="_blank" >
-					<img src="photos/github.png"></a>
+
+		<div class="icon-wrapper">
+			<a href="https://www.facebook.com/jon.bon.johny" class="icon" target="_blank" >
+				<img src="photos/facebook.png"></a>
 			
-				<a href="documents/grades.pdf" target="iframe_main" onclick="remove_help()">
-					<img src="photos/uth.png"></a>
-			</div>
-		</div> -->
+			<a href="https://github.com/johneliades/Curriculum-Vitae" class="icon" target="_blank" >
+				<img src="photos/github.png"></a>
+		
+			<a href="documents/grades.pdf" target="iframe_main" class="icon" onclick="remove_help()">
+				<img src="photos/uth.png"></a>
+		</div>
 
 	</div>
 

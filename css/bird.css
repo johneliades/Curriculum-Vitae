@@ -1,13 +1,16 @@
 .bird-container {
 	position: absolute;
 	top: 20vh;
-	left: 0%;
+	left: -10%;
 	animation-name: fly-right;
+
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
 
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	animation-duration: 12s;
-	animation-delay: 0;
+	animation-duration: 9s;
+	animation-delay: 1s;
 	z-index: 0;
 }
 	
@@ -26,11 +29,13 @@
 	background-size: auto 100%;
 	width: 88px;
 	height: 125px;
+	will-change: background-position;
+	
 	animation-name: fly-cycle;
 	animation-timing-function: steps(10);
 	animation-iteration-count: infinite;
 	animation-duration: 1s;
-	animation-delay: -0.5s;	
+	animation-delay: 1s;	
 	z-index: 0;
 }
 

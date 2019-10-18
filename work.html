@@ -2,7 +2,23 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/work.css">
+
+	<script>
+		function fadeInPage() {
+			if (!window.AnimationEvent) { return; }
+			var fader = document.getElementById('fader');
+			fader.classList.add('fade-out');
+		}
+	</script>
+</head>
+
+<body>
+	<svg id="fader"></svg>
+	<script>
+		fadeInPage();
+	</script>
 
 	<div class="row">
 		<div class="column">
@@ -85,5 +101,5 @@
 		</div>
 	</div>
 
-</head>
+</body>
 </html>

@@ -6,11 +6,12 @@
 	<link rel='icon' type='image/x-icon' href='photos/favicon.ico'>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/bird.css">
-	<link rel="stylesheet" href="css/commom.css">
+	<link rel="stylesheet" href="css/common.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150100041-1"></script>
 	<script>
+
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
@@ -47,25 +48,22 @@
 				`
 				<html>
 					<head>
-					<style>
-						::-webkit-scrollbar { 
-							display: none; 
-						}
+						<link rel="stylesheet" href="css/common.css">
 
-						.unselectable: none;
-							-webkit-user-select: none;
-							-khtml-user-select: none;
-							-moz-user-select: none;
-							-ms-user-select: none;
-							user-select: none;
-							
-							font-family: "Comic Sans MS"
-
-							word-wrap: break-word;
-						}
-					</style>
+						<script>
+							function fadeInPage() {
+								if (!window.AnimationEvent) { return; }
+								var fader = document.getElementById('fader');
+								fader.classList.add('fade-out');
+							}`
+						+ "<" + "/script>" + `
 					</head>
 					<body>
+						<svg id="fader"></svg>
+						<script>
+							fadeInPage();`
+						+ "<" + "/script>" + `
+
 						<div class="unselectable">
 							<p style="font-size:5vh; position: relative; margin-left:5vw; margin-right:5vw; top: 8vw;">
 								<b>`
@@ -84,7 +82,7 @@
 		function remove_help(x=1) {
 			var element = document.getElementById("bird_tip");
 			if(element)			
-				element.parentNode.removeChild(element);
+				element.style.opacity=0;
 
 			if(x==1) {
 				var bird = document.getElementById("bird");
@@ -97,8 +95,9 @@
 		}
 
 		function clearFrame() {
+			var fader = document.getElementById('fader');
+			fader.classList.add('fade-in');
 			var iframe=document.getElementById('iframe_main')
-
 			if(iframe) {
 				iframe.contentWindow.document.open();
 				iframe.contentWindow.document.write(" ");
@@ -111,17 +110,32 @@
 				if(bird_container)
 					bird_container.style.zIndex = 0;
 
-				frameDoc = iframe.contentDocument || iframe.contentWindow.document;
-				if(frameDoc)
-					frameDoc.removeChild(frameDoc.documentElement);
+				var element = document.getElementById("bird_tip");
+				if(element)			
+					element.style.opacity=100;
+
 			}
+			fader.classList.remove('fade-in');
+			fader.classList.add('fade-out');
 		}
+
+		function fadeInPage() {
+			if (!window.AnimationEvent) { return; }
+			var fader = document.getElementById('fader');
+			fader.classList.add('fade-out');
+		}
+
 	</script>
 
 	<title>John's Biography</title>
 </head>
 
 <body>
+	<svg id="fader"></svg>
+	<script>
+		fadeInPage();
+	</script>
+
 	<div class="menu">
 		<img src="photos/profile.jpg" class="profile_pic" border="" alt="Enables Bird" onclick="clearFrame()">
 		

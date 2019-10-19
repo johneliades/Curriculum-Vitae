@@ -27,7 +27,7 @@ p.custom_font {
 	font-size: 5vh;
 }
 
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 859px) and (orientation: portrait) {
 	.breaking {
 		position: absolute;
 
@@ -41,7 +41,7 @@ p.custom_font {
 	}
 }
 
-@media screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 859px) and (orientation: landscape) {
 		.breaking {
 			position: absolute;
 

@@ -5,22 +5,14 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/work.css">
 
-	<script>
-		function fadeInPage() {
-			if (!window.AnimationEvent) { return; }
-			var fader = document.getElementById('fader');
-			fader.classList.add('fade-out');
-		}
-	</script>
+	<style>
+		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+	</style>
+
 </head>
 
 <body>
-	<svg id="fader"></svg>
-	<script>
-		fadeInPage();
-	</script>
-
-	<div class="row">
+	<div class="row fade">
 		<div class="column">
 			<a><img src="photos/panoptis.jpg" alt="" ></a>
 
@@ -51,7 +43,7 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row fade">
 		<div class="column">
 			<div class="breaking">
 				<p class="comic_font">
@@ -76,7 +68,7 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row fade">
 		<div class="column">
 			<div class="breaking">
 				<p class="comic_font">

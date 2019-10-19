@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="css/bird.css">
 	<link rel="stylesheet" href="css/common.css">
 
+	<style>
+		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+	</style>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150100041-1"></script>
 	<script>
@@ -49,23 +53,18 @@
 				<html>
 					<head>
 						<link rel="stylesheet" href="css/common.css">
-
-						<script>
-							function fadeInPage() {
-								if (!window.AnimationEvent) { return; }
-								var fader = document.getElementById('fader');
-								fader.classList.add('fade-out');
-							}`
-						+ "<" + "/script>" + `
 					</head>
 					<body>
-						<svg id="fader"></svg>
-						<script>
-							fadeInPage();`
-						+ "<" + "/script>" + `
+						<style>
+							p.custom_font {
+								font-family: "Comic Sans MS"
+							}
 
-						<div class="unselectable">
-							<p style="font-size:5vh; position: relative; margin-left:5vw; margin-right:5vw; top: 8vw;">
+							.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+						</style>
+
+						<div class="unselectable fade custom_font">
+							<p class="custom_font" style="font-size:5vh; position: relative; margin-left:5vw; margin-right:5vw; top: 8vw;">
 								<b>`
 									+ randomItem + `
 								</b>
@@ -95,8 +94,6 @@
 		}
 
 		function clearFrame() {
-			var fader = document.getElementById('fader');
-			fader.classList.add('fade-in');
 			var iframe=document.getElementById('iframe_main')
 			if(iframe) {
 				iframe.contentWindow.document.open();
@@ -115,14 +112,6 @@
 					element.style.opacity=100;
 
 			}
-			fader.classList.remove('fade-in');
-			fader.classList.add('fade-out');
-		}
-
-		function fadeInPage() {
-			if (!window.AnimationEvent) { return; }
-			var fader = document.getElementById('fader');
-			fader.classList.add('fade-out');
 		}
 
 	</script>
@@ -131,11 +120,6 @@
 </head>
 
 <body>
-	<svg id="fader"></svg>
-	<script>
-		fadeInPage();
-	</script>
-
 	<div class="menu">
 		<img src="photos/profile.jpg" class="profile_pic" border="" alt="Enables Bird" onclick="clearFrame()">
 		
@@ -160,7 +144,7 @@
 	</div>
 
 	<div id="main_screen" class="main_screen">
-		<iframe id="iframe_main" height="100%" width="100%" name="iframe_main" frameBorder="0"></iframe>
+		<iframe id="iframe_main" class="fade" height="100%" width="100%" name="iframe_main" frameBorder="0"></iframe>
 		
 		<div id="bird_container" class="bird-container">
 			<div id="bird" class="bird" onclick="get_quote()"></div>

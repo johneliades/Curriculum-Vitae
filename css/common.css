@@ -15,16 +15,42 @@ p.custom_font {
 	font-family: "Comic Sans MS"
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+.breaking {
+	position: absolute;
+
+	margin-top: 14vh;
+
+	margin-left: 10vw;
+	margin-right: 10vw;
+	width: 80vw;
+
+	font-size: 5vh;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
 	.breaking {
 		position: absolute;
 
-		margin-top: 20vh;
+		margin-top: 15vh;
 
 		margin-left: 10vw;
 		margin-right: 10vw;
 		width: 80vw;
 
-		font-size: 5vw;
+		font-size: 4vh;
 	}
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+		.breaking {
+			position: absolute;
+
+			margin-top: 10vh;
+
+			margin-left: 10vw;
+			margin-right: 10vw;
+			width: 80vw;
+
+			font-size: 6vh;
+		}
 }

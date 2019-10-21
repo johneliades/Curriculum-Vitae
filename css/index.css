@@ -215,7 +215,7 @@
 	}
 
 	.name {
-		font-size: 3vw;
+		font-size: 2.5vw;
 		margin-top: 19.6vw;
 		margin-bottom: 1vw;
 	}
@@ -228,11 +228,11 @@
 
 	.entry {
 		margin-bottom: 1vw;
-		font-size: 3vw;
+		font-size: 2.5vw;
 	}
 
 	.entry:hover {
-		font-size: 4vw;
+		font-size: 3vw;
 	}
 
 	.icon-wrapper {

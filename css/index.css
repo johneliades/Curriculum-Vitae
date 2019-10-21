@@ -67,6 +67,7 @@
 
 .entry:hover {
 	color: #80f1f1;
+	font-size: 2.5vw;
 }
 
 .icon-wrapper {
@@ -149,7 +150,7 @@
 	}
 
 	.entry_wrapper {
-		margin-top: 4vh;
+		margin-top: 2vh;
 		margin-left: 20vh;
 		top: 0;
 	}
@@ -160,6 +161,7 @@
 	}
 
 	.entry:hover {
+		font-size: 3vh;
 		color: #80f1f1;
 	}
 
@@ -220,13 +222,17 @@
 
 	.entry_wrapper {
 		position: relative;
-		top: 5vh;
+		top: 2vh;
 		width: 100%;
 	}
 
 	.entry {
 		margin-bottom: 1vw;
 		font-size: 3vw;
+	}
+
+	.entry:hover {
+		font-size: 4vw;
 	}
 
 	.icon-wrapper {

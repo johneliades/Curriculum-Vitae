@@ -6,6 +6,13 @@
 	box-sizing: border-box;
 }
 
+body, html {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
 .fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 
 p.custom_font {
@@ -19,6 +26,8 @@ p.custom_font {
 	padding-bottom: 2%;
 	width: 100%;
 	word-wrap: break-word;
+
+	transition: 0.2s;
 }
 
 .column {
@@ -46,6 +55,8 @@ iframe {
 
 	padding-right: 5px;
 	padding-left: 5px;
+	
+	transition: 0.2s;
 }
 
 img {
@@ -55,9 +66,11 @@ img {
 
 	padding-right: 5px;
 	padding-left: 5px;
+
+	transition: 0.2s;
 }
 
-@media only screen and (max-width: 859px) {
+@media only screen and (max-width: 1000px) {
 
 	.column {
 		position: relative;
@@ -86,13 +99,11 @@ img {
 		height: 50vw;
 		width: 95vw;
 		min-height: 200px;
-		max-width: 750px;
 	}
 
 	img {
 		height: 50vw;
 		width: 95vw;
 		min-height: 200px;
-		max-width: 750px;
 	}
 }

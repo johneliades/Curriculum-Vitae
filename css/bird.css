@@ -9,7 +9,7 @@
 
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	animation-duration: 9s;
+	animation-duration: 12s;
 	animation-delay: 1s;
 	z-index: 0;
 }
@@ -37,6 +37,10 @@
 	animation-duration: 1s;
 	animation-delay: 1s;	
 	z-index: 0;
+}
+
+.bird:hover {
+	cursor: crosshair;
 }
 
 @keyframes fly-cycle {

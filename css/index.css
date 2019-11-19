@@ -47,14 +47,12 @@ body, html, #menu_left, #main_screen {
 	margin-right: 30px;
 
 	border-radius: 50%;
-	border-width: 5px;
-	border-color: red;
-
-	transition: 0.2s;
+	border-width: 6px;
+	border-color: #2E151B;
 }
 
 #profile_pic:hover {
-	border-color: green;
+	border-color: #00FFFF;
 }
 
 #name {
@@ -102,17 +100,17 @@ body, html, #menu_left, #main_screen {
 	width: 40px;
 
 	border-style: solid;
-	border-color: grey;
+	border-color: #2E151B;
 	border-width: 3px;
 }
 
 .icon img:hover {
-	height: 30px;
-	width: 30px;
+	height: 34px;
+	width: 34px;
 
 	border-style: double;
 	border-color: #00FFFF;
-	border-width: 8px;
+	border-width: 6px;
 }
 
 @media screen and (orientation: portrait) {

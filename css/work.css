@@ -10,7 +10,7 @@ body, html {
 	margin: 0;
 	height: 100%;
 	width: 100%;
-	overflow: auto;
+ 	scrollbar-width: none;
 	background-color: #2E151B;
 }
 
@@ -19,12 +19,18 @@ body, html {
 p.custom_font {
 	font-family: "Baskerville";
 	color: white;
+
+	padding-left: 2%;
+	padding-right: 2%;
 }
 
 h1 {
 	font-family: "Baskerville";
 	text-decoration: underline;
 	color: #00FFFF;
+
+	padding-left: 1%;
+	padding-right: 1%;
 }
 
 a.button{
@@ -63,10 +69,7 @@ a.button:hover{
 }
 
 .breaking{
-	padding-top: 2%;
-	padding-left: 4%;
-	padding-right: 4%;
-	padding-bottom: 2%;
+	padding-bottom: 5%;
 	width: 100%;
 	word-wrap: break-word;
 
@@ -76,11 +79,19 @@ a.button:hover{
 .column {
 	position: relative;
 	float: left;
-	width: 50%;
+	width: 49%;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
 	text-align: center;
+
+	padding-top: 20px;
+	border: 2px solid;
+	border-color: #00FFFF;
+	border-radius: 20px;
 }
 
 .row {
+	display: flex;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
@@ -92,28 +103,33 @@ a.button:hover{
 }
 
 iframe {
-	width: 48vw;
+	width: 47vw;
 	height: 28vw;
 	min-height: 250px;
 
 	padding-right: 5px;
 	padding-left: 5px;
-	
-	transition: 0.2s;
 }
 
 img {
-	width: 48vw;
+	width: 47vw;
 	height: 28vw;
 	min-height: 250px;
 
 	padding-right: 5px;
 	padding-left: 5px;
-
-	transition: 0.2s;
 }
 
 @media only screen and (max-width: 1000px) {
+	h1 {
+		padding-left: 1.5%;
+		padding-right: 1.5%;
+	}
+
+	p.custom_font {
+		padding-left: 6vw;
+		padding-right: 6vw;
+	}
 
 	.column {
 		position: relative;
@@ -122,9 +138,15 @@ img {
 		text-align: none;
 		padding-top: 3vw;
 		padding-bottom: 3vw;
+
+		margin-right: 0;
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.row {
+		display: unset;
 		margin-bottom: 0;
 		margin-top: 0;
 	}
@@ -132,8 +154,6 @@ img {
 	.breaking{
 		padding-top: 0;
 		padding-bottom: 0;
-		padding-left: 3vw;
-		padding-right: 3vw;
 		width: 96vw;
 		word-wrap: break-word;
 	}

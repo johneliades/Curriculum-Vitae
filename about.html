@@ -1,11 +1,44 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="css/common.css">
 
 	<style>
+		::-webkit-scrollbar { 
+			display: none; 
+		}
+
+		body, html {
+			overflow: hidden;
+		 	scrollbar-width: none;
+		}
+
+		.unselectable {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
 		p.custom_font {
-			font-family: "Baskerville"
+			font-family: "Baskerville";
+			text-align: center;
+			font-size: 4.5vh;
+			margin-right: 20vw;
+			margin-left: 20vw;
+		}
+
+		.outer {
+			display: table;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+
+		.middle {
+			display: table-cell;
+			vertical-align: middle;
 		}
 
 		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
@@ -14,8 +47,10 @@
 </head>
 
 <body>
-	<div class="breaking unselectable fade">
-		<p class="custom_font"><b>I am a 21 year old student at the University of Thessaly, Greece. Candidate for a Master of Engineering on Electrical and Computer Engineering. My interests revolve around Software Engineering, Network engineering, Linux administration and Computer/Information security. </b></p>
+	<div class="outer unselectable fade">
+		<div class=middle>
+			<p class="custom_font"><b>I am a 21 year old student at the University of Thessaly, Greece. Candidate for a Master of Engineering on Electrical and Computer Engineering. My interests revolve around Software Engineering, Network engineering, Linux administration and Computer/Information security. </b></p>
+		</div>
 	</div>
 
 </body>

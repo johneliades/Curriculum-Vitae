@@ -7,7 +7,6 @@
 	<link rel='icon' type='image/x-icon' href='photos/favicon.ico'>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/bird.css">
-	<link rel="stylesheet" href="css/common.css">
 	
 	<style>
 		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
@@ -66,33 +65,60 @@
 				`
 				<html>
 					<head>
-						<link rel="stylesheet" href="css/common.css">
+
 					</head>
 					<body>
 						<style>
-							.breaking {
+							body, html {
+								margin: 0;
+								height: 100%;
+								width: 100%;
+								overflow: hidden;
+							 	scrollbar-width: none
+							}
+
+							::-webkit-scrollbar { 
+								display: none; 
+							}
+
+							.breaking{
+								padding-bottom: 5%;
+								width: 100%;
+								word-wrap: break-word;
+								transition: 0.2s;
+							}
+
+							.outer {
+								display: table;
 								position: absolute;
+								height: 100%;
+								width: 100%;
+							}
 
-								margin-top: 15vh;
-
-								margin-left: 10vw;
-								margin-right: 10vw;
-								width: 80vw;
-
-								font-size: 6vh;
+							.middle {
+								display: table-cell;
+								vertical-align: middle;
 							}
 
 							p.custom_font {
 								font-family: "Baskerville"
+								text-align: center;
+								font-size: 4.5vh;
+								margin-right: 20vw;
+								margin-left: 20vw;
 							}
 
 							.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 						</style>
 
-						<div class="breaking unselectable fade custom_font">
-							<b>`
-								+ randomItem + `
-							</b>
+						<div class="outer breaking unselectable fade">
+							<div class="middle">
+								<p class="custom_font">
+									<b>`
+										+ randomItem + `
+									</b>
+								</div>
+							</div>
 						</div>
 					</body>
 				</html>
@@ -137,7 +163,6 @@
 
 			}
 		}
-
 	</script>
 
 	<title> ⮞ John's Biography ⮜ </title>

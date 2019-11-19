@@ -2,11 +2,24 @@
 	display: none; 
 }
 
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 body, html, #menu_left, #main_screen {
 	margin: 0;
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
+	scrollbar-width: none;
+}
+
+#iframe_main { 
+	float: left;
 }
 
 #menu_full {

@@ -11,6 +11,7 @@ body, html {
 	height: 100%;
 	width: 100%;
 	overflow: auto;
+	scrollbar-width: none
 }
 
 .fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}

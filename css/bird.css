@@ -21,7 +21,7 @@
 	30% {transform: translateY(4vh) translateX(50vw) scale(0.7);}
 	40% {transform: translateY(2vh) translateX(70vw) scale(0.7);}
 	50% {transform: translateY(0vh) translateX(90vw) scale(0.7);}
-	60%, 100% {transform: translateY(0vh) translateX(110vw) scale(0.7);}
+	60%, 100% {transform: translateY(0vh) translateX(130vw) scale(0.7);}
 }
 
 .bird {

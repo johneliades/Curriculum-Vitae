@@ -20,8 +20,8 @@ p.custom_font {
 	font-family: "Baskerville";
 	color: white;
 
-	padding-left: 2%;
-	padding-right: 2%;
+	padding-left: 70px;
+	padding-right: 70px;
 }
 
 h1 {
@@ -70,6 +70,7 @@ a.button:hover{
 
 .breaking{
 	padding-bottom: 5%;
+
 	width: 100%;
 	word-wrap: break-word;
 
@@ -143,6 +144,8 @@ img {
 		margin-left: 0;
 		padding-left: 0;
 		padding-right: 0;
+
+		border: none;
 
 		margin-top: 5px;
 	}

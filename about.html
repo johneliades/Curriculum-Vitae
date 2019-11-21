@@ -3,6 +3,7 @@
 <head>
 
 	<style>
+
 		::-webkit-scrollbar { 
 			display: none; 
 		}
@@ -10,6 +11,7 @@
 		body, html {
 			overflow: hidden;
 		 	scrollbar-width: none;
+		 	background-color: #2E151B;
 		}
 
 		.unselectable {
@@ -41,6 +43,24 @@
 			vertical-align: middle;
 		}
 
+		.wrapper {
+			background: linear-gradient(to right, #C38D9E 30%, #00ffff 40%, #C38D9E 80%);
+			background-size: 200% auto;
+			background-clip: text;
+			text-fill-color: transparent;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: textclip 5s linear infinite;
+			display: inline-block;
+			animation-direction: reverse;
+		}
+
+		@keyframes textclip {
+			to {
+				background-position: 200% center;
+			}
+		}
+
 		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 	</style>
 
@@ -49,7 +69,7 @@
 <body>
 	<div class="outer unselectable fade">
 		<div class=middle>
-			<p class="custom_font"><b>I am a 21 year old student at the University of Thessaly, Greece. Candidate for a Master of Engineering on Electrical and Computer Engineering. My interests revolve around Software Engineering, Network engineering, Linux administration and Computer/Information security. </b></p>
+			<p class="custom_font wrapper"><b>I am a 21 year old student at the University of Thessaly, Greece. Candidate for a Master of Engineering on Electrical and Computer Engineering. My interests revolve around Software Engineering, Network engineering, Linux administration and Computer/Information security. </b></p>
 		</div>
 	</div>
 

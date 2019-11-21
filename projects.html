@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+	<style>
+
+		::-webkit-scrollbar { 
+			display: none; 
+		}
+
+		body, html {
+			overflow: hidden;
+		 	scrollbar-width: none;
+		 	background-color: #2E151B;
+		}
+
+		.column {
+			position: relative;
+			float: left;
+			width: 49%;
+			margin-right: 0.5%;
+			margin-left: 0.5%;
+			
+			text-align: center;
+
+			padding-bottom: 30px;
+			border: 2px solid;
+			border-color: #00FFFF;
+			border-radius: 20px;
+		}
+
+		.row {
+			display: flex;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.custom_font {
+			font-family: "Baskerville";
+			font-size: 3vh;
+
+			color: #00FFFF;
+		}
+
+		.center {
+			margin-left: 38%;
+		}
+
+		h2 {
+			text-align: center;
+			text-decoration: underline;
+		}
+
+		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+	</style>
+
+</head>
+
+<body>
+	<div class="row fade">
+		<div class="column">
+			<div class="custom_font"><font size="4"> Filler. </font></div>
+		</div>
+
+		<div class="column">
+			<div class="custom_font"><font size="4"> Filler. </font></div>
+		</div>
+	</div>
+
+	<div class="custom_font"> 
+		<h2> Languages </h2>
+		<div class="center">
+			<li> Java </li>
+			<li> C </li>
+			<li> Python </li>
+			<li> C++ </li>
+			<li> R </li>
+			<li> Matlab </li>
+			<li> Mips Assembly </li>
+		</div>
+	</div>
+
+</body>
+</html>

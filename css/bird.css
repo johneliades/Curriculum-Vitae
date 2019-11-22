@@ -3,17 +3,23 @@
 	top: 20vh;
 	left: -10%;
 	animation-name: fly-right;
+	width: 288px;
+	height: 325px;
 
 	transform: scale(0) translateX(-10vw);
 	will-change: transform;
 
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	animation-duration: 12s;
+	animation-duration: 13s;
 	animation-delay: 1s;
 	z-index: 0;
 }
-	
+
+.bird-container:hover {
+	cursor: url('../images/crosshair.png'), crosshair;
+}
+
 @keyframes fly-right {
 	0% {transform: scale(0.4) translateX(-10vw);}
 	10% {transform: translateY(2vh) translateX(10vw) scale(0.5);}
@@ -25,12 +31,15 @@
 }
 
 .bird {
-	background-image: url(../photos/bird-cells.svg);
+	background-image: url(../images/bird-cells.svg);
 	background-size: auto 100%;
 	width: 88px;
 	height: 125px;
 	will-change: background-position;
 	
+	margin-left: 100px;
+	margin-top: 100px;
+
 	animation-name: fly-cycle;
 	animation-timing-function: steps(10);
 	animation-iteration-count: infinite;
@@ -40,7 +49,7 @@
 }
 
 .bird:hover {
-	cursor: crosshair;
+	cursor: url('../images/crosshair-blue.png'), crosshair;
 }
 
 @keyframes fly-cycle {

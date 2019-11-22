@@ -11,10 +11,10 @@ body, html {
 	height: 100%;
 	width: 100%;
  	scrollbar-width: none;
-	background-color: #2E151B;
+	background-color: #181818;
 }
 
-.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.fade{animation:opac 2s}@keyframes opac{from{opacity:0} to{opacity:1}}
 
 h2 {
 	font-family: "Baskerville";
@@ -27,7 +27,7 @@ h2 {
 
 p.custom_font {
 	font-family: "Baskerville";
-	color: #ff8000;
+	color: white;
 
 	padding-left: 70px;
 	padding-right: 70px;
@@ -87,7 +87,7 @@ a.button:hover{
 
 	padding-top: 20px;
 	border: 2px solid;
-	border-color: #00FFFF;
+	border-color: #D4D4DC;
 	border-radius: 20px;
 }
 

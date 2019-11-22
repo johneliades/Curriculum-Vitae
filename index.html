@@ -4,12 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel='icon' type='image/x-icon' href='photos/favicon.ico'>
+	<link rel='icon' type='image/x-icon' href='images/favicon.ico'>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/bird.css">
 	
 	<style>
-		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+		.fade{animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}}
 	</style>
 	
 	<!-- M -->
@@ -189,23 +189,23 @@
 
 <body>
 	<div id="menu_left">
-		<img src="photos/profile.jpg" id="profile_pic" border="" title="Home" alt="Enables Bird" onclick="clearFrame()">
+		<img src="images/profile.jpg" id="profile_pic" border="" title="Home" alt="Enables Bird" onclick="clearFrame()">
 
 		<div id="name" class="unselectable">John Eliades</div>
 
-		<a href="events.html" onclick="remove_help()" target="iframe_main" class="entry"> Events </a>
-		<a href="projects.html" onclick="remove_help()" target="iframe_main" class="entry"> Projects </a>
-		<a href="about.html" onclick="remove_help()" target="iframe_main" class="entry"> About </a>
+		<a href="events.html" onclick="remove_help()" target="iframe_main" class="fade entry"> Events </a>
+		<a href="projects.html" onclick="remove_help()" target="iframe_main" class="fade entry"> Projects </a>
+		<a href="about.html" onclick="remove_help()" target="iframe_main" class="fade entry"> About </a>
 
 		<div id="icon_wrapper">
 			<a href="https://www.facebook.com/jon.bon.johny" class="icon" target="_blank" >
-				<img src="photos/facebook.png"></a>
+				<img src="images/facebook.png"></a>
 			
 			<a href="https://github.com/johneliades/Curriculum-Vitae" class="icon" target="_blank" >
-				<img src="photos/github.png"></a>
+				<img src="images/github.png"></a>
 		
 			<a href="documents/grades.pdf" target="iframe_main" class="icon" onclick="remove_help()">
-				<img src="photos/uth.png"></a>
+				<img src="images/uth.png"></a>
 		</div>
 	</div>
 	
@@ -214,7 +214,7 @@
 	</div>
 
 	<div id="main_screen">
-		<iframe id="iframe_main" class="fade" height="100%" width="100%" name="iframe_main" frameBorder="0"></iframe>
+		<iframe id="iframe_main" height="100%" width="100%" name="iframe_main" frameBorder="0"></iframe>
 
 		<div id="bird_container" class="bird-container">
 			<div id="bird" class="bird" onclick="get_quote()"></div>
@@ -227,8 +227,7 @@
 						border-width: 2px;
 						border-style: solid;
 						border-radius: 20px;
-						padding: 15px;
-						left: -60px;">
+						padding: 15px;">
 					Catch the bird &<br>watch the magic :)
 				</h2>
 			</div>

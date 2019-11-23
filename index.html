@@ -127,7 +127,7 @@
 								margin-left: 20vw;
 							}
 
-							.fade{animation:opac 2s}@keyframes opac{from{opacity:0} to{opacity:1}}
+							.fade{animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}}
 						</style>
 
 						<div class="outer breaking unselectable fade">
@@ -153,18 +153,19 @@
 				element.style.opacity=0;
 
 			if(x==1) {
+				var element = document.getElementById("main_screen");
+				if(element)			
+					element.style.backgroundSize = "0px 0px";
+
 				var bird = document.getElementById("bird");
 				if(bird) {
 					bird.style.zIndex = -1;
 					bird.style.opacity = 0;
 				}
+
 				var bird_container = document.getElementById("bird_container");
 				if(bird_container)
 					bird_container.style.zIndex = -1;
-
-				var element = document.getElementById("main_screen");
-				if(element)			
-					element.style.backgroundSize = "0px 0px";
 			}
 		}
 
@@ -175,11 +176,16 @@
 				iframe.contentWindow.document.write(" ");
 				iframe.contentWindow.document.close();
 
+				var element = document.getElementById("main_screen");
+				if(element)			
+					element.style.backgroundSize = "cover";
+
 				var bird = document.getElementById("bird");
 				if(bird) {
 					bird.style.zIndex = 0;
 					bird.style.opacity = 100;
 				}
+
 				var bird_container = document.getElementById("bird_container");
 				if(bird_container)
 					bird_container.style.zIndex = 0;
@@ -187,10 +193,6 @@
 				var element = document.getElementById("bird_tip");
 				if(element)			
 					element.style.opacity = 100;
-
-				var element = document.getElementById("main_screen");
-				if(element)			
-					element.style.backgroundSize = "cover";
 			}
 		}
 	</script>

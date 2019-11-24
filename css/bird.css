@@ -1,12 +1,12 @@
 .bird-container {
 	position: absolute;
-	top: 20vh;
-	left: -10%;
+	top: 0px;
+	left:-40%;
 	animation-name: fly-right;
-	width: 288px;
-	height: 325px;
+	width: 175px;
+	height: 200px;
 
-	transform: scale(0) translateX(-10vw);
+	transform: scale(0) translateX(-20vw);
 	will-change: transform;
 
 	animation-timing-function: linear;
@@ -16,29 +16,28 @@
 	z-index: 0;
 }
 
-.bird-container:hover {
-	cursor: url('../images/crosshair.png'), crosshair;
-}
-
 @keyframes fly-right {
-	0% {transform: scale(0.4) translateX(-10vw);}
-	10% {transform: translateY(2vh) translateX(10vw) scale(0.5);}
-	20% {transform: translateY(0vh) translateX(30vw) scale(0.6);}
-	30% {transform: translateY(4vh) translateX(50vw) scale(0.7);}
-	40% {transform: translateY(2vh) translateX(70vw) scale(0.7);}
-	50% {transform: translateY(0vh) translateX(90vw) scale(0.7);}
-	60%, 100% {transform: translateY(0vh) translateX(130vw) scale(0.7);}
+	0% {transform: scale(0.4) translateX(-20vw);}
+	10% {transform: translateY(0vh) translateX(-5vw) scale(0.7);}
+	20% {transform: translateY(2vh) translateX(10vw) scale(0.6);}
+	30% {transform: translateY(4vh) translateX(25vw) scale(0.7);}
+	40% {transform: translateY(3vh) translateX(40vw) scale(0.8);}
+	50% {transform: translateY(4vh) translateX(55vw) scale(0.7);}
+	60% {transform: translateY(2vh) translateX(70vw) scale(0.6);}
+	70% {transform: translateY(2vh) translateX(85vw) scale(0.7);}
+	80% {transform: translateY(2vh) translateX(100vw) scale(0.8);}
+	100% {transform: translateY(0vh) translateX(130vw) scale(0);}
 }
 
 .bird {
+	position: relative;
 	background-image: url(../images/bird-cells.svg);
 	background-size: auto 100%;
 	width: 88px;
 	height: 125px;
 	will-change: background-position;
 	
-	margin-left: 100px;
-	margin-top: 100px;
+	margin-left: 40px;
 
 	animation-name: fly-cycle;
 	animation-timing-function: steps(10);

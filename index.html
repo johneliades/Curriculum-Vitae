@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bird.css">
 	
 	<style>
-		.fade{animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}}
+		.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 	</style>
 	
 	<!-- M -->
@@ -127,7 +127,7 @@
 								margin-left: 20vw;
 							}
 
-							.fade{animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}}
+							.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 						</style>
 
 						<div class="outer breaking unselectable fade">
@@ -153,6 +153,13 @@
 				element.style.opacity=0;
 
 			if(x==1) {
+				var iframe=document.getElementById('iframe_main')
+				if(iframe) {
+					iframe.contentWindow.document.open();
+					iframe.contentWindow.document.write(" ");
+					iframe.contentWindow.document.close();
+				}
+				
 				var element = document.getElementById("main_screen");
 				if(element)			
 					element.style.backgroundSize = "0px 0px";
@@ -175,25 +182,25 @@
 				iframe.contentWindow.document.open();
 				iframe.contentWindow.document.write(" ");
 				iframe.contentWindow.document.close();
-
-				var element = document.getElementById("main_screen");
-				if(element)			
-					element.style.backgroundSize = "cover";
-
-				var bird = document.getElementById("bird");
-				if(bird) {
-					bird.style.zIndex = 0;
-					bird.style.opacity = 100;
-				}
-
-				var bird_container = document.getElementById("bird_container");
-				if(bird_container)
-					bird_container.style.zIndex = 0;
-
-				var element = document.getElementById("bird_tip");
-				if(element)			
-					element.style.opacity = 100;
 			}
+
+			var element = document.getElementById("main_screen");
+			if(element)			
+				element.style.backgroundSize = "cover";
+
+			var bird = document.getElementById("bird");
+			if(bird) {
+				bird.style.zIndex = 0;
+				bird.style.opacity = 100;
+			}
+
+			var bird_container = document.getElementById("bird_container");
+			if(bird_container)
+				bird_container.style.zIndex = 0;
+
+			var element = document.getElementById("bird_tip");
+			if(element)			
+				element.style.opacity = 100;
 		}
 	</script>
 
@@ -231,18 +238,14 @@
 
 		<div id="bird_container" class="bird-container">
 			<div id="bird" class="bird" onclick="get_quote()"></div>
-			<div id="bird_tip" class="unselectable">
-				<h2 style="position:relative;
-						color:#00FFFF;
-						text-align: center;
+			<div id="bird_tip" class="unselectable" 
+					style="text-align: center;
+						width: 150px;
+						color: white;
+						border: solid 2px white;
 						background-color: black;
-						border-color: red;
-						border-width: 2px;
-						border-style: solid;
-						border-radius: 20px;
-						padding: 15px;">
-					Catch the bird &<br>watch the magic :)
-				</h2>
+						padding: 8px">
+				Catch the bird &<br>watch the magic :)
 			</div>
 		</div>
 	</div>

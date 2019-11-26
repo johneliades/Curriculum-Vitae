@@ -14,11 +14,14 @@ body, html {
 	background-color: #181818;
 }
 
+html {
+	margin-top: 10px;
+}
+
 .fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 
 h2 {
 	font-family: "Baskerville";
-	text-decoration: underline;
 	color: #00FFFF;
 
 	padding-left: 1%;
@@ -33,7 +36,7 @@ p.custom_font {
 	padding-right: 70px;
 }
 
-a.button{
+a.button {
 	display: inline-block;
 	padding: 0.35em 1.2em;
 	border: 0.1em solid #00FFFF;
@@ -56,6 +59,20 @@ a.button:hover{
 .bouncy{
 	animation:bouncy 5s infinite linear;
 	position:relative;
+}
+
+h2.color {
+	color: red;
+}
+
+p.custom_font_color {
+	color: #00FFFF;
+	border-color: #00FFFF;
+}
+
+a.button_color {
+	color: red;
+	border-color: red;
 }
 
 @keyframes bouncy {
@@ -93,8 +110,6 @@ a.button:hover{
 
 .row {
 	display: flex;
-	margin-bottom: 20px;
-	margin-top: 20px;
 }
 
 .row:after {
@@ -121,7 +136,35 @@ img {
 	padding-left: 5px;
 }
 
+.spinner {
+	margin: auto;
+	border: 3px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 3px solid red;
+	border-right: 3px solid yellow;
+	border-bottom: 3px solid #00FFFF;
+	border-left: 3px solid #ff8000;
+	width: 20px;
+	height: 20px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
 @media only screen and (max-width: 1000px) {
+	html {
+		margin-top: 0;
+	}
+
 	h2 {
 		padding-left: 1.5%;
 		padding-right: 1.5%;
@@ -130,6 +173,10 @@ img {
 	p.custom_font {
 		padding-left: 6vw;
 		padding-right: 6vw;
+	}
+
+	.loader {
+		display: none;
 	}
 
 	.column {

@@ -129,16 +129,13 @@ body, html, #menu_left, #main_screen {
 }
 
 @media screen and (orientation: portrait) {
-	.entry, #name, .icon, #profile_pic {
-		opacity: 0;
+	.entry, #name, #icon_wrapper, #profile_pic {
+		display: none;
 	}
 
 	#menu_full {
-		position: absolute;
-		top: 10px;
-		left: 10px;
+		top: 0;
 		display: inline;
-		z-index: 1;
 	}
 
 	#main_screen {

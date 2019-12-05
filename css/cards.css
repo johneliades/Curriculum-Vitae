@@ -6,16 +6,26 @@
 	box-sizing: border-box;
 }
 
-body, html {
+html, body {
 	margin: 0;
-	height: 100%;
 	width: 100%;
- 	scrollbar-width: none;
+ 	scrollbar-width: none; 
+
 	background-color: #181818;
 }
 
 html {
-	margin-top: 10px;
+	min-height: 100%;
+}
+
+body {
+	height: 100%;
+ 	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+body.color, html.color {
+	background-color: black;	
 }
 
 .fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
@@ -50,19 +60,19 @@ a.button {
 	transition: all 0.2s;
 }
 
-a.button:hover{
+a.button:hover {
 	color: #2E151B;
 	border-color: white;
 	background-color: white;
 }
 
-.bouncy{
+.bouncy {
 	animation:bouncy 5s infinite linear;
 	position:relative;
 }
 
 h2.color {
-	color: red;
+	color: white;
 }
 
 p.custom_font_color {
@@ -71,8 +81,8 @@ p.custom_font_color {
 }
 
 a.button_color {
-	color: red;
-	border-color: red;
+	color: white;
+	border-color: white;
 }
 
 @keyframes bouncy {
@@ -85,7 +95,7 @@ a.button_color {
 	100%{top:0em;}
 }
 
-.breaking{
+.breaking {
 	padding-bottom: 5%;
 
 	width: 100%;
@@ -103,13 +113,21 @@ a.button_color {
 	text-align: center;
 
 	padding-top: 20px;
-	border: 2px solid;
-	border-color: #D4D4DC;
-	border-radius: 20px;
+	border: 3px solid;
+	border-color: black;
+	border-radius: 25px;
+}
+
+.border {
+	border: none;
 }
 
 .row {
 	display: flex;
+}
+
+.row .spinner {
+	display: none;
 }
 
 .row:after {
@@ -175,10 +193,6 @@ img {
 		padding-right: 6vw;
 	}
 
-	.loader {
-		display: none;
-	}
-
 	.column {
 		position: relative;
 		float: none;
@@ -199,11 +213,16 @@ img {
 
 	.row {
 		display: unset;
+
 		margin-bottom: 0;
 		margin-top: 0;
 	}
 
-	.breaking{
+	.row .spinner {
+		display: flex;
+	}
+
+	.breaking {
 		padding-top: 0;
 		padding-bottom: 0;
 		width: 100vw;

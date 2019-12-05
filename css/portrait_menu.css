@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+html, body {
+	overflow: hidden; 
+	scrollbar-width: none;
+}
+
+.nav__toggle {
+	position: absolute;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0.2);
+	top: 15px;
+	left: 15px;
+	cursor: pointer;
+	border-radius: 50%;
+	transition: background-color .15s linear;
+}
+
+.nav__toggle:hover, .nav__toggle:focus {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav__menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vw;
+	width: 100vw;
+	position: relative;
+	z-index: 2;
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+    overflow: hidden;
+}
+
+.menuicon {
+    display: block;
+    cursor: pointer;
+    -webkit-transform: rotate(0deg);
+		  transform: rotate(0deg);
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.menuicon__bar, .menuicon__circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linecap: round;
+    color: red;
+}
+
+.menuicon__bar {
+    -webkit-transform: rotate(0deg);
+    	  transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+    	  transform-origin: 50% 50%;
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+}
+
+.menuicon__circle {
+    transition: stroke-dashoffset .3s linear .1s;
+    stroke-dashoffset: 144.513262038;
+    stroke-dasharray: 144.513262038;
+    color: red;
+}
+
+.splash {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 1px;
+    height: 1px;
+    z-index: 1;
+}
+
+.splash::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    width: 284vmax;
+    height: 284vmax;
+    top: -142vmax;
+    left: -142vmax;
+    -webkit-transform: scale(0);
+    	  transform: scale(0);
+    -webkit-transform-origin: 50% 50%;
+    	  transform-origin: 50% 50%;
+    transition: -webkit-transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06), -webkit-transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    will-change: transform;
+}
+
+.nav:target > .splash::after, .nav--open > .splash::after {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.nav:target .menuicon, .nav--open .menuicon {
+    color: white;
+    -webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.nav:target .menuicon__circle, .nav--open .menuicon__circle {
+    stroke-dashoffset: 0;
+}
+
+.nav:target .menuicon__bar:nth-child(1), .nav:target .menuicon__bar:nth-child(4),
+    .nav--open .menuicon__bar:nth-child(1), .nav--open .menuicon__bar:nth-child(4) {
+        opacity: 0;
+}
+
+.nav:target .menuicon__bar:nth-child(2), .nav--open .menuicon__bar:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.nav:target .menuicon__bar:nth-child(3), .nav--open .menuicon__bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.nav:target .nav__menu, .nav--open .nav__menu {
+    visibility: visible;
+}
+
+a.entry_new {
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	margin-bottom: 3px;
+}
+
+a.entry_new:hover {
+  color: #00FFFF;
+}
+
+.nav__item {
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
+}
+
+.nav__item:nth-child(1) {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.nav__item:nth-child(2) {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+.nav__item:nth-child(3) {
+  -webkit-transform: translateY(-120px);
+          transform: translateY(-120px);
+}
+
+.nav__item:nth-child(4) {
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+}
+
+.nav__item:nth-child(5) {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+}
+
+.nav:target .nav__item,
+.nav--open .nav__item {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}

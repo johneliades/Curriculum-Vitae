@@ -62,8 +62,8 @@ a.button {
 
 a.button:hover {
 	color: #2E151B;
-	border-color: white;
-	background-color: white;
+	border-color: #00FFFF;
+	background-color: #00FFFF;
 }
 
 .bouncy {
@@ -83,6 +83,11 @@ p.custom_font_color {
 a.button_color {
 	color: white;
 	border-color: white;
+}
+
+a.button_color:hover {
+	border-color: white;
+	background-color: white;
 }
 
 @keyframes bouncy {

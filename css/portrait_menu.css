@@ -8,7 +8,7 @@ html, body {
 .nav_toggle {
 	position: absolute;
 	z-index: 3;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(24, 24, 24, 0.4);
 	top: 15px;
 	left: 15px;
 	cursor: pointer;
@@ -16,8 +16,8 @@ html, body {
 	transition: background-color .15s linear;
 }
 
-.nav_toggle:hover, .nav_toggle:focus {
-	background-color: rgba(0, 0, 0, 0.6);
+.nav_toggle:hover {
+	background-color: rgba(24, 24, 24, 1);
 }
 
 .nav_menu {
@@ -42,12 +42,16 @@ html, body {
 	transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+.menuicon:hover .menuicon__bar, .menuicon:hover .menuicon__circle {
+	color: #00FFFF;
+}
+
 .menuicon__bar, .menuicon__circle {
 	fill: none;
 	stroke: currentColor;
 	stroke-width: 3;
 	stroke-linecap: round;
-	color: red;
+	color: white;
 }
 
 .menuicon__bar {
@@ -64,7 +68,6 @@ html, body {
 	transition: stroke-dashoffset .3s linear .1s;
 	stroke-dashoffset: 144.513262038;
 	stroke-dasharray: 144.513262038;
-	color: red;
 }
 
 .splash {
@@ -103,6 +106,7 @@ html, body {
 
 .nav:target .menuicon, .nav--open .menuicon {
 	color: white;
+
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
@@ -141,15 +145,29 @@ html, body {
 
 	border-radius: 50%;
 	border-width: 6px;
-	border-color: #2E151B;
+	border-color: grey;
+	cursor: pointer;
 }
 
 #profile_pic_full:hover {
-	border-color: #00FFFF;
+	animation: cycle 2s infinite;
+	animation-direction: alternate;
+}
+
+@keyframes cycle {
+	0% { border-color: #00FFFF; }
+   	12.5% { border-right-color: #00FFFF; }
+	25% { border-top-color: #00FFFF; }
+	37.5% { border-left-color: #00FFFF; }
+	50% { border-bottom-color: #00FFFF; }
+   	62.5% { border-right-color: grey; }
+	75% { border-top-color: grey; }
+	87.5% { border-left-color: grey; }
+	100% { border-bottom-color: grey; }
 }
 
 a.entry_full {
-	color: white;
+	color: grey;
 	text-decoration: none;
 	font-size: 30px;
 	margin-bottom: 3px;

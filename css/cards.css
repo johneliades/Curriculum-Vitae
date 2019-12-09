@@ -31,7 +31,7 @@ body.color, html.color {
 .fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 
 h2 {
-	font-family: "Baskerville";
+	font-family: "Roboto";
 	color: #00FFFF;
 
 	padding-left: 1%;
@@ -39,7 +39,7 @@ h2 {
 }
 
 p.custom_font {
-	font-family: "Baskerville";
+	font-family: "Roboto";
 	color: white;
 
 	padding-left: 70px;
@@ -54,7 +54,7 @@ a.button {
 	border-radius: 0.12em;
 	box-sizing: border-box;
 	text-decoration: none;
-	font-family: "Baskerville";
+	font-family: "Roboto";
 	color: #00FFFF;
 	text-align: center;
 	transition: all 0.2s;

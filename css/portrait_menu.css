@@ -154,18 +154,6 @@ html, body {
 	animation-direction: alternate;
 }
 
-@keyframes cycle {
-	0% { border-color: #00FFFF; }
-   	12.5% { border-right-color: #00FFFF; }
-	25% { border-top-color: #00FFFF; }
-	37.5% { border-left-color: #00FFFF; }
-	50% { border-bottom-color: #00FFFF; }
-   	62.5% { border-right-color: grey; }
-	75% { border-top-color: grey; }
-	87.5% { border-left-color: grey; }
-	100% { border-bottom-color: grey; }
-}
-
 a.entry_full {
 	color: grey;
 	text-decoration: none;

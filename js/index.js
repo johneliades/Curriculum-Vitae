@@ -46,7 +46,7 @@ function get_quote() {
 		`
 		<html>
 			<head>
-
+				<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 			</head>
 			<body>
 				<style>
@@ -95,7 +95,7 @@ function get_quote() {
 					}
 
 					p.custom_font {
-						font-family: "Baskerville";
+						font-family: "Roboto";
 						font-size: 4.5vh;
 						margin-right: 20vw;
 						margin-left: 20vw;

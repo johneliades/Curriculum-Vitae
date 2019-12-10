@@ -99,7 +99,7 @@ function get_quote() {
 						font-size: 4.5vh;
 						margin-right: 20vw;
 						margin-left: 20vw;
-						allign-text: center;
+						text-align: center;
 					}
 
 					.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}

@@ -87,7 +87,7 @@ body, html, #menu_left, #main_screen {
 
 #name {
 	text-align: center;
-	margin-bottom: 6vh;
+	margin-bottom: 4vh;
 
 	font-size: 30px;
 	color: white;
@@ -100,7 +100,7 @@ body, html, #menu_left, #main_screen {
 	text-align: center;
 	text-decoration: none;
 
-	margin-bottom: 2vh;
+	margin-bottom: 1vh;
 
 	font-size: 30px;
 	color: grey;
@@ -165,7 +165,7 @@ body, html, #menu_left, #main_screen {
 }
 
 /* Max Menu - Small Screen */
-@media screen and (min-width: 1201px) and (max-height: 470px) and (orientation: landscape) {
+@media screen and (min-width: 1201px) and (max-height: 540px) and (orientation: landscape) {
 	#profile_pic {
 		margin-left: 40px;
 		margin-right: 40px;
@@ -187,7 +187,7 @@ body, html, #menu_left, #main_screen {
 
 	.entry:hover {
 		color: #00FFFF;
-		font-size: 24px;
+		font-size: 26px;
 	}
 
 	.icon img {
@@ -242,17 +242,17 @@ body, html, #menu_left, #main_screen {
 	}
 
 	#name {
-		font-size: 2.5vw;
-		margin-bottom: 6vh;
+		font-size: 2.2vw;
+		margin-bottom: 1vh;
 	}
 
 	.entry {
-		margin-bottom: 1vh;
-		font-size: 2.5vw;
+		margin-bottom: 0vh;
+		font-size: 2vw;
 	}
 
 	.entry:hover {
-		font-size: 3vw;
+		font-size: 2.3vw;
 	}
 
 	#icon_wrapper {
@@ -278,7 +278,7 @@ body, html, #menu_left, #main_screen {
 }
 
 /* Changing Menu Size - Small Screen */
-@media screen and (min-width: 801px) and (max-width: 1200px) and (max-height: 450px) and (orientation: landscape) {
+@media screen and (min-width: 801px) and (max-width: 1200px) and (max-height: 470px) and (orientation: landscape) {
 	#menu_left {
 		width: 18vw;
 	}
@@ -305,7 +305,7 @@ body, html, #menu_left, #main_screen {
 	}
 
 	.entry {
-		margin-bottom: 1vh;
+		margin-bottom: 0vh;
 		font-size: 2vw;
 	}
 
@@ -315,7 +315,7 @@ body, html, #menu_left, #main_screen {
 
 	#icon_wrapper {
 		position: static;
-		margin-top: 6vh;
+		margin-top: 4vh;
 	}
 
 	.icon img {
@@ -359,13 +359,13 @@ body, html, #menu_left, #main_screen {
 	}
 
 	#name {
-		font-size: 20px;
-		margin-bottom: 6vh;
+		font-size: 17px;
+		margin-bottom: 3vh;
 	}
 
 	.entry {
-		margin-bottom: 1vh;
-		font-size: 18px;
+		margin-bottom: 0vh;
+		font-size: 17px;
 	}
 
 	.entry:hover {
@@ -414,22 +414,22 @@ body, html, #menu_left, #main_screen {
 	}
 
 	#name {
-		font-size: 16px;
-		margin-bottom: 3vh;
+		font-size: 15px;
+		margin-bottom: 2.5vh;
 	}
 
 	.entry {
-		margin-bottom: 1vh;
-		font-size: 15px;
+		margin-bottom: 0vh;
+		font-size: 14px;
 	}
 
 	.entry:hover {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	#icon_wrapper {
 		position: static;
-		margin-top: 6vh;
+		margin-top: 2.5vh;
 	}
 
 	.icon img {

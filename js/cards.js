@@ -14,11 +14,11 @@ function color_change() {
 	
 	var element_text = document.querySelectorAll("p.custom_font");
 	for (i=0; i<element_text.length; i++)
-		element_text[i].classList.toggle("custom_font_color");
+		element_text[i].classList.toggle("color");
 	
 	var element_buttons = document.querySelectorAll("a.button");
 	for(i=0; i<element_buttons.length; i++)
-		element_buttons[i].classList.toggle("button_color");
+		element_buttons[i].classList.toggle("color");
 	
 	var background_body = document.getElementsByTagName("body")[0];
 	if(background_body)
@@ -27,8 +27,4 @@ function color_change() {
 	var background_html = document.getElementsByTagName("html")[0];
 	if(background_html)
 		background_html.classList.toggle("color");
-	
-	var border = document.getElementsByClassName("column");
-	for(i=0; i<border.length; i++)
-		border[i].classList.toggle("border");
 }

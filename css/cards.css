@@ -11,7 +11,7 @@ html, body {
 	width: 100%;
  	scrollbar-width: none; 
 
-	background-color: #181818;
+	background-color: black;
 }
 
 html {
@@ -25,7 +25,7 @@ body {
 }
 
 body.color, html.color {
-	background-color: black;	
+	background-color: #181818;	
 }
 
 .fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
@@ -38,12 +38,21 @@ h2 {
 	padding-right: 1%;
 }
 
+h2.color {
+	color: white;
+}
+
 p.custom_font {
 	font-family: "Roboto";
 	color: white;
 
 	padding-left: 70px;
 	padding-right: 70px;
+}
+
+p.color {
+	color: #00FFFF;
+	border-color: #00FFFF;
 }
 
 a.button {
@@ -60,34 +69,25 @@ a.button {
 	transition: all 0.2s;
 }
 
+a.color {
+	color: white;
+	border-color: white;
+}
+
 a.button:hover {
 	color: #2E151B;
 	border-color: #00FFFF;
 	background-color: #00FFFF;
 }
 
+a.color:hover {
+	border-color: white;
+	background-color: white;
+}
+
 .bouncy {
 	animation:bouncy 5s infinite linear;
 	position:relative;
-}
-
-h2.color {
-	color: white;
-}
-
-p.custom_font_color {
-	color: #00FFFF;
-	border-color: #00FFFF;
-}
-
-a.button_color {
-	color: white;
-	border-color: white;
-}
-
-a.button_color:hover {
-	border-color: white;
-	background-color: white;
 }
 
 @keyframes bouncy {
@@ -121,10 +121,6 @@ a.button_color:hover {
 	border: 3px solid;
 	border-color: black;
 	border-radius: 25px;
-}
-
-.border {
-	border: none;
 }
 
 .row {

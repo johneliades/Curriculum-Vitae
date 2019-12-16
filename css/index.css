@@ -44,7 +44,7 @@ body, html, #menu_left, #main_screen {
 	margin-left: 220px;
 
 	background-image: url(../images/background.jpg);
-	background-color: #181818;
+	background-color: black;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;

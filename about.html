@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-	<link rel="stylesheet" href="css/cards.css">
 
 	<style>
 
@@ -30,9 +29,31 @@
 		p.custom_font {
 			font-family: "Roboto";
 			text-align: center;
-			font-size: 23px;
+			font-size: 22px;
 			margin-right: 50px;
 			margin-left: 50px;
+			color: white;
+		}
+
+		h2 {
+			font-family: "Roboto";
+			color: #00FFFF;
+			font-size: 24px;
+
+			text-align: center;
+		}
+
+		.container {
+			text-align:center;
+			margin: auto;
+		}
+
+		.column {
+			margin:auto;
+			display:inline-block;
+			vertical-align:top;
+			margin-left: 30px;
+			margin-right: 30px;
 		}
 
 		.outer {
@@ -74,11 +95,11 @@
 	<div class="outer unselectable fade">
 		<div class=middle>
 			<p class="custom_font wrapper"><b>I am a 21 year old student at the University of Thessaly, Greece. Candidate for a Master of Engineering on Electrical and Computer Engineering. My interests revolve around Software Engineering, Network engineering, Linux administration and Computer/Information security. </b></p>
-
-			<div class="row">
-				<div class="fade column custom_font">
+	
+			<div class="container">
+				<div class="fade column">
 					<h2> Languages </h2>
-					<p class="custom_font" style="font-size: 20px;">
+					<p class="custom_font">
 						Java <br>
 						C <br>
 						Python <br>
@@ -89,9 +110,9 @@
 					</p>
 				</div>
 
-				<div class="fade column custom_font">
+				<div class="fade column">
 					<h2> Databases </h2>
-					<p class="custom_font" style="font-size: 20px;">
+					<p class="custom_font">
 						PostgreSQL <br>
 						MySQL <br>
 						MongoDB <br>

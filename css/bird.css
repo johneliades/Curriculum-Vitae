@@ -17,7 +17,7 @@
 }
 
 .bird-container:hover {
-	cursor: url('../images/crosshair.png'), crosshair;
+	cursor: url('../cursors/crosshair.png'), crosshair;
 }
 
 @keyframes fly-right {
@@ -53,7 +53,7 @@
 }
 
 .bird:hover {
-	cursor: url('../images/crosshair-blue.png'), crosshair;
+	cursor: url('../cursors/crosshair-blue.png'), crosshair;
 }
 
 @keyframes fly-cycle {

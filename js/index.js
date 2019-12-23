@@ -137,12 +137,7 @@ function hide_bird() {
 }
 
 function clearFrame() {
-	var iframe=document.getElementById('iframe_main')
-	if(iframe) {
-		iframe.contentWindow.document.open();
-		iframe.contentWindow.document.write(" ");
-		iframe.contentWindow.document.close();
-	}
+	initFrame();
 
 	var element = document.getElementById("main_screen");
 	if(element)			

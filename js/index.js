@@ -1,6 +1,4 @@
 function get_quote() {
-	remove_help(0);
-
 	var myArray = [
 		"❝A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila.❞ <br><br> - Mitch Ratliff",
 		"❝Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.❞ <br><br> - John Woods",
@@ -96,7 +94,7 @@ function get_quote() {
 
 					p.custom_font {
 						font-family: "Roboto";
-						font-size: 4.5vh;
+						font-size: 22px;
 						margin-right: 20vw;
 						margin-left: 20vw;
 						text-align: center;
@@ -122,33 +120,20 @@ function get_quote() {
 	iframe.contentWindow.document.close();
 }
 
-function remove_help(x=1) {
-	var element = document.getElementById("bird_tip");
+function hide_bird() {
+	var element = document.getElementById("main_screen");
 	if(element)			
-		element.style.opacity=0;
+		element.style.backgroundSize = "0px 0px";
 
-	if(x==1) {
-		var iframe=document.getElementById('iframe_main')
-		if(iframe) {
-			iframe.contentWindow.document.open();
-			iframe.contentWindow.document.write(" ");
-			iframe.contentWindow.document.close();
-		}
-		
-		var element = document.getElementById("main_screen");
-		if(element)			
-			element.style.backgroundSize = "0px 0px";
-
-		var bird = document.getElementById("bird");
-		if(bird) {
-			bird.style.zIndex = -1;
-			bird.style.opacity = 0;
-		}
-
-		var bird_container = document.getElementById("bird_container");
-		if(bird_container)
-			bird_container.style.zIndex = -1;
+	var bird = document.getElementById("bird");
+	if(bird) {
+		bird.style.zIndex = -1;
+		bird.style.opacity = 0;
 	}
+
+	var bird_container = document.getElementById("bird_container");
+	if(bird_container)
+		bird_container.style.zIndex = -1;
 }
 
 function clearFrame() {
@@ -172,8 +157,81 @@ function clearFrame() {
 	var bird_container = document.getElementById("bird_container");
 	if(bird_container)
 		bird_container.style.zIndex = 0;
+}
 
-	var element = document.getElementById("bird_tip");
-	if(element)			
-		element.style.opacity = 100;
+function initFrame() {
+
+	const html= 
+		`
+		<html>
+			<head>
+				<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+			</head>
+			<body>
+				<style>
+					body, html {
+						margin: 0;
+						height: 100%;
+						width: 100%;
+						overflow: hidden;
+					 	scrollbar-width: none
+					}
+
+					body:hover {
+						cursor: url('images/crosshair.png'), crosshair;
+					}
+
+					::-webkit-scrollbar { 
+						display: none; 
+					}
+
+					.unselectable {
+						-webkit-touch-callout: none;
+						-webkit-user-select: none;
+						-khtml-user-select: none;
+						-moz-user-select: none;
+						-ms-user-select: none;
+						user-select: none;
+					}
+
+					.outer {
+						display: table;
+						position: absolute;
+						height: 100%;
+						width: 100%;
+					}
+
+					.middle {
+						display: table-cell;
+						vertical-align: middle;
+					}
+
+					p.custom_font {
+						font-family: "Roboto";
+						font-size: 22px;
+						margin-right: 20vw;
+						margin-left: 20vw;
+						text-align: center;
+					}
+
+					.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+				</style>
+
+				<div class="outer unselectable fade">
+					<div class="middle">
+						<p class="custom_font">
+							<b>
+								Shoot the bird <br> & enjoy
+							</b>
+						</p>
+					</div>
+				</div>
+			</body>
+		</html>
+		`
+	iframe=document.getElementById('iframe_main')
+	iframe.contentWindow.document.open();
+	iframe.contentWindow.document.write(html);
+	iframe.contentWindow.document.close();
+
 }

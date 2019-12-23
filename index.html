@@ -40,22 +40,12 @@
 	<title> ⮞ John's Biography ⮜ </title>
 </head>
 
-<body>
+<body onload="initFrame()">
 	<div id="main_screen">
 		<iframe id="iframe_main" height="100%" width="100%" name="iframe_main" frameBorder="0"></iframe>
 
 		<div id="bird_container" class="bird-container">
 			<div id="bird" class="bird" onclick="get_quote()"></div>
-			<div id="bird_tip" class="unselectable" 
-					style="text-align: center;
-						width: 150px;
-						color: #00FFFF;
-						border: solid 2px #00FFFF;
-						border-radius: 10px;
-						background-color: black;
-						padding: 8px">
-				Catch the bird &<br>watch the magic :)
-			</div>
 		</div>
 	</div>
 	
@@ -64,9 +54,9 @@
 
 		<div id="name" class="custom_font unselectable"> John Eliades </div>
 
-		<a href="events.html" onclick="remove_help()" target="iframe_main" class="custom_font fade entry"> Events </a>
-		<a href="projects.html" onclick="remove_help()" target="iframe_main" class="custom_font fade entry"> Projects </a>
-		<a href="about.html" onclick="remove_help()" target="iframe_main" class="custom_font fade entry"> About </a>
+		<a href="events.html" onclick="hide_bird()" target="iframe_main" class="custom_font fade entry"> Events </a>
+		<a href="projects.html" onclick="hide_bird()" target="iframe_main" class="custom_font fade entry"> Projects </a>
+		<a href="about.html" onclick="hide_bird()" target="iframe_main" class="custom_font fade entry"> About </a>
 
 		<div id="icon_wrapper">
 			<a href="https://www.facebook.com/jon.bon.johny" class="icon" target="_blank" >
@@ -75,7 +65,7 @@
 			<a href="https://github.com/johneliades/Curriculum-Vitae" class="icon" target="_blank" >
 				<img src="images/github.png"></a>
 		
-			<a href="documents/grades.pdf" target="iframe_main" class="icon" onclick="remove_help()">
+			<a href="documents/grades.pdf" target="iframe_main" class="icon" onclick="hide_bird()">
 				<img src="images/uth.png"></a>
 		</div>
 	</div>
@@ -93,11 +83,11 @@
 						font-size: 30px; color: white;" class="custom_font unselectable fade_down"> John Eliades </div>
 
 					<div class="fade_down" style="text-align: center; width: 150px; margin: auto; margin-top: 0px; margin-bottom: 0px;">
-						<a href="events.html" onclick="remove_help()" target="iframe_main" class="custom_font entry_full close"> Events </a>
+						<a href="events.html" onclick="hide_bird()" target="iframe_main" class="custom_font entry_full close"> Events </a>
 
-						<a href="projects.html" onclick="remove_help()" target="iframe_main" class="custom_font entry_full close"> Projects </a>
+						<a href="projects.html" onclick="hide_bird()" target="iframe_main" class="custom_font entry_full close"> Projects </a>
 
-						<a href="about.html" onclick="remove_help()" target="iframe_main" class="custom_font entry_full close"> About </a>
+						<a href="about.html" onclick="hide_bird()" target="iframe_main" class="custom_font entry_full close"> About </a>
 					</div>
 
 					<div style="position: absolute; bottom:10px; width: 100px">
@@ -109,7 +99,7 @@
 							<img src="images/github.png">
 						</a>
 		
-						<a href="documents/grades.pdf" target="iframe_main" class="fade_down close icon" onclick="remove_help()">
+						<a href="documents/grades.pdf" target="iframe_main" class="fade_down close icon" onclick="hide_bird()">
 							<img src="images/uth.png">
 						</a>
 					</div>

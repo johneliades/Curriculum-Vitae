@@ -34,6 +34,7 @@ html, body {
 
 html {
 	min-height: 100%;
+	cursor: url("../cursors/white.cur"), auto;
 }
 
 body {
@@ -96,6 +97,7 @@ a.button:hover {
 	color: #2E151B;
 	border-color: #00FFFF;
 	background-color: #00FFFF;
+	cursor: url("../cursors/blue.cur"), auto;
 }
 
 a.color:hover {

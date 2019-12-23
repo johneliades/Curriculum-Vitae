@@ -34,6 +34,7 @@ body, html, #menu_left, #main_screen {
 
 	background-color: black;
 	overflow-y: auto;
+	cursor: url("../cursors/white.cur"), auto;
 }
 
 #main_screen {
@@ -70,6 +71,7 @@ body, html, #menu_left, #main_screen {
 #profile_pic:hover {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
+	cursor: url("../cursors/blue.cur"), auto;
 }
 
 @keyframes cycle {
@@ -110,6 +112,7 @@ body, html, #menu_left, #main_screen {
 .entry:hover {
 	color: #00FFFF;
 	font-size: 35px;
+	cursor: url("../cursors/blue.cur"), auto;
 }
 
 #icon_wrapper {
@@ -140,6 +143,8 @@ body, html, #menu_left, #main_screen {
 	border-style: double;
 	border-color: #00FFFF;
 	border-width: 6px;
+
+	cursor: url("../cursors/blue.cur"), auto;
 }
 
 @media screen and (orientation: portrait) {

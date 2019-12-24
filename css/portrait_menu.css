@@ -5,10 +5,6 @@ html, body {
 	scrollbar-width: none;
 }
 
-html {
-	cursor: url("../cursors/white.cur"), auto;
-}
-
 .nav_toggle {
 	position: absolute;
 	z-index: 3;
@@ -152,7 +148,6 @@ html {
 	border-radius: 50%;
 	border-width: 6px;
 	border-color: grey;
-	cursor: pointer;
 }
 
 #profile_pic_full:hover {

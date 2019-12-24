@@ -86,13 +86,13 @@ a.button {
 	color: #00FFFF;
 	text-align: center;
 	transition: all 0.2s;
+	cursor: url("../cursors/blue.cur"), auto;
 }
 
 a.button:hover {
 	color: #2E151B;
 	border-color: #00FFFF;
 	background-color: #00FFFF;
-	cursor: url("../cursors/blue.cur"), auto;
 }
 
 a.color {

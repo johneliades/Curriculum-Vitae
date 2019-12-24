@@ -57,7 +57,7 @@ function get_quote() {
 					}
 
 					body:hover {
-						cursor: url('cursors/crosshair.png'), crosshair;
+						cursor: url('cursors/crosshair.cur'), crosshair;
 					}
 
 					::-webkit-scrollbar { 
@@ -173,7 +173,7 @@ function initFrame() {
 					}
 
 					body:hover {
-						cursor: url('cursors/crosshair.png'), crosshair;
+						cursor: url('cursors/crosshair.cur'), crosshair;
 					}
 
 					::-webkit-scrollbar { 

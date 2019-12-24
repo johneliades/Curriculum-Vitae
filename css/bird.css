@@ -14,10 +14,7 @@
 	animation-duration: 13s;
 	animation-delay: 1s;
 	z-index: 0;
-}
-
-.bird-container:hover {
-	cursor: url('../cursors/crosshair.png'), crosshair;
+	cursor: url('../cursors/crosshair.cur'), crosshair;
 }
 
 @keyframes fly-right {
@@ -50,10 +47,7 @@
 	animation-duration: 1s;
 	animation-delay: 1s;	
 	z-index: 0;
-}
-
-.bird:hover {
-	cursor: url('../cursors/crosshair-blue.png'), crosshair;
+	cursor: url('../cursors/crosshair-blue.cur'), crosshair;
 }
 
 @keyframes fly-cycle {

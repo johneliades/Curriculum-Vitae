@@ -160,12 +160,12 @@ body, html, #menu_left, #main_screen {
 	#main_screen {
 		margin-left: 0;
 		width: 100%;
-		transition: 0.5s;
+		transition: 0.2s;
 	}
 
 	#menu_left {
 		width: 0;
-		transition: 0.5s;
+		transition: 0.2s;
 	}
 }
 

@@ -109,7 +109,7 @@ body, html, #menu_left, #main_screen {
 	transition: 0.2s;
 }
 
-.entry:hover {
+.entry:hover, .active {
 	color: #00FFFF;
 	font-size: 35px;
 	cursor: url("../cursors/blue.cur"), auto;
@@ -148,7 +148,7 @@ body, html, #menu_left, #main_screen {
 }
 
 @media screen and (orientation: portrait) {
-	.entry, #name, #icon_wrapper, #profile_pic {
+	#entry_wrapper, #name, #icon_wrapper, #profile_pic {
 		display: none;
 	}
 

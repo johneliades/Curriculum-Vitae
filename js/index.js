@@ -120,7 +120,17 @@ function get_quote() {
 	iframe.contentWindow.document.close();
 }
 
+function not_entry() {
+	var current = document.getElementsByClassName("active");
+	current[0].className = current[0].className.replace(" active", "");
+
+	var not_entry = document.getElementById("not_entry");	
+	not_entry.className += " active";
+}
+
 function hide_bird() {
+	not_entry();
+
 	var element = document.getElementById("main_screen");
 	if(element)			
 		element.style.backgroundSize = "0px 0px";
@@ -137,6 +147,7 @@ function hide_bird() {
 }
 
 function clearFrame() {
+	not_entry();
 	initFrame();
 
 	var element = document.getElementById("main_screen");
@@ -228,5 +239,15 @@ function initFrame() {
 	iframe.contentWindow.document.open();
 	iframe.contentWindow.document.write(html);
 	iframe.contentWindow.document.close();
+}
 
+var btnContainer = document.getElementById("menu_left");
+var btns = btnContainer.getElementsByClassName("entry");
+
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function() {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	});
 }

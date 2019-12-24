@@ -5,6 +5,10 @@ html, body {
 	scrollbar-width: none;
 }
 
+html {
+	cursor: url("../cursors/white.cur"), auto;
+}
+
 .nav_toggle {
 	position: absolute;
 	z-index: 3;
@@ -41,6 +45,7 @@ html, body {
 	-webkit-transform: rotate(0deg);
 			transform: rotate(0deg);
 	transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	cursor: url("../cursors/blue.cur"), auto;
 }
 
 .menuicon:hover .menuicon__bar, .menuicon:hover .menuicon__circle {
@@ -155,17 +160,14 @@ html, body {
 	animation-direction: alternate;
 }
 
-a.entry_full {
-	color: grey;
-	text-decoration: none;
-	font-size: 30px;
-	margin-bottom: 3px;
+.entry {
+	margin-bottom: 0px;
+	font-size: 25px;
 }
 
-a.entry_full:hover {
-	color: #00FFFF;
-	font-size: 35px;
-	transition: 0.2s;
+.entry:hover {
+	margin-bottom: 0px;
+	font-size: 28px;
 }
 
 .fade_down {

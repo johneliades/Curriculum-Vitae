@@ -158,6 +158,7 @@ html {
 #profile_pic_full:hover {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
+	cursor: url("../cursors/blue.cur"), auto;
 }
 
 @media screen and (orientation: portrait) {

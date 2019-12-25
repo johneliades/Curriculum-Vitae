@@ -53,10 +53,7 @@ function get_quote() {
 						height: 100%;
 						width: 100%;
 						overflow: hidden;
-					 	scrollbar-width: none
-					}
-
-					body:hover {
+					 	scrollbar-width: none;
 						cursor: url('cursors/crosshair.cur'), crosshair;
 					}
 
@@ -169,10 +166,7 @@ function initFrame() {
 						height: 100%;
 						width: 100%;
 						overflow: hidden;
-					 	scrollbar-width: none
-					}
-
-					body:hover {
+					 	scrollbar-width: none;
 						cursor: url('cursors/crosshair.cur'), crosshair;
 					}
 

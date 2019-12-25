@@ -17,10 +17,7 @@ body, html, #menu_left, #main_screen {
 	width: 100%;
 	scrollbar-width: none;
 	overflow-x: hidden;
-}
-
-html {
-	cursor: url("../cursors/white.cur"), auto;
+	cursor: url('../cursors/white.cur'), auto;
 }
 
 #iframe_main { 

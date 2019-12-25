@@ -30,11 +30,11 @@ html, body {
  	overflow-x: hidden;
 
 	background-color: black;
+	cursor: url('../cursors/white.cur'), auto;
 }
 
 html {
 	min-height: 100%;
-	cursor: url("../cursors/white.cur"), auto;
 }
 
 body {
@@ -183,6 +183,7 @@ img {
 	height: 19px;
 	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
+	cursor: url("../cursors/blue.cur"), auto;
 }
 
 .spinner:hover {
@@ -191,7 +192,6 @@ img {
 	margin-bottom: 1px;
 	margin-top: 1px;
 	border-width: 4px;
-	cursor: url("../cursors/blue.cur"), auto;
 }
 
 @-webkit-keyframes spin {

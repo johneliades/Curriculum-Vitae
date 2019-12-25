@@ -122,6 +122,11 @@ body, html, #menu_left, #main_screen {
 	transition: 0.2s;
 }
 
+#icon_wrapper a {
+	display:inline-block;
+	cursor: url("../cursors/white.cur"), auto;
+}
+
 .icon img {
 	margin-left: 18px;
 

@@ -74,8 +74,8 @@ html, body {
 
 .splash {
 	position: absolute;
-	top: 15px;
-	left: 15px;
+	top: 40px;
+	left: 40px;
 	width: 1px;
 	height: 1px;
 	z-index: 1;
@@ -166,6 +166,11 @@ html, body {
 		margin-bottom: 0px;
 		font-size: 28px;
 	}
+}
+
+#icon_wrapper_full a {
+	display:inline-block;
+	cursor: url("../cursors/white.cur"), auto;
 }
 
 .fade_down {

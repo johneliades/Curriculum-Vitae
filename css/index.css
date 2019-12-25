@@ -54,6 +54,7 @@ html {
 	background-repeat: no-repeat;
 	z-index: 0;
 	overflow-y: auto;
+	cursor: url('../cursors/white.cur'), crosshair;
 }
 
 #profile_pic {

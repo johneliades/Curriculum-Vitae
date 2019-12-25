@@ -47,14 +47,13 @@ html {
 
 	margin-left: 220px;
 
-	background-image: url(../images/background.jpg);
+	background-image: url('../images/background.jpg');
 	background-color: black;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: 0;
 	overflow-y: auto;
-	cursor: url('../cursors/white.cur'), crosshair;
 }
 
 #profile_pic {

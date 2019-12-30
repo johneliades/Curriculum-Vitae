@@ -152,7 +152,6 @@ function clearFrame() {
 }
 
 function initFrame() {
-
 	const html= 
 		`
 		<html>
@@ -210,7 +209,7 @@ function initFrame() {
 					<div class="middle">
 						<p class="custom_font">
 							<b>
-								Shoot the bird <br> & enjoy
+								Shoot the bird <br> & enjoy ;)
 							</b>
 						</p>
 					</div>

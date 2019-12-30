@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="John Eliades">
+	<meta name="keywords" content="cv, curriculum, vitae, biography, john, eliades">
 
 	<link rel='icon' type='image/x-icon' href='images/favicon.ico'>
 	<link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
@@ -41,7 +43,7 @@
 
 <body onload="initFrame()">
 	<div id="main_screen">
-		<iframe id="iframe_main" height="100%" width="100%" name="iframe_main" frameBorder="0"></iframe>
+		<iframe id="iframe_main" height="100%" width="100%" name="iframe_main" frameBorder="0" onload="this.contentWindow.focus()"></iframe>
 
 		<div id="bird_container" class="bird-container">
 			<div id="bird" class="bird" onclick="get_quote()"></div>

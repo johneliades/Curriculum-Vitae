@@ -182,6 +182,16 @@ body, html, #menu_left, #main_screen {
 		width: 0;
 		transition: 0.2s;
 	}
+
+	.entry {
+		margin-bottom: 0px;
+		font-size: 25px;
+	}
+
+	.entry:hover {
+		margin-bottom: 0px;
+		font-size: 28px;
+	}
 }
 
 /* Max Menu - Small Screen */

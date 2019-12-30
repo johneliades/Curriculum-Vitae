@@ -24,7 +24,7 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 100vw;
+	height: 100vh;
 	width: 100vw;
 	position: relative;
 	z-index: 2;
@@ -37,7 +37,6 @@ html, body {
 
 .menuicon {
 	display: block;
-	cursor: pointer;
 	-webkit-transform: rotate(0deg);
 			transform: rotate(0deg);
 	transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -154,18 +153,6 @@ html, body {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
 	cursor: url("../cursors/blue.cur"), auto;
-}
-
-@media screen and (orientation: portrait) {
-	.entry {
-		margin-bottom: 0px;
-		font-size: 25px;
-	}
-
-	.entry:hover {
-		margin-bottom: 0px;
-		font-size: 28px;
-	}
 }
 
 #icon_wrapper_full a {

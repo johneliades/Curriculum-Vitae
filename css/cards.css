@@ -74,6 +74,15 @@ p.color {
 	border-color: #00FFFF;
 }
 
+h2, p {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 a.button {
 	display: inline-block;
 	padding: 0.35em 1.2em;

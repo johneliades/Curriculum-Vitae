@@ -74,16 +74,16 @@ body, html, #menu_left, #main_screen {
 }
 
 @keyframes cycle {
-	0% { border-color: #00FFFF; }
-   	12.5% { border-right-color: #00FFFF; }
-	25% { border-top-color: #00FFFF; }
-	37.5% { border-left-color: #00FFFF; }
-	50% { border-bottom-color: #00FFFF; }
+	0% { border-color: aqua; }
+   	12.5% { border-right-color: aqua; }
+	25% { border-top-color: aqua; }
+	37.5% { border-left-color: aqua; }
+	50% { border-bottom-color: aqua; }
    	62.5% { border-right-color: lightgreen; }
 	75% { border-top-color: lightgreen; }
 	87.5% { border-left-color: lightgreen; }
 	99% { border-bottom-color: lightgreen ; }
-	100% { border-color: #00FFFF; }
+	100% { border-color: aqua; }
 }
 
 #name {
@@ -110,7 +110,7 @@ body, html, #menu_left, #main_screen {
 }
 
 .entry:hover {
-	color: #00FFFF;
+	color: aqua;
 	font-size: 35px;
 }
 
@@ -120,6 +120,7 @@ body, html, #menu_left, #main_screen {
 	
 	width: 100%;
 	transition: 0.2s;
+	text-align: center;
 }
 
 #icon_wrapper a {
@@ -128,7 +129,9 @@ body, html, #menu_left, #main_screen {
 }
 
 .icon img {
-	margin-left: 18px;
+	display: inline-block;
+	margin-left: 7px;
+	margin-right: 7px;
 
 	border-radius: 50%;
 
@@ -146,7 +149,7 @@ body, html, #menu_left, #main_screen {
 	width: 34px;
 
 	border-style: double;
-	border-color: #00FFFF;
+	border-color: aqua;
 	border-width: 6px;
 }
 
@@ -220,13 +223,11 @@ body, html, #menu_left, #main_screen {
 	}
 
 	.entry:hover {
-		color: #00FFFF;
+		color: aqua;
 		font-size: 26px;
 	}
 
 	.icon img {
-		margin-left: 21px;
-
 		border-radius: 50%;
 
 		height: 36px;
@@ -242,7 +243,7 @@ body, html, #menu_left, #main_screen {
 		width: 30px;
 
 		border-style: double;
-		border-color: #00FFFF;
+		border-color: aqua;
 		border-width: 6px;
 	}
 
@@ -294,7 +295,8 @@ body, html, #menu_left, #main_screen {
 	}
 
 	.icon img {
-		margin-left: 1.2vw;
+		margin-left: 0.5vw;
+		margin-right: 0.5vw;
 
 		height: 3.4vw;
 		width: 3.4vw;
@@ -306,7 +308,7 @@ body, html, #menu_left, #main_screen {
 		height: 3vw;
 		width: 3vw;
 
-		border-color: #00FFFF;
+		border-color: aqua;
 		border-width: 0.5vw;
 	}
 }
@@ -357,8 +359,6 @@ body, html, #menu_left, #main_screen {
 	}
 
 	.icon img {
-		margin-left: 1.4vw;
-
 		height: 3.2vw;
 		width: 3.2vw;
 
@@ -369,7 +369,7 @@ body, html, #menu_left, #main_screen {
 		height: 2.4vw;
 		width: 2.4vw;
 
-		border-color: #00FFFF;
+		border-color: aqua;
 		border-width: 0.7vw;
 	}
 }
@@ -415,7 +415,8 @@ body, html, #menu_left, #main_screen {
 	}
 
 	.icon img {
-		margin-left: 8px;
+		margin-left: 2px;
+		margin-right: 2px;
 
 		height: 30px;
 		width: 30px;
@@ -427,7 +428,7 @@ body, html, #menu_left, #main_screen {
 		height: 26px;
 		width: 26px;
 
-		border-color: #00FFFF;
+		border-color: aqua;
 		border-width: 4px;
 	}
 }
@@ -475,7 +476,8 @@ body, html, #menu_left, #main_screen {
 	}
 
 	.icon img {
-		margin-left: 11px;
+		margin-left: 4px;
+		margin-right: 4px;
 
 		height: 25px;
 		width: 25px;
@@ -487,7 +489,7 @@ body, html, #menu_left, #main_screen {
 		height: 21px;
 		width: 21px;
 
-		border-color: #00FFFF;
+		border-color: aqua;
 		border-width: 4px;
 	}
 }

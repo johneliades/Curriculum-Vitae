@@ -44,7 +44,7 @@ html, body {
 }
 
 .menuicon:hover .menuicon__bar, .menuicon:hover .menuicon__circle {
-	color: #00FFFF;
+	color: aqua;
 }
 
 .menuicon__bar, .menuicon__circle {
@@ -86,10 +86,10 @@ html, body {
 	position: absolute;
 	border-radius: 50%;
 	background-color: #181818;
-	width: 284vmax;
-	height: 284vmax;
-	top: -142vmax;
-	left: -142vmax;
+	width: 100vw;
+	height: 100vw;
+	top: -50vw;
+	left: -50vw;
 	-webkit-transform: scale(0);
 			transform: scale(0);
 	-webkit-transform-origin: 50% 50%;

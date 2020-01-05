@@ -155,11 +155,6 @@ html, body {
 	cursor: url("../cursors/blue.cur"), auto;
 }
 
-#icon_wrapper_full a {
-	display:inline-block;
-	cursor: url("../cursors/white.cur"), auto;
-}
-
 .fade_down {
 	opacity: 0;
 	transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;

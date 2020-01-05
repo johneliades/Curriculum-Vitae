@@ -170,11 +170,6 @@ body, html, #menu_left, #main_screen {
 		display: none;
 	}
 
-	#menu_full {
-		top: 0;
-		display: inline;
-	}
-
 	#main_screen {
 		margin-left: 0;
 		width: 100%;
@@ -186,15 +181,29 @@ body, html, #menu_left, #main_screen {
 		transition: 0.2s;
 	}
 
+	#menu_full {
+		top: 0;
+		display: inline;
+	}
+
 	.entry {
 		margin-bottom: 0px;
 		font-size: 25px;
 	}
 
 	.entry:hover {
-		margin-bottom: 0px;
 		font-size: 28px;
 	}
+
+	#icon_wrapper_full {
+		position: absolute; 
+		bottom: 5px; 
+		width: 100px;
+	}
+
+	#icon_wrapper_full a {
+		cursor: url("../cursors/white.cur"), auto;
+	}	
 }
 
 /* Max Menu - Small Screen */

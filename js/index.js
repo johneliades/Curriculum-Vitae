@@ -1,3 +1,4 @@
+<!-- Chooses quote and prints it in iframe -->
 function get_quote() {
 	var myArray = [
 		"❝A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila.❞ <br><br> - Mitch Ratliff",
@@ -117,7 +118,29 @@ function get_quote() {
 	iframe.contentWindow.document.close();
 }
 
+<!-- Disables the bird -->
 function hide_bird() {
+	iframe=document.getElementById('iframe_main')
+	iframe.contentWindow.document.open();
+	
+	<!-- Change cursor -->
+	html = `
+		<html>
+			<head>
+				<style>
+					body, html {
+						cursor: url('cursors/white.cur'), crosshair;
+					}
+				</style>
+			</head>
+	
+			<body>
+			</body>
+		</html>
+	`
+	iframe.contentWindow.document.write(html);
+	iframe.contentWindow.document.close();
+
 	var element = document.getElementById("main_screen");
 	if(element)			
 		element.style.backgroundSize = "0px 0px";
@@ -133,6 +156,7 @@ function hide_bird() {
 		bird_container.style.zIndex = -1;
 }
 
+<!-- Shows the welcome message and then enables the bird -->
 function clearFrame() {
 	initFrame();
 
@@ -151,6 +175,7 @@ function clearFrame() {
 		bird_container.style.zIndex = 0;
 }
 
+<!-- Shows the welcome message -->
 function initFrame() {
 	const html= 
 		`

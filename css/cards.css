@@ -19,6 +19,12 @@
 	background-color: aqua;
 }
 
+::-webkit-scrollbar-button {
+	background-color: black;
+	border: 2px solid aqua;
+	border-radius: 6px;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -26,7 +32,10 @@
 html, body {
 	margin: 0;
 	width: 100%;
- 	scrollbar-width: none; 
+	scrollbar-color: aqua black;
+	scrollbar-width: thin;
+	-ms-overflow-style: none;
+
  	overflow-x: hidden;
 
 	background-color: black;

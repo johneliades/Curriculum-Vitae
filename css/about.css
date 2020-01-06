@@ -22,8 +22,17 @@
 	background-color: aqua;
 }
 
+::-webkit-scrollbar-button {
+	background-color: black;
+	border: 2px solid aqua;
+	border-radius: 6px;
+}
+
 body, html {
- 	scrollbar-width: none;
+	scrollbar-color: aqua black;
+	scrollbar-width: thin;
+	-ms-overflow-style: none;
+
  	background-color: black;
  	margin: 0;
 	cursor: url("../cursors/white.cur"), auto;

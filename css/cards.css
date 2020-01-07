@@ -67,7 +67,7 @@ h2 {
 }
 
 h2.color {
-	color: white;
+	color: #78C82D;
 }
 
 p.custom_font {
@@ -76,11 +76,6 @@ p.custom_font {
 
 	padding-left: 70px;
 	padding-right: 70px;
-}
-
-p.color {
-	color: aqua;
-	border-color: aqua;
 }
 
 h2, p {
@@ -114,13 +109,13 @@ a.button:hover {
 }
 
 a.color {
-	color: white;
-	border-color: white;
+	color: #78C82D;
+	border-color: #78C82D;
 }
 
 a.color:hover {
-	border-color: white;
-	background-color: white;
+	border-color: #78C82D;
+	background-color: #78C82D;
 }
 
 .bouncy {
@@ -156,8 +151,7 @@ a.color:hover {
 	text-align: center;
 
 	padding-top: 15px;
-	border: 3px solid;
-	border-color: black;
+	border: 3px solid black;
 	border-radius: 25px;
 }
 
@@ -179,12 +173,24 @@ iframe {
 	width: 45vw;
 	height: 28vw;
 	min-height: 250px;
+	border: medium solid aqua;
+	border-radius: 10px;
+}
+
+iframe.color {
+	border-color: #78C82D;
 }
 
 img {
 	width: 45vw;
 	height: 28vw;
 	min-height: 250px;
+	border: medium solid aqua;
+	border-radius: 10px;
+}
+
+img.color {
+	border-color: #78C82D;
 }
 
 .spinner {

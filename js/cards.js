@@ -12,10 +12,6 @@ function color_change() {
 	for (i=0; i<element_headers.length; i++)
 		element_headers[i].classList.toggle("color");
 	
-	var element_text = document.querySelectorAll("p.custom_font");
-	for (i=0; i<element_text.length; i++)
-		element_text[i].classList.toggle("color");
-	
 	var element_buttons = document.querySelectorAll("a.button");
 	for(i=0; i<element_buttons.length; i++)
 		element_buttons[i].classList.toggle("color");
@@ -27,4 +23,12 @@ function color_change() {
 	var background_html = document.getElementsByTagName("html")[0];
 	if(background_html)
 		background_html.classList.toggle("color");
+
+	var iframe_border = document.querySelectorAll("iframe");
+	for(i=0; i<iframe_border.length; i++)
+		iframe_border[i].classList.toggle("color");
+
+	var image_border = document.querySelectorAll("img");
+	for(i=0; i<image_border.length; i++)
+		image_border[i].classList.toggle("color");
 }

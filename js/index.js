@@ -37,9 +37,8 @@ function get_quote() {
 
 	var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
-	iframe=document.getElementById('iframe_main')
-	iframe.contentWindow.document.open();
-	iframe.contentWindow.document.write("");
+	iframe=document.getElementById('iframe_main');
+	iframe.src = "about:blank";
 
 	const html= 
 		`
@@ -120,7 +119,8 @@ function get_quote() {
 
 <!-- Disables the bird -->
 function hide_bird() {
-	iframe=document.getElementById('iframe_main')
+	iframe=document.getElementById('iframe_main');
+	iframe.src = "about:blank";
 	iframe.contentWindow.document.open();
 	
 	<!-- Change cursor -->
@@ -129,7 +129,7 @@ function hide_bird() {
 			<head>
 				<style>
 					body, html {
-						cursor: url('cursors/white.cur'), crosshair;
+						cursor: url('cursors/white.cur'), auto;
 					}
 				</style>
 			</head>
@@ -137,7 +137,8 @@ function hide_bird() {
 			<body>
 			</body>
 		</html>
-	`
+	`;
+
 	iframe.contentWindow.document.write(html);
 	iframe.contentWindow.document.close();
 
@@ -158,8 +159,6 @@ function hide_bird() {
 
 <!-- Shows the welcome message and then enables the bird -->
 function clearFrame() {
-	initFrame();
-
 	var element = document.getElementById("main_screen");
 	if(element)			
 		element.style.backgroundSize = "cover";
@@ -173,12 +172,16 @@ function clearFrame() {
 	var bird_container = document.getElementById("bird_container");
 	if(bird_container)
 		bird_container.style.zIndex = 0;
+
+	initFrame();
 }
 
 <!-- Shows the welcome message -->
 function initFrame() {
-	const html= 
-		`
+	iframe=document.getElementById('iframe_main');
+	iframe.src = "about:blank";
+
+	const html= `
 		<html>
 			<head>
 				<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -241,8 +244,8 @@ function initFrame() {
 				</div>
 			</body>
 		</html>
-		`
-	iframe=document.getElementById('iframe_main')
+	`;
+
 	iframe.contentWindow.document.open();
 	iframe.contentWindow.document.write(html);
 	iframe.contentWindow.document.close();

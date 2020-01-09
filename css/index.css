@@ -108,7 +108,7 @@ iframe {
 
 	font-size: 30px;
 	color: grey;
-	transition: 0.2s;
+	transition: font-size 0.2s;
 	cursor: url("../cursors/blue.cur"), auto;
 }
 

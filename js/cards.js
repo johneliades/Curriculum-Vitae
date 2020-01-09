@@ -31,4 +31,12 @@ function color_change() {
 	var image_border = document.querySelectorAll("img");
 	for(i=0; i<image_border.length; i++)
 		image_border[i].classList.toggle("color");
+
+	for (i=0; i<spinner_buttons.length; i++) {
+		spinner_buttons[i].classList.toggle("spinnercolorhover");
+	}
+
+	for (i=0; i<spinner_buttons.length; i++) {
+		spinner_buttons[i].classList.toggle("spinnercolor");
+	}
 }

@@ -216,6 +216,11 @@ img.color {
 	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
 	cursor: url("../cursors/blue.cur"), auto;
+	box-shadow: 0px 0px 9px 0px aqua, inset 0px 0px 4px 0px aqua;
+}
+
+.spinnercolor {
+	box-shadow: 0px 0px 9px 0px #78c82d, inset 0px 0px 4px 0px #78c82d;
 }
 
 .spinner:hover {
@@ -224,6 +229,11 @@ img.color {
 	margin-bottom: 1px;
 	margin-top: 1px;
 	border-width: 4px;
+	box-shadow: 0px 0px 15px 0px aqua, inset 0px 0px 6px 0px aqua;
+}
+
+.spinnercolorhover:hover {
+	box-shadow: 0px 0px 15px 0px #78c82d, inset 0px 0px 6px 0px #78c82d;
 }
 
 @-webkit-keyframes spin {

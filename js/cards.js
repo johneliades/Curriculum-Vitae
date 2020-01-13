@@ -40,3 +40,31 @@ function color_change() {
 		spinner_buttons[i].classList.toggle("spinnercolor");
 	}
 }
+
+var modal = document.getElementById("modal");
+var span = document.getElementsByClassName("close")[0];
+
+function show_modal() {
+	if(modal) {
+		modal.style.display = "block";
+	}
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+window.addEventListener('keydown', function(e){
+	if (e.keyCode == (window.event ? 27 : e.DOM_VK_ESCAPE)) {
+		modal.style.display = "none";
+	}
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target != modal) {
+		console.log("One day this must be fixed...");
+		//modal.style.display = "none";
+	}
+}

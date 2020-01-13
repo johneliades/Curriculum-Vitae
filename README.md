@@ -4,5 +4,5 @@ A website made with the use of html/css/javascript from scratch for personal use
 
 # Link
 ```
-http://inf-server.inf.uth.gr/~ieliades/
+http://johneliades.github.io
 ```

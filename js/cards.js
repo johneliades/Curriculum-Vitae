@@ -64,7 +64,8 @@ window.addEventListener('keydown', function(e){
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 	if (event.target != modal) {
-		console.log("One day this must be fixed...");
+		console.log("This shouldn't hide modal again");
+
 		//modal.style.display = "none";
 	}
 }

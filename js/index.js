@@ -91,8 +91,8 @@ function get_quote() {
 					p.custom_font {
 						font-family: "Roboto";
 						font-size: 22px;
-						margin-right: 16vw;
-						margin-left: 16vw;
+						margin-right: 20vw;
+						margin-left: 20vw;
 						text-align: center;
 					}
 

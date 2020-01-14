@@ -10,7 +10,7 @@ function get_quote() {
 		"❝Never say anything on the phone that you wouldn't want your mother to hear at your trial.❞ <br><br> - Sydney Biddle Barrows",
 		"❝Perl - The only language that looks the same before and after RSA encryption.❞ <br><br> - Keith Bostic",
 		"❝The trouble with quotes on the Internet is that you never know if they are genuine.❞ <br><br> - Benjamin Franklin",
-		"❝Using encryption on the Internet is the equivalent of arranging an armored car to deliver credit card information from someone living in a cardboard box to someone living on a park bench.❞ <br><br> - Gene Spafford",
+		"❝Using encryption on the Internet is like arranging an armored car to deliver credit card information from someone living in a cardboard box to someone living on a park bench.❞ <br><br> - Gene Spafford",
 		"❝What one programmer can do in one month, two programmers can do in two months.❞ <br><br> - Fred Brooks",
 		"❝Security in IT is like locking your house or car - it doesn't stop the bad guys, but if it's good enough they may move on to an easier target.❞ <br><br> - Paul Herbka",
 		"❝In theory, one can build provably secure systems. In theory, theory can be applied to practice but in practice, it can't.❞ <br><br> - M.Dacier, Eurecom Institute",
@@ -71,7 +71,6 @@ function get_quote() {
 					}
 					
 					.breaking{
-						padding-bottom: 5%;
 						width: 100%;
 						word-wrap: break-word;
 						transition: 0.2s;
@@ -92,8 +91,8 @@ function get_quote() {
 					p.custom_font {
 						font-family: "Roboto";
 						font-size: 22px;
-						margin-right: 20vw;
-						margin-left: 20vw;
+						margin-right: 14vw;
+						margin-left: 14vw;
 						text-align: center;
 					}
 

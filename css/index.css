@@ -17,6 +17,8 @@ body, html, #menu_left, #main_screen {
 	width: 100%;
 	scrollbar-width: none;
 	overflow-x: hidden;
+
+	background-color: black;
 	cursor: url('../cursors/white.cur'), auto;
 }
 
@@ -48,6 +50,8 @@ iframe {
 	width: calc(100% - 220px - 15px);
 	border: 15px solid black;
 	border-left: none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
 
 	margin-left: 220px;
 
@@ -185,10 +189,13 @@ iframe {
 		display: none;
 	}
 
-		#main_screen {
+	#main_screen {
 		height: calc(100% - 18px);
 		width: calc(100% - 18px);
+
 		border: 9px solid black;
+		border-radius: 20px;
+	
 		margin-left: 0;
 		transition: 0.2s;
 	}

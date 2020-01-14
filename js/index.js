@@ -1,38 +1,38 @@
 <!-- Chooses quote and prints it in iframe -->
 function get_quote() {
 	var myArray = [
-		"❝A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila.❞ <br><br> - Mitch Ratliff",
-		"❝Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.❞ <br><br> - John Woods",
-		"❝Any sufficiently advanced bug is indistinguishable from a feature.❞ <br><br> - Rich Kulawiec",
-		"❝Any fool can write code that a computer can understand. Good programmers write code that humans can understand.❞ <br><br> - Martin Fowler",
-		"❝If privacy is outlawed, only outlaws will have privacy.❞ <br><br> - Philip Zimmermann",
-		"❝Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.❞ <br><br> - Muhammad Waseem",
-		"❝Never say anything on the phone that you wouldn't want your mother to hear at your trial.❞ <br><br> - Sydney Biddle Barrows",
-		"❝Perl - The only language that looks the same before and after RSA encryption.❞ <br><br> - Keith Bostic",
-		"❝The trouble with quotes on the Internet is that you never know if they are genuine.❞ <br><br> - Benjamin Franklin",
-		"❝Using encryption on the Internet is like arranging an armored car to deliver credit card information from someone living in a cardboard box to someone living on a park bench.❞ <br><br> - Gene Spafford",
-		"❝What one programmer can do in one month, two programmers can do in two months.❞ <br><br> - Fred Brooks",
-		"❝Security in IT is like locking your house or car - it doesn't stop the bad guys, but if it's good enough they may move on to an easier target.❞ <br><br> - Paul Herbka",
-		"❝In theory, one can build provably secure systems. In theory, theory can be applied to practice but in practice, it can't.❞ <br><br> - M.Dacier, Eurecom Institute",
-		"❝Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.❞ <br><br> - Patrick McKenzie",
-		"❝One of the best programming skills you can have is knowing when to walk away for awhile.❞ <br><br> - Oscar Godson",
-		"❝Don't write better error messages, write code that doesn't need them.❞ <br><br> - Jason C. McDonald",
-		"❝Java is to JavaScript what car is to Carpet.❞ <br><br> - Chris Heilmann",
-		"❝Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.❞ <br><br> - Dan Salomon",
-		"❝Code is like humor. When you have to explain it, it’s bad.❞ <br><br> - Cory House",
-		"❝How you look at it is pretty much how you'll see it.❞ <br><br> - Rasheed Ogunlaru",
-		"❝Tomorrow is the busiest day of the week.❞ <br><br> - Spanish Proverb",
-		"❝A C program is like a fast dance on a newly waxed dance floor by people carrying razors.❞ <br><br> - Waldi Ravens",
-		"❝Programming allows you to think about thinking, and while debugging you learn learning.❞ <br><br> - Nicholas Negroponte",
-		"❝Programming is like sex. One mistake and you have to support it for the rest of your life.❞ <br><br> - Michael Sinz",
-		"❝In order to understand recursion, one must first understand recursion.❞ <br><br> - Me",
-		"❝C++, where friends have access to your private members.❞ <br><br> - Anonymous",
-		"❝Document What You Know When You Know It.❞ <br><br> - Me",
-		"❝Software is like cathedrals. First we build them, then we pray.❞ <br><br> - Sam Redwine",
-		"❝Knock knock. Race condition. Who's there?❞ <br><br> - Anonymous",
-		"❝What's the best thing thing about UDP jokes? I don't care if you get them.❞ <br><br> - Anonymous",
-		"❝A UDP packet walks into a bar, no one acknowledges him.❞ <br><br> - Anonymous",
-		"❝A UDP packet walks into...❞ <br><br> - Anonymous"
+		"❝A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila.❞",
+		"❝Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.❞",
+		"❝Any sufficiently advanced bug is indistinguishable from a feature.❞",
+		"❝Any fool can write code that a computer can understand. Good programmers write code that humans can understand.❞",
+		"❝If privacy is outlawed, only outlaws will have privacy.❞",
+		"❝Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.❞",
+		"❝Never say anything on the phone that you wouldn't want your mother to hear at your trial.❞",
+		"❝Perl - The only language that looks the same before and after RSA encryption.❞",
+		"❝The trouble with quotes on the Internet is that you never know if they are genuine.❞",
+		"❝Using encryption on the Internet is like arranging an armored car to deliver credit card information from someone living in a cardboard box to someone living on a park bench.❞",
+		"❝What one programmer can do in one month, two programmers can do in two months.❞",
+		"❝Security in IT is like locking your house or car - it doesn't stop the bad guys, but if it's good enough they may move on to an easier target.❞",
+		"❝In theory, one can build provably secure systems. In theory, theory can be applied to practice but in practice, it can't.❞",
+		"❝Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.❞",
+		"❝One of the best programming skills you can have is knowing when to walk away for awhile.❞",
+		"❝Don't write better error messages, write code that doesn't need them.❞",
+		"❝Java is to JavaScript what car is to Carpet.❞",
+		"❝Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.❞",
+		"❝Code is like humor. When you have to explain it, it’s bad.❞",
+		"❝How you look at it is pretty much how you'll see it.❞",
+		"❝Tomorrow is the busiest day of the week.❞",
+		"❝A C program is like a fast dance on a newly waxed dance floor by people carrying razors.❞",
+		"❝Programming allows you to think about thinking, and while debugging you learn learning.❞",
+		"❝Programming is like sex. One mistake and you have to support it for the rest of your life.❞",
+		"❝In order to understand recursion, one must first understand recursion.❞",
+		"❝C++, where friends have access to your private members.❞",
+		"❝Document What You Know When You Know It.❞",
+		"❝Software is like cathedrals. First we build them, then we pray.❞",
+		"❝Knock knock. Race condition. Who's there?❞",
+		"❝What's the best thing thing about UDP jokes? I don't care if you get them.❞",
+		"❝A UDP packet walks into a bar, no one acknowledges him.❞",
+		"❝A UDP packet walks into...❞"
 	];
 
 	var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
@@ -91,8 +91,8 @@ function get_quote() {
 					p.custom_font {
 						font-family: "Roboto";
 						font-size: 22px;
-						margin-right: 14vw;
-						margin-left: 14vw;
+						margin-right: 16vw;
+						margin-left: 16vw;
 						text-align: center;
 					}
 

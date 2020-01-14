@@ -96,6 +96,10 @@ function get_quote() {
 						text-align: center;
 					}
 
+					@media screen and (max-width: 800px) {
+						font-size: 18px;
+					}
+
 					.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 				</style>
 

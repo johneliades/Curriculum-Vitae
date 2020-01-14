@@ -97,7 +97,9 @@ function get_quote() {
 					}
 
 					@media screen and (max-width: 800px) {
-						font-size: 18px;
+						p.custom_font {
+							font-size: 18px;
+						}
 					}
 
 					.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
@@ -231,6 +233,12 @@ function initFrame() {
 						margin-right: 20vw;
 						margin-left: 20vw;
 						text-align: center;
+					}
+
+					@media screen and (max-width: 800px) {
+						p.custom_font {
+							font-size: 20px;
+						}
 					}
 
 					.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}

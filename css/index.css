@@ -309,24 +309,24 @@ iframe {
 		height: 12vw;
 
 		border-width: 0.5vw;
-		margin-top: 13vh;
-		margin-bottom: 2vh;
+		margin-top: 9vh;
+		margin-bottom: 1vh;
 		margin-left: 2.5vw;
 		margin-right: 2.5vw;
 	}
 
 	#name {
-		font-size: 2.2vw;
-		margin-bottom: 1vh;
+		font-size: 2.5vw;
+		margin-bottom: 4vh;
 	}
 
 	.entry {
-		margin-bottom: 0vh;
-		font-size: 2vw;
+		margin-bottom: 1vh;
+		font-size: 2.5vw;
 	}
 
 	.entry:hover {
-		font-size: 2.3vw;
+		font-size: 2.7vw;
 	}
 
 	#icon_wrapper {
@@ -353,7 +353,7 @@ iframe {
 }
 
 /* Changing Menu Size - Small Screen */
-@media screen and (min-width: 801px) and (max-width: 1200px) and (max-height: 450px) and (orientation: landscape) {
+@media screen and (min-width: 801px) and (max-width: 1200px) and (max-height: 500px) and (orientation: landscape) {
 	.outer {
 		display: table;
 	}

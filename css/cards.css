@@ -222,8 +222,6 @@ a.color:hover {
 
 	width: 100%;
 	word-wrap: break-word;
-
-	transition: 0.2s;
 }
 
 .column {
@@ -342,7 +340,6 @@ img.color {
 	}
 
 	.column {
-		position: relative;
 		float: none;
 		width: 100%;
 		padding-top: 3vw;
@@ -372,8 +369,6 @@ img.color {
 	.breaking {
 		padding-top: 0;
 		padding-bottom: 0;
-		width: 100vw;
-		word-wrap: break-word;
 	}
 
 	iframe {

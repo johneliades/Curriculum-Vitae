@@ -115,6 +115,7 @@ a.color {
 	color: #fc4444;
 	border-color: #fc4444;
 	box-shadow: 0px 0px 8px 0px #fc4444;
+	cursor: url("../cursors/red.cur"), auto;
 }
 
 a.color:hover {
@@ -308,6 +309,7 @@ img.color {
 
 .spinnercolor {
 	box-shadow: 0px 0px 10px 0px #fc4444, inset 0px 0px 4px 0px #fc4444;
+	cursor: url("../cursors/red.cur"), auto;
 }
 
 .spinnercolorhover:hover {

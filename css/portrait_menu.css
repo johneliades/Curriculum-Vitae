@@ -20,14 +20,6 @@ html, body {
 	background-color: rgba(24, 24, 24, 1);
 }
 
-.nav {
-	height: 100%;
-}
-
-.header {
-	height: 100%;
-}
-
 .nav_menu {
 	height: 100%;
 	display: flex;
@@ -135,8 +127,7 @@ html, body {
 	transition-property: opacity;
 }
 
-.nav:target .fade_down,
-.nav--open .fade_down {
+.nav:target .fade_down, .nav--open .fade_down {
 	opacity: 1;
 	-webkit-transform: translateY(0);
 			transform: translateY(0);

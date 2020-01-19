@@ -1,4 +1,4 @@
-const nav = document.querySelector('#nav');
+const nav = document.querySelector('#menu_full');
 const menu = document.querySelector('#menu');
 const menuToggle = document.querySelector('.nav_toggle');
 const entries = document.getElementsByClassName('close');

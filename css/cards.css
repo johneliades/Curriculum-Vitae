@@ -68,7 +68,7 @@ h2 {
 }
 
 h2.color {
-	color: #78C82D;
+	color: #fc4444;
 }
 
 p.custom_font {
@@ -112,15 +112,15 @@ a.button:hover {
 }
 
 a.color {
-	color: #78C82D;
-	border-color: #78C82D;
-	box-shadow: 0px 0px 8px 0px #78C82D;
+	color: #fc4444;
+	border-color: #fc4444;
+	box-shadow: 0px 0px 8px 0px #fc4444;
 }
 
 a.color:hover {
-	border-color: #78C82D;
-	background-color: #78C82D;
-	box-shadow: 0px 0px 15px 0px #78C82D;
+	border-color: #fc4444;
+	background-color: #fc4444;
+	box-shadow: 0px 0px 15px 0px #fc4444;
 }
 
 .bouncy {
@@ -261,8 +261,8 @@ iframe {
 }
 
 iframe.color {
-	border-color: #78C82D;
-	box-shadow: 0px 0px 12px 0px #78C82D;
+	border-color: #fc4444;
+	box-shadow: 0px 0px 12px 0px #fc4444;
 }
 
 img {
@@ -275,8 +275,8 @@ img {
 }
 
 img.color {
-	border-color: #78C82D;
-	box-shadow: 0px 0px 12px 0px #78C82D;
+	border-color: #fc4444;
+	box-shadow: 0px 0px 12px 0px #fc4444;
 }
 
 .spinner {
@@ -297,10 +297,6 @@ img.color {
 	box-shadow: 0px 0px 10px 0px aqua, inset 0px 0px 4px 0px aqua;
 }
 
-.spinnercolor {
-	box-shadow: 0px 0px 10px 0px #78c82d, inset 0px 0px 4px 0px #78c82d;
-}
-
 .spinner:hover {
 	width: 23px;
 	height: 23px;
@@ -310,8 +306,12 @@ img.color {
 	box-shadow: 0px 0px 20px 0px aqua, inset 0px 0px 6px 0px aqua;
 }
 
+.spinnercolor {
+	box-shadow: 0px 0px 10px 0px #fc4444, inset 0px 0px 4px 0px #fc4444;
+}
+
 .spinnercolorhover:hover {
-	box-shadow: 0px 0px 20px 0px #78c82d, inset 0px 0px 6px 0px #78c82d;
+	box-shadow: 0px 0px 20px 0px #fc4444, inset 0px 0px 6px 0px #fc4444;
 }
 
 @-webkit-keyframes spin {

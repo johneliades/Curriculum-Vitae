@@ -149,14 +149,15 @@ a.color:hover {
 	outline: 0;
 	background-color: black;
 
-	width: 80vw;
-	height: 80vh;
+	width: 80%;
+	height: 80%;
 
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	resize: both;
 
+	box-shadow: 0px 0px 50px 0px black;
 	border: thin solid aqua;
 	border-radius: 10px;
 }
@@ -206,7 +207,7 @@ a.color:hover {
 	margin-left: 2%;
 	margin-right: 2%;
 
-	height: calc(95% - 40px);
+	height: calc(95% - 60px);
 	width: 96%;
 }
 

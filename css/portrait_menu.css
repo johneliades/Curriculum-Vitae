@@ -121,6 +121,19 @@ html, body {
 	box-shadow: 0px 0px 30px 0px aqua;
 }
 
+#name_full {
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 25px;
+	font-weight: 800;
+	color: white;
+	transition: 0.2s;
+}
+
+#profile_pic_full:hover ~ #name_full {
+	color: aqua;
+}
+
 .fade_down {
 	opacity: 0;
 	transition: 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;

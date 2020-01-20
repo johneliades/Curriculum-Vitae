@@ -54,7 +54,8 @@ body {
 }
 
 body.color, html.color {
-	background-color: #181818;	
+	background-color: #181818;
+	scrollbar-color: #78c82d black;
 }
 
 .fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
@@ -68,7 +69,7 @@ h2 {
 }
 
 h2.color {
-	color: #fc4444;
+	color: #78c82d;
 }
 
 p.custom_font {
@@ -112,16 +113,16 @@ a.button:hover {
 }
 
 a.color {
-	color: #fc4444;
-	border-color: #fc4444;
-	box-shadow: 0px 0px 8px 0px #fc4444;
-	cursor: url("../cursors/red.cur"), auto;
+	color: #78c82d;
+	border-color: #78c82d;
+	box-shadow: 0px 0px 8px 0px #78c82d;
+	cursor: url("../cursors/green.cur"), auto;
 }
 
 a.color:hover {
-	border-color: #fc4444;
-	background-color: #fc4444;
-	box-shadow: 0px 0px 15px 0px #fc4444;
+	border-color: #78c82d;
+	background-color: #78c82d;
+	box-shadow: 0px 0px 15px 0px #78c82d;
 }
 
 .bouncy {
@@ -263,8 +264,8 @@ iframe {
 }
 
 iframe.color {
-	border-color: #fc4444;
-	box-shadow: 0px 0px 12px 0px #fc4444;
+	border-color: #78c82d;
+	box-shadow: 0px 0px 12px 0px #78c82d;
 }
 
 img {
@@ -277,8 +278,8 @@ img {
 }
 
 img.color {
-	border-color: #fc4444;
-	box-shadow: 0px 0px 12px 0px #fc4444;
+	border-color: #78c82d;
+	box-shadow: 0px 0px 12px 0px #78c82d;
 }
 
 .spinner {
@@ -309,12 +310,12 @@ img.color {
 }
 
 .spinnercolor {
-	box-shadow: 0px 0px 10px 0px #fc4444, inset 0px 0px 4px 0px #fc4444;
-	cursor: url("../cursors/red.cur"), auto;
+	box-shadow: 0px 0px 10px 0px #78c82d, inset 0px 0px 4px 0px #78c82d;
+	cursor: url("../cursors/green.cur"), auto;
 }
 
 .spinnercolorhover:hover {
-	box-shadow: 0px 0px 20px 0px #fc4444, inset 0px 0px 6px 0px #fc4444;
+	box-shadow: 0px 0px 20px 0px #78c82d, inset 0px 0px 6px 0px #78c82d;
 }
 
 @-webkit-keyframes spin {

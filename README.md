@@ -10,4 +10,4 @@ http://johneliades.github.io
 
 ## Author
 
-**Eliades John** - *Developer* - [johneliades](https://github.com/johneliades)
+**Eliades John** - *Developer* - [Github](https://github.com/johneliades)

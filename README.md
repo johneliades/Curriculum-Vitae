@@ -4,6 +4,10 @@ A website made with the use of html/css/javascript from scratch for personal use
 
 ![Image of website](https://github.com/johneliades/johneliades.github.io/blob/master/images/portfolio.png)
 
-# Link
+## Link
 
 http://johneliades.github.io
+
+## Author
+
+**Eliades John** - *Developer* - [Github](https://github.com/johneliades)

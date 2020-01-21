@@ -132,6 +132,7 @@ html, body {
 
 #profile_pic_full:hover ~ #name_full {
 	color: aqua;
+	text-shadow: -3px -3px 5px aqua;
 }
 
 .fade_down {

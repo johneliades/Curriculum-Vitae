@@ -24,6 +24,8 @@ body, html, #menu_left, #main_screen {
 
 #iframe_main { 
 	float: left;
+	width: 100%;
+	height: 100%;
 }
 
 iframe {
@@ -72,7 +74,8 @@ iframe {
 	margin-left: 30px;
 	margin-right: 30px;
 
-	border: 6px solid #2E151B;
+	border: 6px solid white;
+	box-shadow: 0px 0px 10px 0px white;
 	border-radius: 50%;
 }
 
@@ -81,6 +84,11 @@ iframe {
 	animation-direction: alternate;
 	cursor: url("../cursors/blue.cur"), auto;
 	box-shadow: 0px 0px 30px 0px aqua;
+}
+
+#profile_pic:hover ~ #name {
+	color: aqua;
+	text-shadow: -3px -3px 5px aqua;
 }
 
 @keyframes cycle {
@@ -102,7 +110,7 @@ iframe {
 
 	font-size: 30px;
 	color: white;
-	
+
 	transition: 0.2s;
 }
 
@@ -124,35 +132,41 @@ iframe {
 	color: aqua;
 	font-size: 35px;
 	box-shadow: 0px 0px 15px 0px aqua;
+	border-radius: 15px;
 	border: 2px solid aqua;
 }
 
 #icon_wrapper {
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	
+	height: 46px;
 	width: 100%;
+
 	transition: 0.2s;
 	text-align: center;
 }
 
 #icon_wrapper a {
 	display:inline-block;
-	cursor: url("../cursors/white.cur"), auto;
+
+	border-radius: 50%;
+	margin-left: 7px;
+	margin-right: 7px;
+	cursor: url("../cursors/blue.cur"), auto;
+
+	height: 46px;
+	width: 46px;
 }
 
 .icon img {
-	display: inline-block;
-	margin-left: 7px;
-	margin-right: 7px;
-
 	border-radius: 50%;
 
 	height: 40px;
 	width: 40px;
 
-	border: 3px solid #2E151B;
-	cursor: url("../cursors/blue.cur"), auto;
+	border: 3px solid white;
+	box-shadow: 0px 0px 5px 0px white;
 }
 
 .icon img:hover {
@@ -216,13 +230,22 @@ iframe {
 	}
 
 	#icon_wrapper_full {
-		position: absolute; 
-		bottom: 5px; 
-		width: 100px;
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+
+		width: 46px;
 	}
 
 	#icon_wrapper_full a {
+		display: block;
 		cursor: url("../cursors/white.cur"), auto;
+		
+		margin: 0;
+		margin-top: 7px;
+
+		height: 46px;
+		width: 46px;
 	}	
 }
 
@@ -256,6 +279,8 @@ iframe {
 
 	.entry {
 		margin-bottom: 1vh;
+		margin-right: 30px;
+		margin-left: 30px;
 		font-size: 22px;
 	}
 
@@ -264,14 +289,23 @@ iframe {
 		font-size: 26px;
 	}
 
-	.icon img {
-		border-radius: 50%;
+	#icon_wrapper {
+		position: static;
+		margin-top: 3vh;
 
+		height: 42px;
+	}
+
+	#icon_wrapper a {
+		height: 42px;
+		width: 42px;
+	}
+
+	.icon img {
 		height: 36px;
 		width: 36px;
 
 		border-style: solid;
-		border-color: grey;
 		border-width: 3px;
 	}
 
@@ -282,11 +316,6 @@ iframe {
 		border-style: double;
 		border-color: aqua;
 		border-width: 6px;
-	}
-
-	#icon_wrapper {
-		position: static;
-		margin-top: 3vh;
 	}
 }
 
@@ -309,38 +338,44 @@ iframe {
 		height: 12vw;
 
 		border-width: 0.5vw;
-		margin-top: 13vh;
-		margin-bottom: 2vh;
+		margin-top: 9vh;
+		margin-bottom: 1vh;
 		margin-left: 2.5vw;
 		margin-right: 2.5vw;
 	}
 
 	#name {
-		font-size: 2.2vw;
-		margin-bottom: 1vh;
+		font-size: 2.5vw;
+		margin-bottom: 4vh;
 	}
 
 	.entry {
-		margin-bottom: 0vh;
-		font-size: 2vw;
+		margin-bottom: 1vh;
+		font-size: 2.5vw;
 	}
 
 	.entry:hover {
-		font-size: 2.3vw;
+		font-size: 2.7vw;
 	}
 
 	#icon_wrapper {
-		margin-top: 6vh;
+		bottom: 15px;
+		height: 3.8vw;
+	}
+
+	#icon_wrapper a {
+		margin-left: 0.7vw;
+		margin-right: 0.7vw;
+
+		height: 3.8vw;
+		width: 3.8vw;
 	}
 
 	.icon img {
-		margin-left: 0.5vw;
-		margin-right: 0.5vw;
-
 		height: 3.4vw;
 		width: 3.4vw;
 
-		border-width: 0.3vw;
+		border-width: 0.2vw;
 	}
 
 	.icon img:hover {
@@ -348,12 +383,12 @@ iframe {
 		width: 3vw;
 
 		border-color: aqua;
-		border-width: 0.5vw;
+		border-width: 0.4vw;
 	}
 }
 
 /* Changing Menu Size - Small Screen */
-@media screen and (min-width: 801px) and (max-width: 1200px) and (max-height: 450px) and (orientation: landscape) {
+@media screen and (min-width: 801px) and (max-width: 1200px) and (max-height: 500px) and (orientation: landscape) {
 	.outer {
 		display: table;
 	}
@@ -397,13 +432,20 @@ iframe {
 	#icon_wrapper {
 		position: static;
 		margin-top: 4vh;
+
+		height: 3.6vw;
+	}
+
+	#icon_wrapper a {
+		height: 3.6vw;
+		width: 3.6vw;
 	}
 
 	.icon img {
 		height: 3.2vw;
 		width: 3.2vw;
 
-		border-width: 0.3vw;
+		border-width: 0.2vw;
 	}
 
 	.icon img:hover {
@@ -411,7 +453,7 @@ iframe {
 		width: 2.4vw;
 
 		border-color: aqua;
-		border-width: 0.7vw;
+		border-width: 0.6vw;
 	}
 }
 
@@ -456,12 +498,21 @@ iframe {
 
 	#icon_wrapper {
 		margin-top: 6vh;
+
+		bottom: 10px;
+
+		height: 34px;
 	}
 
-	.icon img {
+	#icon_wrapper a{
 		margin-left: 2px;
 		margin-right: 2px;
 
+		height: 34px;
+		width: 34px;
+	}
+
+	.icon img {
 		height: 30px;
 		width: 30px;
 
@@ -505,12 +556,12 @@ iframe {
 
 	#name {
 		font-size: 15px;
-		margin-bottom: 2.5vh;
+		margin-bottom: 1.5vh;
 	}
 
 	.entry {
 		margin-bottom: 0vh;
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.entry:hover {
@@ -520,21 +571,28 @@ iframe {
 	#icon_wrapper {
 		position: static;
 		margin-top: 2.5vh;
+
+		height: 26px;
+	}
+
+	#icon_wrapper a {
+		margin-left: 5px;
+		margin-right: 5px;	
+
+		height: 26px;
+		width: 26px;	
 	}
 
 	.icon img {
-		margin-left: 4px;
-		margin-right: 4px;
-
-		height: 25px;
-		width: 25px;
+		height: 22px;
+		width: 22px;
 
 		border-width: 2px;
 	}
 
 	.icon img:hover {
-		height: 21px;
-		width: 21px;
+		height: 18px;
+		width: 18px;
 
 		border-color: aqua;
 		border-width: 4px;

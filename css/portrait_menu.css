@@ -20,14 +20,6 @@ html, body {
 	background-color: rgba(24, 24, 24, 1);
 }
 
-.nav {
-	height: 100%;
-}
-
-.header {
-	height: 100%;
-}
-
 .nav_menu {
 	height: 100%;
 	display: flex;
@@ -117,7 +109,8 @@ html, body {
 	margin-left: 30px;
 	margin-right: 30px;
 
-	border: 6px solid #2E151B;
+	border: 6px solid white;
+	box-shadow: 0px 0px 10px 0px white;
 	border-radius: 50%;
 }
 
@@ -128,14 +121,27 @@ html, body {
 	box-shadow: 0px 0px 30px 0px aqua;
 }
 
+#name_full {
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 25px;
+	font-weight: 800;
+	color: white;
+	transition: 0.2s;
+}
+
+#profile_pic_full:hover ~ #name_full {
+	color: aqua;
+	text-shadow: -3px -3px 5px aqua;
+}
+
 .fade_down {
 	opacity: 0;
 	transition: 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
 	transition-property: opacity;
 }
 
-.nav:target .fade_down,
-.nav--open .fade_down {
+.nav:target .fade_down, .nav--open .fade_down {
 	opacity: 1;
 	-webkit-transform: translateY(0);
 			transform: translateY(0);

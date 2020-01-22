@@ -3,8 +3,8 @@
 	top: 0px;
 	left:-40%;
 	animation-name: fly-right;
-	width: 175px;
-	height: 200px;
+	width: 125px;
+	height: 165px;
 
 	transform: scale(0) translateX(-20vw);
 	will-change: transform;
@@ -14,7 +14,7 @@
 	animation-duration: 13s;
 	animation-delay: 1s;
 	z-index: 0;
-	cursor: url('../cursors/crosshair.cur'), crosshair;
+	cursor: url('../cursors/crosshair-blue.cur'), crosshair;
 }
 
 @keyframes fly-right {
@@ -38,8 +38,8 @@
 	width: 88px;
 	height: 125px;
 	will-change: background-position;
-	
-	margin-left: 40px;
+
+	margin: 20px;
 
 	animation-name: fly-cycle;
 	animation-timing-function: steps(10);
@@ -47,7 +47,6 @@
 	animation-duration: 1s;
 	animation-delay: 1s;	
 	z-index: 0;
-	cursor: url('../cursors/crosshair-blue.cur'), crosshair;
 }
 
 @keyframes fly-cycle {

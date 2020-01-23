@@ -33,10 +33,6 @@ function color_change() {
 		image_border[i].classList.toggle("color");
 
 	for (i=0; i<spinner_buttons.length; i++) {
-		spinner_buttons[i].classList.toggle("spinnercolorhover");
-	}
-
-	for (i=0; i<spinner_buttons.length; i++) {
 		spinner_buttons[i].classList.toggle("spinnercolor");
 	}
 }

@@ -88,7 +88,7 @@ iframe {
 
 #profile_pic:hover ~ #name {
 	color: aqua;
-	text-shadow: -3px -3px 5px aqua;
+	text-shadow: -3px -3px 5px aqua, -3px -3px 10px #FF0000;
 }
 
 @keyframes cycle {

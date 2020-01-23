@@ -111,6 +111,10 @@ a.button:hover {
 	box-shadow: 0px 0px 15px 0px aqua;
 }
 
+a.button:active {
+	color: white;
+}
+
 a.color {
 	cursor: url("../cursors/green.cur"), auto;
 	color: #78C82D;

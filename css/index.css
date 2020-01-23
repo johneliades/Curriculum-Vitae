@@ -91,6 +91,11 @@ iframe {
 	text-shadow: -3px -3px 5px aqua, -3px -3px 10px #FF0000;
 }
 
+#profile_pic:active ~ #name {
+	color: aqua;
+	text-shadow: -3px -3px 5px red;
+}
+
 @keyframes cycle {
 	0% { border-color: aqua; }
    	12.5% { border-right-color: aqua; }
@@ -134,6 +139,11 @@ iframe {
 	box-shadow: 0px 0px 15px 0px aqua;
 	border-radius: 15px;
 	border: 2px solid aqua;
+}
+
+.entry:active {
+	background-color: aqua;
+	color: black;
 }
 
 #icon_wrapper {

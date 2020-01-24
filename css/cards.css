@@ -113,6 +113,7 @@ a.button:hover {
 
 a.button:active {
 	color: white;
+	font-weight: bold;
 }
 
 a.color {
@@ -239,7 +240,7 @@ a.color:hover {
 	margin-left: 0.7%;
 	text-align: center;
 
-	padding-top: 15px;
+	padding-top: 30px;
 	border: thick solid black;
 	border-radius: 25px;
 }
@@ -264,12 +265,11 @@ iframe {
 	min-height: 250px;
 	border: thick solid aqua;
 	border-radius: 10px;
-	box-shadow: 0px 0px 12px 0px aqua;
+	box-shadow: 0px 0px 12px 0px white;
 }
 
 iframe.color {
 	border-color: #78C82D;
-	box-shadow: 0px 0px 12px 0px #78C82D;
 }
 
 img {
@@ -278,26 +278,26 @@ img {
 	min-height: 250px;
 	border: thick solid aqua;
 	border-radius: 10px;
-	box-shadow: 0px 0px 12px 0px aqua;
+	box-shadow: 0px 0px 12px 0px white;
 }
 
 img.color {
 	border-color: #78C82D;
-	box-shadow: 0px 0px 12px 0px #78C82D;
 }
 
 .spinner {
+	width: 23px;
+	height: 23px;
+
 	margin: auto;
-	margin-bottom: 3px;
-	margin-top: 3px;
+
 	border: 3px solid #f3f3f3;
 	border-radius: 50%;
 	border-top: 3px solid red;
 	border-right: 3px solid yellow;
 	border-bottom: 3px solid aqua;
 	border-left: 3px solid #ff8000;
-	width: 19px;
-	height: 19px;
+
 	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
 	cursor: url("../cursors/blue.cur"), auto;
@@ -305,11 +305,7 @@ img.color {
 }
 
 .spinner:hover {
-	width: 23px;
-	height: 23px;
-	margin-bottom: 1px;
-	margin-top: 1px;
-	border-width: 4px;
+	border-width: 5px;
 	box-shadow: 0px 0px 15px 0px aqua, inset 0px 0px 8px 0px aqua;
 }
 
@@ -318,16 +314,16 @@ img.color {
 }
 
 .spinnercolor {
-	box-shadow: 0px 0px 10px 0px #78c82d, inset 0px 0px 2px 0px #78c82d;
+	box-shadow: 0px 0px 10px 0px white, inset 0px 0px 2px 0px white;
 	cursor: url("../cursors/green.cur"), auto;
 }
 
 .spinnercolor:hover {
-	box-shadow: 0px 0px 15px 0px #78c82d, inset 0px 0px 8px 0px #78c82d;
+	box-shadow: 0px 0px 15px 0px white, inset 0px 0px 8px 0px white;
 }
 
 .spinnercolor:active {
-	box-shadow: 0px 0px 30px 0px #78c82d, inset 0px 0px 15px 0px #78c82d;
+	box-shadow: 0px 0px 30px 0px white, inset 0px 0px 15px 0px white;
 }
 
 @-webkit-keyframes spin {
@@ -356,13 +352,13 @@ img.color {
 
 	background-image: url("https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg");
 	background-size: cover;
+	cursor: url("../cursors/blue.cur"), auto;
 
 	width: 25px;
 	height: 40px;
 }
 
 .coffee_btn a:hover {
-	cursor: pointer;
 	box-shadow: 0 0 5px aqua;
 }
 

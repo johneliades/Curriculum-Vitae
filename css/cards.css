@@ -347,18 +347,6 @@ img.color {
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 20px;
-
-	border: 2px solid black;
-}
-
-.coffee_btn:hover {
-	border: 2px solid aqua;
-}
-
-.coffee_btn:active {
-	border: 2px solid aqua;
-	background-color: aqua;
-	box-shadow: 0 0 20px aqua;
 }
 
 .coffee_btn a {
@@ -366,12 +354,20 @@ img.color {
 
 	margin: auto;
 
-	cursor: pointer;
 	background-image: url("https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg");
 	background-size: cover;
 
 	width: 25px;
 	height: 40px;
+}
+
+.coffee_btn a:hover {
+	cursor: pointer;
+	box-shadow: 0 0 5px aqua;
+}
+
+.coffee_btn a:active {
+	box-shadow: 0 0 20px aqua;
 }
 
 @media only screen and (max-width: 1000px) {

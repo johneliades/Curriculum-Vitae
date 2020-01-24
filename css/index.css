@@ -54,7 +54,7 @@ iframe {
 	margin: 20px;
 	margin-left: 220px;
 
-	border-radius: 20px;
+	border-radius: 10px;
 
 	background-image: url('../images/background.jpg');
 	background-color: black;
@@ -74,7 +74,7 @@ iframe {
 	margin-left: 30px;
 	margin-right: 30px;
 
-	border: 6px solid white;
+	border: 6px solid black;
 	box-shadow: 0px 0px 10px 0px white;
 	border-radius: 50%;
 }
@@ -83,17 +83,24 @@ iframe {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
 	cursor: url("../cursors/blue.cur"), auto;
+	box-shadow: 0px 0px 23px 0px aqua;
+}
+
+#profile_pic:active {
+	animation: cycle 2s infinite;
+	animation-direction: alternate;
+	cursor: url("../cursors/blue.cur"), auto;
 	box-shadow: 0px 0px 30px 0px aqua;
 }
 
 #profile_pic:hover ~ #name {
 	color: aqua;
-	text-shadow: -3px -3px 5px aqua, -3px -3px 10px #FF0000;
+	text-shadow: -1px -1px 3px aqua;
 }
 
 #profile_pic:active ~ #name {
 	color: aqua;
-	text-shadow: -3px -3px 5px red;
+	text-shadow: -1px -1px 10px red;
 }
 
 @keyframes cycle {
@@ -127,10 +134,11 @@ iframe {
 	margin-right: 20px;
 	margin-bottom: 1vh;
 
+	cursor: url("../cursors/blue.cur"), auto;
+
 	font-size: 30px;
 	color: grey;
 	transition: font-size 0.2s;
-	cursor: url("../cursors/blue.cur"), auto;
 }
 
 .entry:hover {
@@ -175,7 +183,7 @@ iframe {
 	height: 40px;
 	width: 40px;
 
-	border: 3px solid white;
+	border: 3px solid black;
 	box-shadow: 0px 0px 5px 0px white;
 }
 
@@ -215,6 +223,8 @@ iframe {
 	#main_screen {
 		height: calc(100% - 30px);
 		width: calc(100% - 30px);
+
+		border-radius: 20px;
 
 		margin: 15px;
 		transition: 0.2s;

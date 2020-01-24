@@ -130,12 +130,12 @@ html, body {
 
 #profile_pic_full:hover ~ #name_full {
 	color: aqua;
-	text-shadow: -3px -3px 5px aqua;
+	text-shadow: -1px -1px 3px aqua;
 }
 
 #profile_pic_full:active ~ #name_full {
 	color: aqua;
-	text-shadow: -3px -3px 5px red;
+	text-shadow: -1px -1px 10px red;
 }
 
 #name_full {

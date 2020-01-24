@@ -95,12 +95,12 @@ iframe {
 
 #profile_pic:hover ~ #name {
 	color: aqua;
-	text-shadow: -1px -1px 3px aqua;
+	text-shadow: 0px 0px 20px aqua;
 }
 
 #profile_pic:active ~ #name {
 	color: aqua;
-	text-shadow: -1px -1px 10px red;
+	text-shadow: 0px 0px 20px red;
 }
 
 @keyframes cycle {

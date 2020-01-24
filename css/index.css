@@ -126,10 +126,6 @@ iframe {
 	transition: 0.2s;
 }
 
-#entry_wrapper {
-	cursor: url("../cursors/blue.cur"), auto;
-}
-
 .entry {
 	display: block;
 	text-align: center;

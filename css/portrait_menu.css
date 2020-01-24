@@ -109,12 +109,19 @@ html, body {
 	margin-left: 30px;
 	margin-right: 30px;
 
-	border: 6px solid white;
+	border: 6px solid black;
 	box-shadow: 0px 0px 10px 0px white;
 	border-radius: 50%;
 }
 
 #profile_pic_full:hover {
+	animation: cycle 2s infinite;
+	animation-direction: alternate;
+	cursor: url("../cursors/blue.cur"), auto;
+	box-shadow: 0px 0px 23px 0px aqua;
+}
+
+#profile_pic_full:active {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
 	cursor: url("../cursors/blue.cur"), auto;
@@ -132,7 +139,12 @@ html, body {
 
 #profile_pic_full:hover ~ #name_full {
 	color: aqua;
-	text-shadow: -3px -3px 5px aqua;
+	text-shadow: -1px -1px 2px aqua;
+}
+
+#profile_pic_full:active ~ #name_full {
+	color: aqua;
+	text-shadow: -1px -1px 10px red;
 }
 
 .fade_down {

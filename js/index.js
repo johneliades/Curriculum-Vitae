@@ -94,7 +94,7 @@ function get_quote() {
 						margin-right: 20vw;
 						margin-left: 20vw;
 						text-align: center;
-						text-shadow: 0 0 2px #4B6364;
+						text-shadow: 0 0 1.5px #4B6364, 0 0 6px white;
 						color: transparent;
 						font-weight: bold;
 					}
@@ -102,7 +102,6 @@ function get_quote() {
 					@media screen and (max-width: 800px) {
 						p.custom_font {
 							font-size: 18px;
-							text-shadow: 0 0 1px #4B6364;
 						}
 					}
 
@@ -237,15 +236,14 @@ function initFrame() {
 						margin-right: 20vw;
 						margin-left: 20vw;
 						text-align: center;
-						text-shadow: 0 0 2px #4B6364;
+						text-shadow: 0 0 1.5px #4B6364, 0 0 6px white;
 						font-weight: bold;
 						color: transparent;
 					}
 
 					@media screen and (max-width: 800px) {
 						p.custom_font {
-							font-size: 20px;
-							text-shadow: 0 0 1px #4B6364;
+							font-size: 18px;
 						}
 					}
 

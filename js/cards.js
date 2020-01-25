@@ -44,14 +44,18 @@ var span = document.getElementsByClassName("close")[0];
 var modal_open = false;
 var document_name;
 
+
+// !! Each document must have a unique name !!
 function toggle_modal(name) {
 	if(modal && modal_content) {
+		// Close only when the same document is clicked again else reload
 		if(modal_open && document_name==name) {
 			modal.style.display = "none";
 			modal_open = false;
 		}
 		else {
-			if(modal_open)
+			// Blur until iframe is loaded again(onload=loading_finished())
+			if(modal_open || document_name==name)
 				modal_content.style.opacity = "10%"
 
 			document_name = name;
@@ -62,6 +66,7 @@ function toggle_modal(name) {
 }
 
 function loading_finished() {
+	// Remove blur
 	if(modal_content)
 		modal_content.style.opacity = "100%"
 }
@@ -74,6 +79,7 @@ span.onclick = function() {
 	}
 }
 
+// When the user presses (Esc), close the modal
 window.addEventListener('keydown', function(e){
 	if(modal) {
 		if (e.keyCode == (window.event ? 27 : e.DOM_VK_ESCAPE)) {

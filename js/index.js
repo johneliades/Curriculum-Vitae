@@ -94,7 +94,8 @@ function get_quote() {
 						margin-right: 20vw;
 						margin-left: 20vw;
 						text-align: center;
-						text-shadow: 0 0 3px aqua, 0 0 5px #0000FF;
+						text-shadow: 0 0 2px #4B6364;
+						color: transparent;
 						font-weight: bold;
 					}
 
@@ -235,8 +236,9 @@ function initFrame() {
 						margin-right: 20vw;
 						margin-left: 20vw;
 						text-align: center;
-						text-shadow: 0 0 3px aqua, 0 0 5px #0000FF;
+						text-shadow: 0 0 2px #4B6364;
 						font-weight: bold;
+						color: transparent;
 					}
 
 					@media screen and (max-width: 800px) {

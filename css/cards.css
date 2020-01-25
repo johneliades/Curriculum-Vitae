@@ -170,11 +170,11 @@ a.color:hover {
 #modal:after {
 	content: "";
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: 1px;
+	right: 1px;
 	display: block;
-	width: 17px;
-	height: 17px;	  
+	width: 15px;
+	height: 15px;	  
 	cursor: nwse-resize;
 }
 

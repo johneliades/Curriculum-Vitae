@@ -40,27 +40,47 @@ function color_change() {
 var modal = document.getElementById("modal");
 var span = document.getElementsByClassName("close")[0];
 
-function show_modal() {
+var modal_open = false;
+var document_name;
+
+function toggle_modal(name) {
 	if(modal) {
-		modal.style.display = "block";
+		if(modal_open && document_name==name) {
+			modal.style.display = "none";
+			document_name = ""	
+			modal_open = false;
+		}
+		else {
+			document_name = name;
+			modal.style.display = "block";
+			modal_open = true;
+		}
 	}
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-	modal.style.display = "none";
+	if(modal) {
+		modal_open = false;
+		document_name = ""	
+		modal.style.display = "none";
+	}
 }
 
 window.addEventListener('keydown', function(e){
 	if (e.keyCode == (window.event ? 27 : e.DOM_VK_ESCAPE)) {
-		modal.style.display = "none";
+		if(modal) {
+			modal_open = false;
+			document_name = ""	
+			modal.style.display = "none";
+		}
 	}
 });
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 	if (event.target != modal) {
-		console.log("This shouldn't hide modal again");
+		//console.log("This closes the modal the first time too");
 
 		//modal.style.display = "none";
 	}

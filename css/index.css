@@ -12,7 +12,6 @@
 }
 
 body, html, #menu_left, #main_screen {
-	overscroll-behavior: auto;
 	position: fixed;
 	margin: 0;
 	height: 100%;

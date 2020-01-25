@@ -38,19 +38,22 @@ function color_change() {
 }
 
 var modal = document.getElementById("modal");
+var modal_content = document.getElementById("modal_content");
 var span = document.getElementsByClassName("close")[0];
 
 var modal_open = false;
 var document_name;
 
 function toggle_modal(name) {
-	if(modal) {
+	if(modal && modal_content) {
 		if(modal_open && document_name==name) {
 			modal.style.display = "none";
-			document_name = ""	
 			modal_open = false;
 		}
 		else {
+			if(modal_open)
+				modal_content.style.opacity = "10%"
+
 			document_name = name;
 			modal.style.display = "block";
 			modal_open = true;
@@ -58,20 +61,23 @@ function toggle_modal(name) {
 	}
 }
 
+function loading_finished() {
+	if(modal_content)
+		modal_content.style.opacity = "100%"
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
 	if(modal) {
 		modal_open = false;
-		document_name = ""	
 		modal.style.display = "none";
 	}
 }
 
 window.addEventListener('keydown', function(e){
-	if (e.keyCode == (window.event ? 27 : e.DOM_VK_ESCAPE)) {
-		if(modal) {
+	if(modal) {
+		if (e.keyCode == (window.event ? 27 : e.DOM_VK_ESCAPE)) {
 			modal_open = false;
-			document_name = ""	
 			modal.style.display = "none";
 		}
 	}

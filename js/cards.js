@@ -65,11 +65,3 @@ window.onclick = function(event) {
 		//modal.style.display = "none";
 	}
 }
-
-function show_coffee() {
-	var html='https://www.buymeacoffee.com/widget/page/johneliades?description=Support%20me%20on%20Buy%20me%20a%20coffee!&color=%235F7FFF';
-
-	if(modal) {
-		modal.src = html;
-	}
-}

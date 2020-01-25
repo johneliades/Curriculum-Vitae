@@ -13,8 +13,8 @@
 
 body, html, #menu_left, #main_screen {
 	margin: 0;
-	height: -webkit-fill-available;
 	height: 100%;
+	height: -webkit-fill-available;
 	width: 100%;
 	scrollbar-width: none;
 	overflow-x: hidden;

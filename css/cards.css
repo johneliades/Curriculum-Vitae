@@ -44,14 +44,14 @@ html, body {
 }
 
 html {
-	height: -webkit-fill-available;
 	height: 100%;
+	height: -webkit-fill-available;
 }
 
 body {
     overflow: visible;
+   	min-height: 100%;
 	min-height: -webkit-fill-available;
-	height: 100%;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }

@@ -94,7 +94,7 @@ function get_quote() {
 						margin-right: 20vw;
 						margin-left: 20vw;
 						text-align: center;
-						text-shadow: 0 0 1.5px #4B6364, 0 0 6px white;
+						text-shadow: 0 0 1.5px #4B6364, 1px 1px 5px white;
 						color: transparent;
 						font-weight: bold;
 					}
@@ -151,8 +151,10 @@ function hide_bird() {
 	iframe.contentWindow.document.close();
 
 	var element = document.getElementById("main_screen");
-	if(element)			
+	if(element)	{
 		element.style.backgroundSize = "0px 0px";
+		element.style.boxShadow = "none";
+	}
 
 	var bird = document.getElementById("bird");
 	if(bird) {
@@ -168,8 +170,10 @@ function hide_bird() {
 <!-- Shows the welcome message and then enables the bird -->
 function clearFrame() {
 	var element = document.getElementById("main_screen");
-	if(element)			
+	if(element)	{
+		element.style.boxShadow = "inset 0px 0px 10px 0px white";
 		element.style.backgroundSize = "cover";
+	}
 
 	var bird = document.getElementById("bird");
 	if(bird) {
@@ -236,7 +240,7 @@ function initFrame() {
 						margin-right: 20vw;
 						margin-left: 20vw;
 						text-align: center;
-						text-shadow: 0 0 1.5px #4B6364, 0 0 6px white;
+						text-shadow: 0 0 1.5px #4B6364, 1px 1px 5px white;
 						font-weight: bold;
 						color: transparent;
 					}

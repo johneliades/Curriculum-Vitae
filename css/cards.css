@@ -242,14 +242,19 @@ a.color:hover {
 .column {
 	position: relative;
 	float: left;
-	width: 48.6%;
-	margin-right: 0.7%;
-	margin-left: 0.7%;
+	width: 48%;
+	margin-right: 1%;
+	margin-left: 1%;
 	text-align: center;
 
 	padding-top: 30px;
+	
 	border: thick solid black;
 	border-radius: 25px;
+}
+
+.column_color {
+	box-shadow: 0 0 10px 0 white;
 }
 
 .row {
@@ -267,7 +272,7 @@ a.color:hover {
 }
 
 iframe {
-	width: 45vw;
+	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
 	border: thick solid aqua;
@@ -280,7 +285,7 @@ iframe.color {
 }
 
 img {
-	width: 45vw;
+	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
 	border: thick solid aqua;
@@ -405,6 +410,10 @@ img.color {
 		border: none;
 
 		margin-top: 5px;
+	}
+
+	.column_color {
+		box-shadow: none;
 	}
 
 	.row {

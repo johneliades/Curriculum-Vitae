@@ -35,6 +35,10 @@ function color_change() {
 	for (i=0; i<spinner_buttons.length; i++) {
 		spinner_buttons[i].classList.toggle("spinnercolor");
 	}
+
+	var column_border = document.getElementsByClassName("column");
+	for(i=0; i<column_border.length; i++)
+		column_border[i].classList.toggle("column_color");
 }
 
 var modal = document.getElementById("modal");

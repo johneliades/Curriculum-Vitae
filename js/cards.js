@@ -51,6 +51,8 @@ var document_name;
 
 // !! Each document must have a unique name !!
 function toggle_modal(name) {
+	modal_content.style.opacity = "10%"
+
 	if(modal && modal_content) {
 		// Close only when the same document is clicked again else reload
 		if(modal_open && document_name==name) {
@@ -59,8 +61,6 @@ function toggle_modal(name) {
 		}
 		else {
 			// Blur until iframe is loaded again(onload=loading_finished())
-			if(modal_open || document_name==name)
-				modal_content.style.opacity = "10%"
 
 			document_name = name;
 			modal.style.display = "block";

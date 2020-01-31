@@ -258,7 +258,7 @@ function initFrame() {
 					<div class="middle">
 						<p class="custom_font">
 							<b>
-								Shoot the bird & enjoy the quote ;)
+								Shoot the bird & <br> enjoy the quote ;)
 							</b>
 						</p>
 					</div>

@@ -5,40 +5,41 @@ for (i=0; i<spinner_buttons.length; i++) {
 	spinner_buttons[i].addEventListener("click", color_change);
 }
 
+var main=true;
+
 function color_change() {
 	var i;
-
-	var element_headers = document.querySelectorAll("h2");
-	for (i=0; i<element_headers.length; i++)
-		element_headers[i].classList.toggle("color");
-	
-	var element_buttons = document.querySelectorAll("a.button");
-	for(i=0; i<element_buttons.length; i++)
-		element_buttons[i].classList.toggle("color");
-	
-	var background_body = document.getElementsByTagName("body")[0];
-	if(background_body)
-		background_body.classList.toggle("color");
+	const element = document.querySelector('body');
+	const style = getComputedStyle(element);
 
 	var background_html = document.getElementsByTagName("html")[0];
 	if(background_html)
 		background_html.classList.toggle("color");
 
-	var iframe_border = document.querySelectorAll("iframe");
-	for(i=0; i<iframe_border.length; i++)
-		iframe_border[i].classList.toggle("color");
+	if(main) {
+		element.style.setProperty('--main-bg-color', '#181818');
+		element.style.setProperty('--main-font-color', '#78C82D');
 
-	var image_border = document.querySelectorAll("img");
-	for(i=0; i<image_border.length; i++)
-		image_border[i].classList.toggle("color");
-
-	for (i=0; i<spinner_buttons.length; i++) {
-		spinner_buttons[i].classList.toggle("spinnercolor");
+		main=false;
 	}
+	else {
+		element.style.setProperty('--main-bg-color', 'black');
+		element.style.setProperty('--main-font-color', 'aqua');
 
+		main=true;
+	}
+	
 	var column_border = document.getElementsByClassName("column");
 	for(i=0; i<column_border.length; i++)
 		column_border[i].classList.toggle("column_color");
+
+	var element_buttons = document.querySelectorAll("a.button");
+	for(i=0; i<element_buttons.length; i++)
+		element_buttons[i].classList.toggle("cursor");
+
+	for (i=0; i<spinner_buttons.length; i++) {
+		spinner_buttons[i].classList.toggle("spinnercursor");
+	}
 }
 
 var modal = document.getElementById("modal");

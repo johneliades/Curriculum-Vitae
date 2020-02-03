@@ -1,9 +1,2 @@
 bird not teleporting at start on edge and safari
 portrait images appear first
-same colors in variable
-
-element {
-  --main-bg-color: brown;
-}
-
-var(--main-bg-color)

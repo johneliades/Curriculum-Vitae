@@ -5,7 +5,7 @@ for (i=0; i<spinner_buttons.length; i++) {
 	spinner_buttons[i].addEventListener("click", color_change);
 }
 
-var main=true;
+var main_color=true;
 
 function color_change() {
 	var i;
@@ -16,17 +16,17 @@ function color_change() {
 	if(background_html)
 		background_html.classList.toggle("color");
 
-	if(main) {
+	if(main_color) {
 		element.style.setProperty('--main-bg-color', '#181818');
 		element.style.setProperty('--main-font-color', '#78C82D');
 
-		main=false;
+		main_color=false;
 	}
 	else {
 		element.style.setProperty('--main-bg-color', 'black');
 		element.style.setProperty('--main-font-color', 'aqua');
 
-		main=true;
+		main_color=true;
 	}
 	
 	var column_border = document.getElementsByClassName("column");
@@ -48,7 +48,6 @@ var span = document.getElementsByClassName("close")[0];
 
 var modal_open = false;
 var document_name;
-
 
 // !! Each document must have a unique name !!
 function toggle_modal(name) {

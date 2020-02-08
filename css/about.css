@@ -57,6 +57,8 @@ p.custom_font {
 h2, h3 {
 	font-family: "Roboto";
 	color: aqua;
+	text-shadow: 0 0 15px aqua;
+
 	font-size: 25px;
 
 	text-align: center;
@@ -64,6 +66,8 @@ h2, h3 {
 
 h3 {
 	color: lightgreen;
+	text-shadow: 0 0 15px lightgreen;
+
 	font-size: 21px;
 }
 

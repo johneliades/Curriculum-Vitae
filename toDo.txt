@@ -1,2 +1,3 @@
+detailed explanation of each project in modal
 bird not teleporting at start on edge and safari
 portrait images appear first

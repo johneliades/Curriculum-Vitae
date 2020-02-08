@@ -82,6 +82,11 @@ p.custom_font {
 	padding-right: 70px;
 }
 
+span {
+	color: var(--main-font-color);
+	text-shadow: 0px 0px 10px var(--main-font-color);
+}
+
 h2, p {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;

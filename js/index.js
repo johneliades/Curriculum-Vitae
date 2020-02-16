@@ -127,7 +127,7 @@ function get_quote() {
 
 <!-- Disables the bird -->
 function hide_bird(tabName) {
-	document.title = "[john@portfolio]-[" + tabName + "]";
+	document.title = "[John@Portfolio]-[" + tabName + "]";
 
 	iframe=document.getElementById('iframe_main');
 	iframe.src = "about:blank";
@@ -171,7 +171,7 @@ function hide_bird(tabName) {
 
 <!-- Shows the welcome message and then enables the bird -->
 function clearFrame() {
-	document.title = "[john@portfolio]-[~]"
+	document.title = "[John@Portfolio]-[~]"
 
 	var element = document.getElementById("main_screen");
 	if(element)	{

@@ -428,19 +428,19 @@ video {
 
 	iframe {
 		height: 50vw;
-		width: 95vw;
+		width: 90vw;
 		min-height: 200px;
 	}
 
 	img {
 		height: 50vw;
-		width: 95vw;
+		width: 90vw;
 		min-height: 200px;
 	}
 
 	video {
 		height: 50vw;
-		width: 95vw;
+		width: 90vw;
 		min-height: 200px;
 	}
 }

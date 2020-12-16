@@ -20,6 +20,10 @@ html, body {
 	background-color: rgba(24, 24, 24, 1);
 }
 
+.nav_menu:focus {
+	outline: none;
+}
+
 .nav_menu {
 	height: 100%;
 	display: flex;

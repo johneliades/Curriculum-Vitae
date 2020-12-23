@@ -69,12 +69,6 @@ function toggle_modal(name) {
 	}
 }
 
-function loading_finished() {
-	// Remove blur
-	if(modal_content)
-		modal_content.style.opacity = "100%"
-}
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
 	if(modal) {

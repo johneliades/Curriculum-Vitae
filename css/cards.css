@@ -298,6 +298,15 @@ video {
 	box-shadow: 0px 0px 12px 0px white;
 }
 
+.gif {
+	position:absolute;
+	background: white;
+}
+
+.gif:hover {
+	opacity:0;
+}
+
 .spinner {
 	width: 23px;
 	height: 23px;

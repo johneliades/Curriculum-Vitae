@@ -13,7 +13,9 @@
 		}
 
 	</style>
-		
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158250593-1"></script>
 	<script>
@@ -21,21 +23,15 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'UA-158250593-1');
-
-		function loading_finished() {
-			// Remove blur
-			if(modal_content)
-				modal_content.style.opacity = "100%"
-		}
 	</script>
 </head>
 
 <body>
 	<div id="modal">
-		<span class="close">&times;</span>
+		<span class="close_modal">&times;</span>
 		
 		<div id="modal_content">
-			<iframe id="iframe_modal" name="iframe_modal" onload="loading_finished()"></iframe>
+			<iframe id="iframe_modal" name="iframe_modal"></iframe>
 		</div>
 	</div>
 
@@ -109,7 +105,7 @@
 				</p>
 
 				<a href="https://github.com/johneliades/portal" target="_blank" class="button bouncy">View Repo in Github</a>
-				<a href="documents/Portal_Design_Document.pdf" target="iframe_modal" onclick="toggle_modal('Design Document')" class="button bouncy">Design Document</a>
+				<a href="documents/Portal_Design_Document.pdf" target="iframe_modal" class="button bouncy modal_link">Design Document</a>
 			</div>
 		</div>
 	</div>
@@ -180,7 +176,7 @@
 	</div>
 
 	<div class="coffee_btn">
-		<a target="iframe_modal" href="https://www.buymeacoffee.com/widget/page/johneliades?description=Support%20me%20on%20Buy%20me%20a%20coffee!&color=%235F7FFF" onclick="toggle_modal('Coffee');"></a>
+		<a target="iframe_modal" href="https://www.buymeacoffee.com/widget/page/johneliades?description=Support%20me%20on%20Buy%20me%20a%20coffee!&color=%235F7FFF" class="modal_link" ></a>
 	</div>
 
 	<script src="js/cards.js"></script>

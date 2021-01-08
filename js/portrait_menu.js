@@ -1,7 +1,7 @@
 const nav = document.querySelector('#menu_full');
 const menu = document.querySelector('#menu');
 const menuToggle = document.querySelector('.nav_toggle');
-const entries = document.getElementsByClassName('close');
+const entries = document.getElementsByClassName('close_menu');
 let isMenuOpen = false;
 
 // TOGGLE MENU ACTIVE STATE
@@ -15,8 +15,7 @@ menuToggle.addEventListener('click', e => {
 	nav.classList.toggle('nav--open');
 });
 
-var i;
-for(i=0; i<entries.length; i++) {
+for(var i=0; i<entries.length; i++) {
 	entries[i].addEventListener('click', e => {
 		isMenuOpen = !isMenuOpen;
 		

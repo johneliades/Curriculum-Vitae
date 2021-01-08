@@ -1,5 +1,5 @@
 <!-- Chooses quote and prints it in iframe -->
-function get_quote() {
+$("#bird_container").click(function() {
 	var myArray = [
 		"❝A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila.❞",
 		"❝Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.❞",
@@ -123,11 +123,19 @@ function get_quote() {
 
 	iframe.contentWindow.document.write(html);
 	iframe.contentWindow.document.close();
-}
+})
 
 <!-- Disables the bird -->
-function hide_bird(tabName) {
-	document.title = "[John@Portfolio]-[" + tabName + "]";
+$(".hide_bird").click(function() {
+	var href = $(this).attr('href');
+	href = href.replace('documents/','');
+	href = 	href.replace('.html','');
+	href = 	href.replace('.png','');
+	href = 	href.replace('.pdf','');
+
+	href = href.substr(0,1).toUpperCase() + href.substr(1);
+
+	document.title = "[John@Portfolio]-[" + href + "]";
 
 	iframe=document.getElementById('iframe_main');
 	iframe.src = "about:blank";
@@ -167,10 +175,10 @@ function hide_bird(tabName) {
 	var bird_container = document.getElementById("bird_container");
 	if(bird_container)
 		bird_container.style.zIndex = -1;
-}
+})
 
 <!-- Shows the welcome message and then enables the bird -->
-function clearFrame() {
+$(".clear_frame").click(function() {
 	document.title = "[John@Portfolio]-[~]"
 
 	var element = document.getElementById("main_screen");
@@ -190,7 +198,9 @@ function clearFrame() {
 		bird_container.style.zIndex = 0;
 
 	initFrame();
-}
+})
+
+$(document).ready(initFrame);
 
 <!-- Shows the welcome message -->
 function initFrame() {

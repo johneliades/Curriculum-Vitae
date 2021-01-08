@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/portrait_menu.css">
 	<link rel="stylesheet" href="css/bird.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158250593-1"></script>
@@ -32,25 +34,25 @@
 	<title>[John@Portfolio]-[~]</title>
 </head>
 
-<body onload="initFrame()">
+<body>
 	<div id="main_screen">
-		<iframe id="iframe_main" name="iframe_main" onload="this.contentWindow.focus()" onmouseenter="this.contentWindow.focus()"></iframe>
+		<iframe id="iframe_main" name="iframe_main"></iframe>
 
-		<div id="bird_container" class="bird-container" onclick="get_quote()">
+		<div id="bird_container" class="bird-container">
 			<div id="bird" class="bird"></div>
 		</div>
 	</div>
 	
 	<div id="menu_left" class="outer">
 		<div class="middle">
-			<img src="images/profile.jpg" draggable="false" id="profile_pic" alt="Home Screen" onclick="clearFrame()">
+			<img src="images/profile.jpg" draggable="false" id="profile_pic" class="clear_frame" alt="Home Screen">
 
 			<div id="name" class="custom_font unselectable"> John Eliades </div>
 
 			<div id="entry_wrapper" style="width: 100%">
-				<a href="about.html" onclick="hide_bird('About')" target="iframe_main" class="custom_font fade entry"> About </a>
-				<a href="projects.html" onclick="hide_bird('Projects')" target="iframe_main" class="custom_font fade entry"> Projects </a>
-				<a href="events.html" onclick="hide_bird('Events')" target="iframe_main" class="custom_font fade entry"> Events </a>
+				<a href="about.html" target="iframe_main" class="custom_font fade entry hide_bird"> About </a>
+				<a href="projects.html" target="iframe_main" class="custom_font fade entry hide_bird"> Projects </a>
+				<a href="events.html" target="iframe_main" class="custom_font fade entry hide_bird"> Events </a>
 			</div>
 
 			<div id="icon_wrapper">
@@ -62,7 +64,7 @@
 					<img src="images/github.png" alt="Github">
 				</a>
 			
-				<a href="documents/grades.pdf" target="iframe_main" class="icon" onclick="hide_bird('Grades')">
+				<a href="documents/grades.pdf" target="iframe_main" class="icon hide_bird">
 					<img src="images/uth.png" alt="Uth">
 				</a>
 			</div>
@@ -71,18 +73,17 @@
 
 	<div id="menu_full" class="nav">
 		<div class="nav_menu fade_down" id="menu" tabindex="-1">
-			<img src="images/profile.jpg" draggable="false" id="profile_pic_full" class="close"
-				style="margin: auto; margin-top: 0; margin-bottom: 10px;" alt="Home Screen" onclick="
-					clearFrame()">
+			<img src="images/profile.jpg" draggable="false" id="profile_pic_full" class="close_menu clear_frame"
+				style="margin: auto; margin-top: 0; margin-bottom: 10px;" alt="Home Screen">
 
 			<div id="name_full" class="custom_font unselectable fade_down"> John Eliades </div>
 
 			<div class="fade_down" style="text-align: center; width: 150px; margin: auto; margin-top: 0px; margin-bottom: 0px;">
-				<a href="about.html" onclick="hide_bird('About')" target="iframe_main" class="custom_font entry close"> About </a>
+				<a href="about.html" target="iframe_main" class="custom_font entry close_menu hide_bird"> About </a>
 
-				<a href="projects.html" onclick="hide_bird('Projects')" target="iframe_main" class="custom_font entry close"> Projects </a>
+				<a href="projects.html" target="iframe_main" class="custom_font entry close_menu hide_bird"> Projects </a>
 
-				<a href="events.html" onclick="hide_bird('Events')" target="iframe_main" class="custom_font entry close"> Events </a>
+				<a href="events.html" target="iframe_main" class="custom_font entry close_menu hide_bird"> Events </a>
 			</div>
 
 			<div id="icon_wrapper_full">
@@ -94,7 +95,7 @@
 					<img src="images/github.png" alt="Github">
 				</a>
 
-				<a href="documents/grades.pdf" target="iframe_main" class="fade_down close icon" onclick="hide_bird('Grades')">
+				<a href="documents/grades.pdf" target="iframe_main" class="fade_down close_menu icon hide_bird">
 					<img src="images/uth.png" alt="Uth">
 				</a>
 			</div>

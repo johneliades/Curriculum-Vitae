@@ -298,12 +298,12 @@ video {
 	box-shadow: 0px 0px 12px 0px white;
 }
 
-.gif {
+.png {
 	position:absolute;
-	background: white;
+	background: var(--main-bg-color);
 }
 
-.gif:hover {
+.png:hover {
 	opacity:0;
 }
 

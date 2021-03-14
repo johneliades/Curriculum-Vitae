@@ -19,6 +19,7 @@ $(".spinner").click(function() {
 	$('html').toggleClass("color");
 	$('.column').toggleClass("column_color");
 	$('a.button').toggleClass("cursor");
+	$(".png").toggleClass("spinnercursor");
 });
 
 $(".modal_link").click(function() {

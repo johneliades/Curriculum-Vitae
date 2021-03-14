@@ -301,6 +301,7 @@ video {
 .png {
 	position:absolute;
 	background: var(--main-bg-color);
+	cursor: url("../cursors/blue.cur"), auto;
 }
 
 .png:hover {

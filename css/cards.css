@@ -82,7 +82,7 @@ p.custom_font {
 	padding-right: 70px;
 }
 
-span {
+.mark {
 	color: var(--main-font-color);
 	text-shadow: 0px 0px 10px var(--main-font-color);
 }

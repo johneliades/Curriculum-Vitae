@@ -137,10 +137,12 @@ $(".hide_bird").click(function() {
 
 	document.title = "[John@Portfolio]-[" + href + "]";
 
+	$("#iframe_main").focus();
+
 	iframe=document.getElementById('iframe_main');
 	iframe.src = "about:blank";
 	iframe.contentWindow.document.open();
-	
+
 	<!-- Change cursor -->
 	html = `
 		<html>

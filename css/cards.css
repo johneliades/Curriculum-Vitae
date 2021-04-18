@@ -80,6 +80,8 @@ p.custom_font {
 
 	padding-left: 70px;
 	padding-right: 70px;
+
+	line-height: 150%;
 }
 
 .mark {

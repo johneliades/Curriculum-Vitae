@@ -127,7 +127,7 @@ a.button:active {
 	font-weight: bold;
 }
 
-a.button:focus {
+a.button:focus-visible {
 	outline: 3px solid var(--main-font-color);
 	outline-offset: 7px;
 	box-shadow: 0 0 0 10px var(--main-bg-color);
@@ -217,6 +217,11 @@ a.cursor {
 
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.close_modal:active {
+	color: aqua;
+	border-color: aqua;
 }
 
 #modal_content {
@@ -386,7 +391,7 @@ video {
 	box-shadow: 0 0 5px white;
 }
 
-.coffee_btn a:focus {
+.coffee_btn a:focus-visible {
 	outline: 3px solid var(--main-font-color);
 	outline-offset: 7px;
 }

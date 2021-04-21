@@ -61,6 +61,7 @@ body {
 	min-height: 100%;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	padding-bottom: 6px;
 	background-color: var(--main-bg-color);
 }
 
@@ -124,6 +125,11 @@ a.button:hover {
 a.button:active {
 	color: white;
 	font-weight: bold;
+}
+
+a.button:focus {
+	outline: 3px solid var(--main-font-color);
+	outline-offset: 7px;
 }
 
 a.cursor {
@@ -377,6 +383,11 @@ video {
 
 .coffee_btn a:hover {
 	box-shadow: 0 0 5px white;
+}
+
+.coffee_btn a:focus {
+	outline: 3px solid var(--main-font-color);
+	outline-offset: 7px;
 }
 
 .coffee_btn a:active {

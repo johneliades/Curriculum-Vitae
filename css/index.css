@@ -151,6 +151,11 @@ iframe {
 	border: 2px solid aqua;
 }
 
+.entry:focus {
+	outline: 2px solid white;
+	outline-offset: 5px;
+}
+
 .entry:active {
 	background-color: aqua;
 	color: black;
@@ -197,6 +202,11 @@ iframe {
 	border-color: aqua;
 	border-width: 6px;
 	box-shadow: 0px 0px 15px 0px aqua;
+}
+
+.icon:focus {
+	outline: 2px solid white;
+	outline-offset: 6px;
 }
 
 .outer {

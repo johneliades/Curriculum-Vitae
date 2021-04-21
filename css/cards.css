@@ -130,6 +130,7 @@ a.button:active {
 a.button:focus {
 	outline: 3px solid var(--main-font-color);
 	outline-offset: 7px;
+	box-shadow: 0 0 0 10px var(--main-bg-color);
 }
 
 a.cursor {

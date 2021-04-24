@@ -79,6 +79,8 @@ iframe {
 	border: 6px solid black;
 	box-shadow: 0px 0px 10px 0px white;
 	border-radius: 50%;
+
+	transition: box-shadow 150ms linear;
 }
 
 #profile_pic:hover {
@@ -140,7 +142,7 @@ iframe {
 
 	font-size: 30px;
 	color: grey;
-	transition: font-size 0.2s;
+	transition: font-size 0.2s, background-color 150ms linear, color 150ms linear;
 }
 
 .entry:hover {

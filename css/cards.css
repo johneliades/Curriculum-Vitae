@@ -63,6 +63,8 @@ body {
 	margin-bottom: 15px;
 	padding-bottom: 6px;
 	background-color: var(--main-bg-color);
+
+	transition: background-color 200ms linear;
 }
 
 .fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
@@ -232,6 +234,8 @@ a.cursor {
 
 	height: calc(95% - 40px);
 	width: 96%;
+
+	transition: opacity 500ms linear;
 }
 
 #iframe_modal {

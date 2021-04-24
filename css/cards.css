@@ -389,6 +389,8 @@ video {
 
 	width: 25px;
 	height: 40px;
+
+	transition: box-shadow 200ms linear;
 }
 
 .coffee_btn a:hover {

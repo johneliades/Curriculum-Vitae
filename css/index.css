@@ -80,7 +80,7 @@ iframe {
 	box-shadow: 0px 0px 10px 0px white;
 	border-radius: 50%;
 
-	transition: box-shadow 200ms linear;
+	transition: box-shadow 300ms linear;
 }
 
 #profile_pic:hover {

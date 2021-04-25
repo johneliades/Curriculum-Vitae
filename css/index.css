@@ -189,6 +189,7 @@ iframe {
 
 .icon {
 	transition: box-shadow 0.2s linear;
+	outline: none;
 }
 
 .icon img {
@@ -201,7 +202,7 @@ iframe {
 	box-shadow: 0px 0px 5px 0px white;
 }
 
-.icon img:hover, .icon:focus {
+.icon img:hover, .icon:focus > img {
 	height: 34px;
 	width: 34px;
 
@@ -209,7 +210,6 @@ iframe {
 	border-color: aqua;
 	border-width: 6px;
 	box-shadow: 0px 0px 15px 0px aqua;
-	outline: none;
 }
 
 .outer {

@@ -44,6 +44,8 @@ iframe {
 
 	background-color: black;
 	overflow-y: auto;
+
+	animation: opac 0.8s;
 }
 
 #main_screen {
@@ -81,8 +83,6 @@ iframe {
 	border-radius: 50%;
 
 	transition: box-shadow 300ms linear;
-
-	animation: opac 0.8s;
 }
 
 #profile_pic:hover {
@@ -130,8 +130,6 @@ iframe {
 	color: white;
 
 	transition: 0.2s;
-
-	animation: opac 0.8s;
 }
 
 .entry {
@@ -147,7 +145,6 @@ iframe {
 	font-size: 30px;
 	color: grey;
 	transition: all 0.2s linear;
-	animation: opac 0.8s;
 }
 
 .entry:hover, .entry:focus {

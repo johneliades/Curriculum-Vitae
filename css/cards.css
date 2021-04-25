@@ -64,10 +64,17 @@ body {
 	padding-bottom: 6px;
 	background-color: var(--main-bg-color);
 
-	transition: background-color 200ms linear;
+	transition: background-color 0.2s linear;
 }
 
-.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac {
+	from {
+		opacity:0
+	} 
+	to {
+		opacity:1
+	}
+}
 
 h2 {
 	font-family: "Roboto";
@@ -268,6 +275,8 @@ a.cursor {
 	
 	border: thick solid black;
 	border-radius: 25px;
+
+	animation: opac 0.8s;
 }
 
 .column_color {

@@ -81,6 +81,8 @@ $("#bird_container").click(function() {
 						position: absolute;
 						height: 100%;
 						width: 100%;
+
+						animation:opac 0.8s;
 					}
 
 					.middle {
@@ -105,10 +107,17 @@ $("#bird_container").click(function() {
 						}
 					}
 
-					.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+					@keyframes opac{
+						from{
+							opacity:0
+						} 
+						to{
+							opacity:1
+						}
+					}
 				</style>
 
-				<div class="outer breaking unselectable fade">
+				<div class="outer breaking unselectable">
 					<div class="middle">
 						<p class="custom_font">
 							<b>`
@@ -243,6 +252,8 @@ function initFrame() {
 						position: absolute;
 						height: 100%;
 						width: 100%;
+		
+						animation:opac 0.8s;
 					}
 
 					.middle {
@@ -267,10 +278,16 @@ function initFrame() {
 						}
 					}
 
-					.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+					@keyframes opac{
+						from{
+							opacity:0
+						} to{
+							opacity:1
+						}
+					}
 				</style>
 
-				<div class="outer unselectable fade">
+				<div class="outer unselectable">
 					<div class="middle">
 						<p class="custom_font">
 							<b>

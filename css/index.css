@@ -81,6 +81,8 @@ iframe {
 	border-radius: 50%;
 
 	transition: box-shadow 300ms linear;
+
+	animation: opac 0.8s;
 }
 
 #profile_pic:hover {
@@ -128,6 +130,8 @@ iframe {
 	color: white;
 
 	transition: 0.2s;
+
+	animation: opac 0.8s;
 }
 
 .entry {
@@ -142,20 +146,17 @@ iframe {
 
 	font-size: 30px;
 	color: grey;
-	transition: font-size 0.2s, background-color 150ms linear, color 150ms linear;
+	transition: all 0.2s linear;
+	animation: opac 0.8s;
 }
 
-.entry:hover {
+.entry:hover, .entry:focus {
 	color: aqua;
 	font-size: 35px;
 	box-shadow: 0px 0px 15px 0px aqua;
 	border-radius: 15px;
 	border: 2px solid aqua;
-}
-
-.entry:focus-visible {
-	outline: 2px solid white;
-	outline-offset: 5px;
+	outline: none;
 }
 
 .entry:active {
@@ -196,7 +197,7 @@ iframe {
 	box-shadow: 0px 0px 5px 0px white;
 }
 
-.icon img:hover {
+.icon img:hover, .icon:focus {
 	height: 34px;
 	width: 34px;
 
@@ -204,11 +205,7 @@ iframe {
 	border-color: aqua;
 	border-width: 6px;
 	box-shadow: 0px 0px 15px 0px aqua;
-}
-
-.icon:focus-visible {
-	outline: 2px solid white;
-	outline-offset: 6px;
+	outline: none;
 }
 
 .outer {
@@ -223,7 +220,14 @@ iframe {
 	vertical-align: middle;
 }
 
-.fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac {
+	from {
+		opacity:0
+	} 
+	to {
+		opacity:1
+	}
+}
 
 .custom_font {
 	font-family: "Charm";

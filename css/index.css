@@ -187,6 +187,10 @@ iframe {
 	width: 46px;
 }
 
+.icon {
+	transition: box-shadow 0.2s linear;
+}
+
 .icon img {
 	border-radius: 50%;
 

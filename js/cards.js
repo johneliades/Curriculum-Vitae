@@ -29,13 +29,13 @@ $(".modal_link").click(function() {
 
 	// Close only when the same document is clicked again else reload
 	if($("#modal").is(":visible") && last_document==href) {
-		$("#modal").hide();
+		$("#modal").hide("fast");
 	}
 	else {
 		// Blur until iframe is loaded
 
 		last_document = href;
-		$("#modal").show();
+		$("#modal").show("fast");
 	}
 })
 
@@ -45,11 +45,11 @@ $('#iframe_modal').on("load", function() {
 
 $(".close_modal" ).click(function() {
 	if($("#modal").is(":visible")) {
-		$("#modal").hide();
+		$("#modal").hide("fast");
 	}
 })
 
 $(document).keyup(function(e) {
 	if (e.keyCode === 27) 
-		$("#modal").hide();
+		$("#modal").hide("fast");
 });

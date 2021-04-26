@@ -243,7 +243,7 @@ a.cursor {
 	margin-left: 2%;
 	margin-right: 2%;
 
-	height: calc(95% - 40px);
+	height: calc(100% - 80px);
 	width: 96%;
 
 	transition: opacity 0.2s linear;

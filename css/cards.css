@@ -179,7 +179,7 @@ a.cursor {
 	transform: translate(-50%, -50%);
 	resize: both;
 
-	border: medium solid var(--main-font-color);
+	border: 3px solid var(--main-font-color);
 	border-radius: 10px;
 }
 

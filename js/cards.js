@@ -23,6 +23,7 @@ $(".spinner").click(function() {
 });
 
 $(".modal_link").click(function() {
+	$("img.modal_loading").show();
 	$("#modal_content").css("opacity", "0");
 	
 	var href = $(this).attr('href');
@@ -38,6 +39,7 @@ $(".modal_link").click(function() {
 })
 
 $('#iframe_modal').on("load", function() {
+	$("img.modal_loading").hide();
 	$("#modal_content").css("opacity", "1");
 });
 

@@ -237,6 +237,15 @@ a.cursor {
 	border-color: aqua;
 }
 
+img.modal_loading {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
 #modal_content {
 	margin-top: 50px;
 	margin-bottom: 2.5%;
@@ -311,7 +320,7 @@ iframe {
 	box-shadow: 0px 0px 12px 0px white;
 }
 
-img {
+video {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
@@ -320,7 +329,11 @@ img {
 	box-shadow: 0px 0px 12px 0px white;
 }
 
-video {
+/* When there is no gif photo behind the png photo then the
+photo must have the .gif class instead of the .png class
+so that position is not absolute */
+
+.gif {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
@@ -331,6 +344,14 @@ video {
 
 .png {
 	position:absolute;
+
+	width: 44vw;
+	height: 28vw;
+	min-height: 250px;
+	border: thick solid var(--main-font-color);
+	border-radius: 10px;
+	box-shadow: 0px 0px 12px 0px white;
+
 	background: var(--main-bg-color);
 	cursor: url("../cursors/blue.cur"), auto;
 
@@ -482,7 +503,13 @@ video {
 		min-height: 200px;
 	}
 
-	img {
+	img.png {
+		height: 50vw;
+		width: 90vw;
+		min-height: 200px;
+	}
+
+	img.gif {
 		height: 50vw;
 		width: 90vw;
 		min-height: 200px;

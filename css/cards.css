@@ -329,6 +329,8 @@ video {
 	position:absolute;
 	background: var(--main-bg-color);
 	cursor: url("../cursors/blue.cur"), auto;
+
+	transition: opacity 0.2s linear;
 }
 
 .png:hover {

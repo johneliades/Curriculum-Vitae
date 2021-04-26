@@ -32,8 +32,6 @@ $(".modal_link").click(function() {
 		$("#modal").hide("fast");
 	}
 	else {
-		// Blur until iframe is loaded
-
 		last_document = href;
 		$("#modal").show("fast");
 	}

@@ -171,8 +171,8 @@ a.cursor {
 	outline: none;
 	background-color: var(--main-bg-color);
 
-	width: 80vw;
-	height: 80vh;
+	width: 80%;
+	height: 80%;
 
 	top: 50%;
 	left: 50%;
@@ -187,8 +187,8 @@ a.cursor {
 	content: "";
 
 	position: absolute;
-	bottom: 4px;
-	right: 4px;
+	bottom: 3px;
+	right: 3px;
 
 	display: block;
 
@@ -238,7 +238,7 @@ a.cursor {
 }
 
 #modal_content {
-	margin-top: 2.5%;
+	margin-top: 50px;
 	margin-bottom: 2.5%;
 	margin-left: 2%;
 	margin-right: 2%;

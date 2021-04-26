@@ -200,7 +200,7 @@ a.cursor {
 	background: repeating-linear-gradient(135deg, hsla(180, 100%, 50%, .5), hsla(180, 100%, 50%, .5) 2px, #000 0, #000 4px);
 }
 
-.close_modal {
+#close_modal {
 	color: #aaaaaa;
 
 	border: 1px solid var(--main-bg-color);
@@ -219,8 +219,8 @@ a.cursor {
 	font-weight: bold;
 }
 
-.close_modal:hover,
-.close_modal:focus {
+#close_modal:hover,
+#close_modal:focus {
 	color: red;
 	border-color: red;
 
@@ -228,7 +228,7 @@ a.cursor {
 	cursor: pointer;
 }
 
-.close_modal:active {
+#close_modal:active {
 	color: aqua;
 	border-color: aqua;
 }
@@ -242,7 +242,7 @@ a.cursor {
 	height: calc(95% - 40px);
 	width: 96%;
 
-	transition: opacity 500ms linear;
+	transition: opacity 0.2s linear;
 }
 
 #iframe_modal {

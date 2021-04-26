@@ -41,7 +41,7 @@ $('#iframe_modal').on("load", function() {
 	$("#modal_content").css("opacity", "1");
 });
 
-$(".close_modal" ).click(function() {
+$("#close_modal" ).click(function() {
 	if($("#modal").is(":visible")) {
 		$("#modal").hide("fast");
 	}

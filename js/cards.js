@@ -53,3 +53,29 @@ $(document).keyup(function(e) {
 	if (e.keyCode === 27) 
 		$("#modal").hide("fast");
 });
+
+var cip = $("img.png").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {
+	url = this.src.slice("file:///C:/Users/john/Desktop/projects/johneliades.github.io/images/".length, -4);
+
+	$("source").each(function() {
+		webm = $(this).attr("src").slice("images/".length, -5)
+
+		if(webm === url) {
+			$(this).parent()[0].play(); 
+		}
+	});
+}
+
+function hideVideo(e) {
+	url = this.src.slice("file:///C:/Users/john/Desktop/projects/johneliades.github.io/images/".length, -4);
+
+	$("source").each(function() {
+		webm = $(this).attr("src").slice("images/".length, -5)
+
+		if(webm === url) {
+			$(this).parent()[0].pause(); 
+		}
+	});
+}

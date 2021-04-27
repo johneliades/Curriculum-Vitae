@@ -38,7 +38,7 @@ $("#bird_container").click(function() {
 	var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
 	iframe=document.getElementById('iframe_main');
-	iframe.src = "quote_page.html";
+	iframe.src = "quote_page.html?data="+randomItem;
 })
 
 <!-- Disables the bird -->
@@ -73,7 +73,7 @@ $(".hide_bird").click(function() {
 })
 
 <!-- Shows the welcome message and then enables the bird -->
-$(".clear_frame").click(function() {
+function initFrame() {
 	document.title = "[John@Portfolio]-[~]"
 
 	var element = document.getElementById("main_screen");
@@ -92,13 +92,9 @@ $(".clear_frame").click(function() {
 	if(bird_container)
 		bird_container.style.zIndex = 0;
 
-	initFrame();
-})
-
-$(document).ready(initFrame);
-
-<!-- Shows the welcome message -->
-function initFrame() {
 	iframe=document.getElementById('iframe_main');
-	iframe.src = "quote_page.html";
+	iframe.src = "quote_page.html?data=Shoot the bird & enjoy the quote ;)";
 }
+
+$(".clear_frame").click(initFrame);
+$(document).ready(initFrame);

@@ -4,7 +4,7 @@ body, html {
 	width: 100%;
 	overflow: hidden;
  	scrollbar-width: none;
-	cursor: url('cursors/crosshair.cur'), crosshair;
+	cursor: url('../cursors/crosshair.cur'), crosshair;
 }
 
 ::-webkit-scrollbar { 

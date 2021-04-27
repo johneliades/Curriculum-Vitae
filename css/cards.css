@@ -320,29 +320,18 @@ iframe {
 	box-shadow: 0px 0px 12px 0px white;
 }
 
-video {
+video.webm {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
 	border: thick solid var(--main-font-color);
 	border-radius: 10px;
 	box-shadow: 0px 0px 12px 0px white;
+	object-fit: fill;
+	z-index: 5;
 }
 
-/* When there is no gif photo behind the png photo then the
-photo must have the .gif class instead of the .png class
-so that position is not absolute */
-
-.gif {
-	width: 44vw;
-	height: 28vw;
-	min-height: 250px;
-	border: thick solid var(--main-font-color);
-	border-radius: 10px;
-	box-shadow: 0px 0px 12px 0px white;
-}
-
-.png {
+img.png {
 	position:absolute;
 
 	width: 44vw;
@@ -354,12 +343,26 @@ so that position is not absolute */
 
 	background: var(--main-bg-color);
 	cursor: url("../cursors/blue.cur"), auto;
+	z-index: 4;
 
 	transition: opacity 0.2s linear;
 }
 
-.png:hover {
+img.png:hover {
 	opacity:0;
+}
+
+.placeholder {
+	width: 44vw;
+	height: 28vw;
+	min-height: 250px;
+	border: thick solid var(--main-font-color);
+	border-radius: 10px;
+	box-shadow: 0px 0px 12px 0px white;
+
+	background: var(--main-bg-color);
+	cursor: url("../cursors/blue.cur"), auto;
+	z-index: 4;
 }
 
 .spinner {
@@ -509,15 +512,16 @@ so that position is not absolute */
 		min-height: 200px;
 	}
 
-	img.gif {
+	video.webm {
 		height: 50vw;
 		width: 90vw;
 		min-height: 200px;
 	}
 
-	video {
+	.placeholder {
 		height: 50vw;
 		width: 90vw;
 		min-height: 200px;
 	}
+
 }

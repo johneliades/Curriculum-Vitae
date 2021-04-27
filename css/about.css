@@ -92,11 +92,17 @@ h3 {
 	position: absolute;
 	height: 100%;
 	width: 100%;
+
+	animation: opac 0.8s;
 }
 
 .middle {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+p {
+	animation: opac 0.8s;
 }
 
 .wrapper {
@@ -114,5 +120,14 @@ h3 {
 @keyframes textclip {
 	to {
 		background-position: 200% center;
+	}
+}
+
+@keyframes opac {
+	from {
+		opacity:0
+	} 
+	to {
+		opacity:1
 	}
 }

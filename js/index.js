@@ -54,8 +54,6 @@ $(".hide_bird").click(function() {
 	document.title = "[John@Portfolio]-[" + href + "]";
 
 	$("#iframe_main").focus();
-	$('#main_screen').hide();
-	$('#main_screen').fadeIn("fast");
 
 	var element = document.getElementById("main_screen");
 	if(element)	{
@@ -77,9 +75,6 @@ $(".hide_bird").click(function() {
 <!-- Shows the welcome message and then enables the bird -->
 function initFrame() {
 	document.title = "[John@Portfolio]-[~]"
-	
-	$('#main_screen').hide();
-	$('#main_screen').fadeIn("fast");
 
 	var element = document.getElementById("main_screen");
 	if(element)	{

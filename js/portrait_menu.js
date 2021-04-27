@@ -9,6 +9,11 @@ menuToggle.addEventListener('click', e => {
 	e.preventDefault();
 	isMenuOpen = !isMenuOpen;
 	
+	if(isMenuOpen)
+		$('#main_screen').fadeOut("fast");
+	else
+		$('#main_screen').fadeIn("fast");	
+
 	// toggle a11y attributes and active class
 	menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
 	menu.hidden = !isMenuOpen;
@@ -18,7 +23,7 @@ menuToggle.addEventListener('click', e => {
 for(var i=0; i<entries.length; i++) {
 	entries[i].addEventListener('click', e => {
 		isMenuOpen = !isMenuOpen;
-		
+
 		// toggle a11y attributes and active class
 		menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
 		menu.hidden = !isMenuOpen;

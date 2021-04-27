@@ -103,5 +103,5 @@ $(".clear_frame").click(initFrame);
 $(document).ready(initFrame);
 
 $('#iframe_main').on("load", function() {
-	$('#main_screen').fadeIn(500);
+	$('#main_screen').fadeIn("fast");
 });

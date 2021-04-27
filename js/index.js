@@ -55,6 +55,7 @@ $(".hide_bird").click(function() {
 
 	$("#iframe_main").focus();
 	$('#main_screen').hide();
+	$('#main_screen').fadeIn("fast");
 
 	var element = document.getElementById("main_screen");
 	if(element)	{
@@ -78,6 +79,7 @@ function initFrame() {
 	document.title = "[John@Portfolio]-[~]"
 	
 	$('#main_screen').hide();
+	$('#main_screen').fadeIn("fast");
 
 	var element = document.getElementById("main_screen");
 	if(element)	{
@@ -101,7 +103,3 @@ function initFrame() {
 
 $(".clear_frame").click(initFrame);
 $(document).ready(initFrame);
-
-$('#iframe_main').on("load", function() {
-	$('#main_screen').fadeIn("fast");
-});

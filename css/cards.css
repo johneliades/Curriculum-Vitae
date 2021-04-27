@@ -67,15 +67,6 @@ body {
 	transition: background-color 0.2s linear;
 }
 
-@keyframes opac {
-	from {
-		opacity:0
-	} 
-	to {
-		opacity:1
-	}
-}
-
 h2 {
 	font-family: "Roboto";
 	color: var(--main-font-color);
@@ -288,8 +279,6 @@ img.modal_loading {
 	
 	border: thick solid black;
 	border-radius: 25px;
-
-	animation: opac 0.8s;
 }
 
 .column_color {

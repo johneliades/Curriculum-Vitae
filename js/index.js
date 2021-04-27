@@ -150,6 +150,7 @@ $(".hide_bird").click(function() {
 
 	iframe=document.getElementById('iframe_main');
 	iframe.src = "about:blank";
+
 	iframe.contentWindow.document.open();
 
 	<!-- Change cursor -->
@@ -167,10 +168,10 @@ $(".hide_bird").click(function() {
 			</body>
 		</html>
 	`;
-
+	
 	iframe.contentWindow.document.write(html);
 	iframe.contentWindow.document.close();
-
+	
 	var element = document.getElementById("main_screen");
 	if(element)	{
 		element.style.backgroundSize = "0px 0px";
@@ -216,91 +217,5 @@ $(document).ready(initFrame);
 <!-- Shows the welcome message -->
 function initFrame() {
 	iframe=document.getElementById('iframe_main');
-	iframe.src = "about:blank";
-
-	const html= `
-		<html>
-			<head>
-				<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-			</head>
-			<body>
-				<style>
-					body, html {
-						margin: 0;
-						height: 100%;
-						width: 100%;
-						overflow: hidden;
-					 	scrollbar-width: none;
-						cursor: url('cursors/crosshair.cur'), crosshair;
-					}
-
-					::-webkit-scrollbar { 
-						display: none; 
-					}
-
-					.unselectable {
-						-webkit-touch-callout: none;
-						-webkit-user-select: none;
-						-khtml-user-select: none;
-						-moz-user-select: none;
-						-ms-user-select: none;
-						user-select: none;
-					}
-
-					.outer {
-						display: table;
-						position: absolute;
-						height: 100%;
-						width: 100%;
-		
-						animation:opac 0.8s;
-					}
-
-					.middle {
-						display: table-cell;
-						vertical-align: middle;
-					}
-
-					p.custom_font {
-						font-family: "Roboto";
-						font-size: 22px;
-						margin-right: 20vw;
-						margin-left: 20vw;
-						text-align: center;
-						text-shadow: 0 0 1.5px #4B6364, 1px 1px 5px white;
-						font-weight: bold;
-						color: transparent;
-					}
-
-					@media screen and (max-width: 800px) {
-						p.custom_font {
-							font-size: 18px;
-						}
-					}
-
-					@keyframes opac{
-						from{
-							opacity:0
-						} to{
-							opacity:1
-						}
-					}
-				</style>
-
-				<div class="outer unselectable">
-					<div class="middle">
-						<p class="custom_font">
-							<b>
-								Shoot the bird & <br> enjoy the quote ;)
-							</b>
-						</p>
-					</div>
-				</div>
-			</body>
-		</html>
-	`;
-
-	iframe.contentWindow.document.open();
-	iframe.contentWindow.document.write(html);
-	iframe.contentWindow.document.close();
+	iframe.src = "quote_page.html";
 }

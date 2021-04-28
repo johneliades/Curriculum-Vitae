@@ -174,7 +174,7 @@ html, body {
 
 .fade_down {
 	opacity: 0;
-	transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06), opacity 0.3s ease;
+	transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 
 .nav:target .fade_down, .nav--open .fade_down {

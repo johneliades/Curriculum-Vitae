@@ -44,7 +44,7 @@ $("#bird_container").click(function() {
 <!-- Disables the bird -->
 $(".hide_bird").click(function() {
 	$('#main_screen').hide();
-	$('#main_screen').fadeIn(400);
+	$('#main_screen').fadeIn(700);
 
 	var href = $(this).attr('href');
 	href = href.replace('documents/','');
@@ -78,7 +78,7 @@ $(".hide_bird").click(function() {
 <!-- Shows the welcome message and then enables the bird -->
 function initFrame() {
 	$('#main_screen').hide();
-	$('#main_screen').fadeIn(400);
+	$('#main_screen').fadeIn(700);
 
 	document.title = "[John@Portfolio]-[~]"
 

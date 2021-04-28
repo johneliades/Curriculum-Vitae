@@ -43,9 +43,6 @@ $("#bird_container").click(function() {
 
 <!-- Disables the bird -->
 $(".hide_bird").click(function() {
-	$('#main_screen').hide();
-	$('#main_screen').fadeIn(700);
-
 	var href = $(this).attr('href');
 	href = href.replace('documents/','');
 	href = 	href.replace('.html','');
@@ -55,7 +52,9 @@ $(".hide_bird").click(function() {
 	href = href.substr(0,1).toUpperCase() + href.substr(1);
 
 	document.title = "[John@Portfolio]-[" + href + "]";
-
+	
+	$('#main_screen').hide();
+	$('#main_screen').fadeIn("slow");
 	$("#iframe_main").focus();
 
 	var element = document.getElementById("main_screen");
@@ -78,7 +77,8 @@ $(".hide_bird").click(function() {
 <!-- Shows the welcome message and then enables the bird -->
 function initFrame() {
 	$('#main_screen').hide();
-	$('#main_screen').fadeIn(700);
+	$('#main_screen').fadeIn("slow");
+	$("#iframe_main").focus();
 
 	document.title = "[John@Portfolio]-[~]"
 

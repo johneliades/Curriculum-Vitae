@@ -54,8 +54,6 @@ $(".hide_bird").click(function() {
 	document.title = "[John@Portfolio]-[" + href + "]";
 	
 	$('#main_screen').hide();
-	$('#main_screen').fadeIn("slow");
-	$("#iframe_main").focus();
 
 	var element = document.getElementById("main_screen");
 	if(element)	{
@@ -75,13 +73,14 @@ $(".hide_bird").click(function() {
 	var bird_container = document.getElementById("bird_container");
 	if(bird_container)
 		bird_container.style.zIndex = -1;
+
+	$('#main_screen').fadeIn("slow");
+	$("#iframe_main").focus();
 })
 
 <!-- Shows the welcome message and then enables the bird -->
 function initFrame() {
 	$('#main_screen').hide();
-	$('#main_screen').fadeIn("slow");
-	$("#iframe_main").focus();
 
 	document.title = "[John@Portfolio]-[~]"
 
@@ -106,6 +105,9 @@ function initFrame() {
 
 	iframe=document.getElementById('iframe_main');
 	iframe.src = "quote_page.html?data=Shoot the bird & enjoy the quote ;)";
+
+	$('#main_screen').fadeIn("slow");
+	$("#iframe_main").focus();
 }
 
 $(".clear_frame").click(initFrame);

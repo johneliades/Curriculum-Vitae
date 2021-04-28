@@ -4,16 +4,6 @@
 		<link rel="stylesheet" href="css/quote_page.css">
 	</head>
 	<body>
-		<script>
-			document.addEventListener("DOMContentLoaded", function(){
-				var url = window.location.search.substring(1);
-				url = decodeURIComponent(url);
-				url = url.replace("data=", "");
-
-				document.getElementById('quote').innerText = url;
-			});
-		</script>
-
 		<div class="outer breaking unselectable">
 			<div class="middle">
 				<p class="custom_font" id="quote">
@@ -23,5 +13,13 @@
 				</p>
 			</div>
 		</div>
+
+		<script>
+			var url = window.location.search.substring(1);
+			url = decodeURIComponent(url);
+			url = url.replace("data=", "");
+
+			document.getElementById('quote').innerText = url;
+		</script>
 	</body>
 </html>

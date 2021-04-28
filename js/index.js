@@ -61,6 +61,9 @@ $(".hide_bird").click(function() {
 	if(element)	{
 		element.style.backgroundSize = "0px 0px";
 		element.style.boxShadow = "none";
+		element = document.getElementById("quote");
+		if(element)	
+			element.visibility = "hidden";
 	}
 
 	var bird = document.getElementById("bird");
@@ -86,6 +89,9 @@ function initFrame() {
 	if(element)	{
 		element.style.boxShadow = "inset 0px 0px 10px 0px white";
 		element.style.backgroundSize = "cover";
+		element = document.getElementById("quote");
+		if(element)	
+			element.visibility = "initial";
 	}
 
 	var bird = document.getElementById("bird");

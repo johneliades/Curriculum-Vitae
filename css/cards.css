@@ -454,18 +454,25 @@ img.png:hover {
 	.column {
 		position: relative;
 		float: none;
-		width: 100%;
-		padding-top: 3vw;
-		padding-bottom: 3vw;
+		width: 97%;
+		padding-top: 5vw;
+		padding-bottom: 5vw;
 
-		margin-right: 0;
-		margin-left: 0;
+		margin-right: 1.5%;
+		margin-left: 1.5%;
 		padding-left: 0;
 		padding-right: 0;
 
 		border: none;
 
-		margin-top: 5px;
+		margin-top: 10px;
+	}
+
+	.breaking {
+		padding-top: 0;
+		padding-bottom: 0;
+		width: 97vw;
+		word-wrap: break-word;
 	}
 
 	.column_color {
@@ -483,35 +490,27 @@ img.png:hover {
 		display: flex;
 	}
 
-	.breaking {
-		padding-top: 0;
-		padding-bottom: 0;
-		width: 100vw;
-		word-wrap: break-word;
-	}
-
 	iframe {
 		height: 50vw;
-		width: 90vw;
+		width: 87vw;
 		min-height: 200px;
 	}
 
 	img.png {
 		height: 50vw;
-		width: 90vw;
+		width: 87vw;
 		min-height: 200px;
 	}
 
 	video.webm {
 		height: 50vw;
-		width: 90vw;
+		width: 87vw;
 		min-height: 200px;
 	}
 
 	.placeholder {
 		height: 50vw;
-		width: 90vw;
+		width: 87vw;
 		min-height: 200px;
 	}
-
 }

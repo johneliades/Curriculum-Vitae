@@ -282,7 +282,7 @@ img.modal_loading {
 }
 
 .column_color {
-	box-shadow: 0 0 10px 0 white;
+	box-shadow: 0 0 2px 0 white;
 	background-color: #101010;
 }
 
@@ -316,7 +316,6 @@ video.webm {
 	min-height: 250px;
 	border: thick solid var(--main-font-color);
 	border-radius: 10px;
-	box-shadow: 0px 0px 12px 0px white;
 	object-fit: fill;
 	z-index: 5;
 }
@@ -329,7 +328,6 @@ img.png {
 	min-height: 250px;
 	border: thick solid var(--main-font-color);
 	border-radius: 10px;
-	box-shadow: 0px 0px 12px 0px white;
 
 	background: var(--main-bg-color);
 	cursor: url("../cursors/blue.cur"), auto;
@@ -342,13 +340,24 @@ img.png:hover {
 	opacity:0;
 }
 
+img.png:hover ~ .breaking > p.custom_font {
+	font-weight: bold;
+}
+
+img.png:hover ~ .breaking > b {
+	text-shadow: 1px 1px 3px var(--main-font-color);
+}
+
+img.png:hover ~ video.webm {
+	box-shadow: 0px 0px 12px 0px white;
+}
+
 .placeholder {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
 	border: thick solid var(--main-font-color);
 	border-radius: 10px;
-	box-shadow: 0px 0px 12px 0px white;
 
 	background: var(--main-bg-color);
 	cursor: url("../cursors/blue.cur"), auto;

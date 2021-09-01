@@ -52,7 +52,8 @@ $(".hide_bird").click(function() {
 	href = href.substr(0,1).toUpperCase() + href.substr(1);
 
 	document.title = "[John@Portfolio]-[" + href + "]";
-	
+
+	$('#main_screen').fadeOut("fast");
 	$('#main_screen').hide();
 
 	var element = document.getElementById("main_screen");

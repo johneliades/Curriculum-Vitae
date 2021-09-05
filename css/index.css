@@ -136,8 +136,8 @@ iframe {
 	display: block;
 	text-align: center;
 	text-decoration: none;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
 	margin-bottom: 1vh;
 
 	cursor: url("../cursors/blue.cur"), auto;
@@ -147,18 +147,17 @@ iframe {
 	transition: all 0.2s linear;
 }
 
-.entry:hover, .entry:focus {
+.entry:hover {
+	color: aqua;
+}
+
+.entry:focus {
 	color: aqua;
 	font-size: 35px;
 	box-shadow: 0px 0px 15px 0px aqua;
 	border-radius: 15px;
 	border: 2px solid aqua;
 	outline: none;
-}
-
-.entry:active {
-	background-color: aqua;
-	color: black;
 }
 
 #icon_wrapper {
@@ -260,11 +259,13 @@ iframe {
 	}
 
 	.entry {
+		margin-left: 20px;
+		margin-right: 20px;
 		margin-bottom: 0px;
 		font-size: 25px;
 	}
 
-	.entry:hover {
+	.entry:focus {
 		font-size: 28px;
 	}
 
@@ -318,13 +319,12 @@ iframe {
 
 	.entry {
 		margin-bottom: 1vh;
-		margin-right: 30px;
-		margin-left: 30px;
+		margin-right: 50px;
+		margin-left: 50px;
 		font-size: 22px;
 	}
 
-	.entry:hover {
-		color: aqua;
+	.entry:focus {
 		font-size: 26px;
 	}
 
@@ -393,7 +393,7 @@ iframe {
 		font-size: 2.5vw;
 	}
 
-	.entry:hover {
+	.entry:focus {
 		font-size: 2.7vw;
 	}
 
@@ -464,7 +464,7 @@ iframe {
 		font-size: 2vw;
 	}
 
-	.entry:hover {
+	.entry:focus {
 		font-size: 2.5vw;
 	}
 
@@ -531,7 +531,7 @@ iframe {
 		font-size: 17px;
 	}
 
-	.entry:hover {
+	.entry:focus {
 		font-size: 20px;
 	}
 
@@ -603,7 +603,7 @@ iframe {
 		font-size: 15px;
 	}
 
-	.entry:hover {
+	.entry:focus {
 		font-size: 16px;
 	}
 

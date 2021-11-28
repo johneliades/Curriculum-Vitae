@@ -433,26 +433,26 @@ img.png:hover ~ video.webm {
 	}
 
 	iframe {
-		height: 50vw;
-		width: 87vw;
+		height: 48vw;
+		width: 86vw;
 		min-height: 200px;
 	}
 
 	img.png {
-		height: 50vw;
-		width: 87vw;
+		height: 48vw;
+		width: 86vw;
 		min-height: 200px;
 	}
 
 	video.webm {
-		height: 50vw;
-		width: 87vw;
+		height: 48vw;
+		width: 86vw;
 		min-height: 200px;
 	}
 
 	.placeholder {
-		height: 50vw;
-		width: 87vw;
+		height: 48vw;
+		width: 86vw;
 		min-height: 200px;
 	}
 }

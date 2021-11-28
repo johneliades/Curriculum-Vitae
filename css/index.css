@@ -2,7 +2,7 @@
 	display: none; 
 }
 
-.unselectable {
+img, #name_full, .entry, #icon_wrapper, #icon_wrapper_full, #main_screen, #name {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;

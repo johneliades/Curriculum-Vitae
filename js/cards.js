@@ -46,7 +46,7 @@ function color_change() {
 	main_color = !main_color;
 
 	$('html').toggleClass("color");
-	$('.column').toggleClass("column_color");
+	$('.element').toggleClass("element_color");
 	$('a.button').toggleClass("cursor");
 	$("img.png").toggleClass("cursor");
 }

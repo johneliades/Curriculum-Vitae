@@ -1,3 +1,25 @@
+let haveIt = [];
+
+function generateUniqueRandom(maxNr) {
+	//Generate random number
+	let random = (Math.random() * maxNr).toFixed();
+
+	//Coerce to number by boxing
+	random = Number(random);
+
+	if(!haveIt.includes(random)) {
+		haveIt.push(random);
+		return random;
+	} 
+	else {
+		if(haveIt.length >= maxNr) {
+			haveIt = [];
+		}
+
+		return generateUniqueRandom(maxNr);
+	}
+}
+
 <!-- Chooses quote and prints it in iframe -->
 $("#bird_container").click(function() {
 	var myArray = [
@@ -35,7 +57,7 @@ $("#bird_container").click(function() {
 		"❝A UDP packet walks into...❞"
 	];
 
-	var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+	var randomItem = myArray[generateUniqueRandom(myArray.length-1)];
 
 	iframe=document.getElementById('iframe_main');
 	iframe.src = "quote_page.html?data="+randomItem;

@@ -43,12 +43,13 @@ p.custom_font {
 	text-shadow: 0 0 1.5px #4B6364, 1px 1px 5px white;
 	font-weight: bold;
 	color: transparent;
-}
 
-p.animation {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+}
+
+p.animation {
 	animation: typing 3s steps(100, end);
 }
 

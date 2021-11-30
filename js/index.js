@@ -63,11 +63,18 @@ $("#bird_container").click(function() {
 	element = iframe.contentWindow.document.getElementById("quote")
 	element.innerText = randomItem;
 
+	if(randomItem.length > 60) {
+		element.style.whiteSpace = "normal";
+	}
+	else {
+		element.style.whiteSpace = "nowrap";
+	}
+
 	element.classList.remove("animation");
 
 	// -> triggering reflow /* The actual magic */
 	void element.offsetWidth;
-	
+
 	element.classList.add("animation");
 })
 

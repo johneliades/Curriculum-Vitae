@@ -59,8 +59,11 @@ $("#bird_container").click(function() {
 
 	var randomItem = myArray[generateUniqueRandom(myArray.length-1)];
 
-	iframe=document.getElementById('iframe_main');
-	iframe.contentWindow.document.getElementById("quote").innerText = randomItem;
+	iframe = document.getElementById('iframe_main');
+	element = iframe.contentWindow.document.getElementById("quote")
+	element.innerText = randomItem;
+	var newone = elm.cloneNode(element);
+	element.parentNode.replaceChild(newone, element);
 })
 
 <!-- Disables the bird -->

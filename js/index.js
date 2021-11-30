@@ -60,7 +60,7 @@ $("#bird_container").click(function() {
 	var randomItem = myArray[generateUniqueRandom(myArray.length-1)];
 
 	iframe=document.getElementById('iframe_main');
-	iframe.contentWindow.document.getElementById('quote').innerText = randomItem;
+	iframe.src = "quote_page.html?data="+randomItem;
 })
 
 <!-- Disables the bird -->
@@ -121,10 +121,10 @@ function initFrame() {
 		bird_container.style.zIndex = 0;
 
 	iframe=document.getElementById('iframe_main');
-	var innerDoc = (iframe.contentDocument) 
-		? iframe.contentDocument 
-		: iframe.contentWindow.document;
-	innerDoc.getElementById('quote').innerText = "Shoot the bird & enjoy the quote ;)"
+
+	iframe.contentWindow.document('quote').innerText = "Shoot the bird & enjoy the quote ;)"
+
+	iframe.src = "quote_page.html?data=Shoot the bird & enjoy the quote ;)";
 
 	$('#main_screen').fadeIn("slow");
 	$("#iframe_main").focus();

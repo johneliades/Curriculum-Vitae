@@ -63,7 +63,7 @@ $("#bird_container").click(function() {
 	element = iframe.contentWindow.document.getElementById("quote")
 	element.innerText = randomItem;
 
-	if(randomItem.length >= 70) {
+	if(randomItem.length >= 60) {
 		element.style.whiteSpace = "normal";
 	}
 	else {

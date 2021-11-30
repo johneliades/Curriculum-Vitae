@@ -34,11 +34,14 @@ body, html {
 	vertical-align: middle;
 }
 
+.margin {
+	margin-right: 20vw;
+	margin-left: 20vw;
+}
+
 p.custom_font {
 	font-family: "Roboto";
 	font-size: 22px;
-	margin-right: 20vw;
-	margin-left: 20vw;
 	text-align: center;
 	text-shadow: 0 0 1.5px #4B6364, 1px 1px 5px white;
 	font-weight: bold;

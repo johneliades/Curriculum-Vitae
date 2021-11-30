@@ -52,7 +52,7 @@ p.custom_font {
 }
 
 p.animation {
-	animation: wrap 3s steps(100, end);
+	animation: wrap 1s steps(100, end);
 }
 
 /* The typing effect */

@@ -62,12 +62,6 @@ p.animation {
 	to { width: 100% }
 }
 
-.breaking{
-	width: 100%;
-	word-wrap: break-word;
-	transition: 0.2s;
-}
-
 @media screen and (max-width: 800px) {
 	p.custom_font {
 		font-size: 18px;

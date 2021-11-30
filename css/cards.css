@@ -353,7 +353,7 @@ img.png:hover {
 	opacity:0;
 }
 
-img.png:hover ~ p.custom_font {
+img.png:hover ~ p.custom_font > font > span.mark {
 	font-weight: bold;
 }
 

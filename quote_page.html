@@ -13,5 +13,13 @@
 				</p>
 			</div>
 		</div>
+
+		<script>
+			var url = window.location.search.substring(1);
+			url = decodeURIComponent(url);
+			url = url.replace("data=", "");
+
+			document.getElementById('quote').innerText = url;
+		</script>
 	</body>
 </html>

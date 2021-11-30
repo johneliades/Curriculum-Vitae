@@ -62,8 +62,13 @@ $("#bird_container").click(function() {
 	iframe = document.getElementById('iframe_main');
 	element = iframe.contentWindow.document.getElementById("quote")
 	element.innerText = randomItem;
-	var newone = elm.cloneNode(element);
-	element.parentNode.replaceChild(newone, element);
+
+	element.classList.remove("animation");
+
+	// -> triggering reflow /* The actual magic */
+	void element.offsetWidth;
+	
+	element.classList.add("animation");
 })
 
 <!-- Disables the bird -->

@@ -121,7 +121,10 @@ function initFrame() {
 		bird_container.style.zIndex = 0;
 
 	iframe=document.getElementById('iframe_main');
-	iframe.contentWindow.document.getElementById('quote').innerText = "Shoot the bird & enjoy the quote ;)"
+	var innerDoc = (iframe.contentDocument) 
+		? iframe.contentDocument 
+		: iframe.contentWindow.document;
+	innerDoc.getElementById('quote').innerText = "Shoot the bird & enjoy the quote ;)"
 
 	$('#main_screen').fadeIn("slow");
 	$("#iframe_main").focus();

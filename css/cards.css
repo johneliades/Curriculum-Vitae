@@ -284,6 +284,24 @@ img.modal_loading {
 	border-radius: 25px;
 }
 
+/*.container .element:nth-child(2n+2):after {
+	display: block;
+	content: "";
+
+	position:absolute;
+	left: 0px;
+	bottom:-10px;
+	width: 25px;
+	height: 25px;
+
+	background-image: url("../images/color_circle.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	border-radius: 50%;
+}*/
+
 .element_color {
 	box-shadow: 0 0 2px 0 white;
 	background-color: #101010;
@@ -299,11 +317,6 @@ img.modal_loading {
 	transform: translate(-50%, -50%);
 	transition: transform .7s ease-in-out;
 
-	background-image: url("../images/color_circle.png");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	
 	width: 25px;
 	height: 25px;
 	

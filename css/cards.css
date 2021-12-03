@@ -179,8 +179,10 @@ img.png.cursor {
 	transform: translate(-50%, -50%);
 	resize: both;
 
-	border: 3px solid var(--main-font-color);
+	border: 3px solid black;
 	border-radius: 10px;
+
+	box-shadow: 0 0 4px 0 white;
 }
 
 #modal:after {
@@ -271,7 +273,7 @@ img.modal_loading {
 	grid-template-columns: repeat(auto-fill, 50%);
 }
 
-.container .element {
+.container > .element {
 	margin: 13px;
 
 	text-align: center;
@@ -284,7 +286,7 @@ img.modal_loading {
 	border-radius: 25px;
 }
 
-/*.container .element:nth-child(2n+2):after {
+/*.container > .element:nth-child(2n+2):after {
 	display: block;
 	content: "";
 
@@ -302,7 +304,7 @@ img.modal_loading {
 	border-radius: 50%;
 }*/
 
-.element_color {
+.element_color_toggle {
 	box-shadow: 0 0 2px 0 white;
 	background-color: #101010;
 }
@@ -319,7 +321,9 @@ img.modal_loading {
 
 	width: 25px;
 	height: 25px;
-	
+
+	cursor: url("../cursors/blue.cur"), auto;
+
 	border-radius: 50%;
 }
 
@@ -328,21 +332,11 @@ img.modal_loading {
 	transform: translate(-50%, -50%) rotate(360deg);
 }
 
-iframe {
-	width: 44vw;
-	height: 28vw;
-	min-height: 250px;
-	border: thick solid;
-	border-color: var(--main-font-color);
-	border-radius: 10px;
-	box-shadow: 0px 0px 12px 0px white;
-}
-
 video.webm {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
-	border: thick solid var(--main-font-color);
+	border: 3px solid var(--main-font-color);
 	border-radius: 10px;
 	object-fit: fill;
 	z-index: 5;
@@ -414,7 +408,7 @@ img.png:hover ~ video.webm {
 	margin-bottom: 20px;
 }
 
-.coffee_btn a {
+.coffee_btn > a {
 	display: block;
 
 	margin: auto;
@@ -429,16 +423,16 @@ img.png:hover ~ video.webm {
 	transition: box-shadow 200ms linear;
 }
 
-.coffee_btn a:hover {
+.coffee_btn > a:hover {
 	box-shadow: 0 0 5px white;
 }
 
-.coffee_btn a:focus-visible {
+.coffee_btn > a:focus-visible {
 	outline: 3px solid var(--main-font-color);
 	outline-offset: 7px;
 }
 
-.coffee_btn a:active {
+.coffee_btn > a:active {
 	box-shadow: 0 0 20px white;
 }
 
@@ -452,23 +446,13 @@ img.png:hover ~ video.webm {
 		grid-template-columns: repeat(auto-fill, 100%);
 	}
 
-	.container .element {
+	.container > .element {
 		padding-top: 5vw;
 		padding-bottom: 5vw;
 		padding-left: 0;
 		padding-right: 0;
 
 		border: none;
-	}
-
-	.column_color {
-		box-shadow: none;
-	}
-
-	iframe {
-		height: 48vw;
-		width: 86vw;
-		min-height: 200px;
 	}
 
 	img.png {

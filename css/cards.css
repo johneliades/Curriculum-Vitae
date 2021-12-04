@@ -348,14 +348,14 @@ img.png {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
-	border: thick solid var(--main-font-color);
+	border: 5px solid var(--main-font-color);
 	border-radius: 10px;
 
 	background: var(--main-bg-color);
 	cursor: url("../cursors/blue.cur"), auto;
 	z-index: 4;
 
-	transition: opacity 0.2s linear;
+	transition: opacity 0.3s linear;
 }
 
 img.png:hover {
@@ -391,7 +391,7 @@ img.png:hover ~ video.webm {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
-	border: thick solid var(--main-font-color);
+	border: 5px solid var(--main-font-color);
 	border-radius: 10px;
 
 	background: var(--main-bg-color);

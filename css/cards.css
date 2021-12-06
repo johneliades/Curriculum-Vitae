@@ -332,6 +332,10 @@ img.modal_loading {
 	transform: translate(-50%, -50%) rotate(360deg);
 }
 
+#color_wheel:active {
+	box-shadow: 0px 0px 15px 0px white;
+}
+
 video.webm {
 	width: 44vw;
 	height: 28vw;
@@ -424,7 +428,7 @@ img.png:hover ~ video.webm {
 }
 
 .coffee_btn > a:hover {
-	box-shadow: 0 0 5px white;
+	filter: drop-shadow(0 0 4px white);
 }
 
 .coffee_btn > a:focus-visible {
@@ -433,7 +437,7 @@ img.png:hover ~ video.webm {
 }
 
 .coffee_btn > a:active {
-	box-shadow: 0 0 20px white;
+	filter: drop-shadow(0 0 6px white);
 }
 
 @media only screen and (max-width: 1000px) {

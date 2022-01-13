@@ -432,19 +432,19 @@ img.png:hover ~ video.webm {
 
 	img.png {
 		height: 48vw;
-		width: 86vw;
+		width: 80vw;
 		min-height: 200px;
 	}
 
 	video.webm {
 		height: 48vw;
-		width: 86vw;
+		width: 80vw;
 		min-height: 200px;
 	}
 
 	.placeholder {
 		height: 48vw;
-		width: 86vw;
+		width: 80vw;
 		min-height: 200px;
 	}
 }

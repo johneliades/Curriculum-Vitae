@@ -42,7 +42,7 @@ function color_change() {
 	main_color = !main_color;
 
 	$('html').toggleClass("color");
-	$('.element').toggleClass("element_color_toggle");
+	$('.card').toggleClass("card_color_toggle");
 	$('a.button').toggleClass("cursor");
 	$("img.png").toggleClass("cursor");
 }
@@ -80,7 +80,7 @@ const appearOnScroll = new IntersectionObserver(function(
 },
 appearOptions);
 
-const faders = document.querySelectorAll(".element");
+const faders = document.querySelectorAll(".card");
 faders.forEach(fader => {
 	appearOnScroll.observe(fader);
 });

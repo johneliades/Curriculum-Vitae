@@ -268,12 +268,12 @@ img.modal_loading {
 	width: 100%;
 }
 
-.container {
+.card_container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 50%);
 }
 
-.container > .element {
+.card_container > .card {
 	margin: 13px;
 
 	text-align: center;
@@ -285,24 +285,24 @@ img.modal_loading {
 	border-radius: 25px;
 }
 
-.container > .element:nth-child(2n+1) {
+.card_container > .card:nth-child(2n+1) {
 	transform: translate(-50%);
 	transition: transform 400ms ease-in, opacity 400ms ease-in;
 	opacity: 0;
 }
 
-.container > .element:nth-child(2n+2) {
+.card_container > .card:nth-child(2n+2) {
 	transform: translateX(50%);
 	transition: transform 400ms ease-in, opacity 400ms ease-in;
 	opacity: 0;
 }
 
-.container > .element:nth-child(n).appear {
+.card_container > .card:nth-child(n).appear {
 	transform: translateX(0);
 	opacity: 1;
 }
 
-.element_color_toggle {
+.card_color_toggle {
 	box-shadow: 0 0 2px 0 white;
 	background-color: #101010;
 }
@@ -417,11 +417,11 @@ img.png:hover ~ video.webm {
 		margin-bottom: 0;
 	}
 
-	.container {
+	.card_container {
 		grid-template-columns: repeat(auto-fill, 100%);
 	}
 
-	.container > .element {
+	.card_container > .card {
 		padding-top: 5vw;
 		padding-bottom: 5vw;
 		padding-left: 0;

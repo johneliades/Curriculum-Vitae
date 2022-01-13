@@ -22,15 +22,11 @@ $('#iframe_modal').on("load", function() {
 	$("#modal_content").css("opacity", "1");
 });
 
-$("#close_modal" ).click(function() {
+$("#close_modal").click(function() {
 	if($("#modal").is(":visible")) {
 		$("#modal").hide("fast");
 	}
-})
-
-$("#color_wheel" ).click(function() {
-	color_change();
-})
+});
 
 function color_change() {
 	var body = $('body');
@@ -51,6 +47,10 @@ function color_change() {
 	$("img.png").toggleClass("cursor");
 }
 
+$(".png").click(function() {
+	color_change();
+});
+
 $(document).keyup(function(e) {
 	if (event.key === "Escape") {
 		$("#modal").hide("fast");
@@ -58,4 +58,29 @@ $(document).keyup(function(e) {
 	else if (event.key === "c") {
 		color_change();
 	}
+});
+
+const appearOptions = {
+	threshold: 0,
+	rootMargin: "0px 0px -150px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+	entries,
+	appearOnScroll
+) {
+	entries.forEach(entry => {
+		if(!entry.isIntersecting) {
+			return;
+		}
+
+		entry.target.classList.add("appear");
+		appearOnScroll.unobserve(entry.target);
+  });
+},
+appearOptions);
+
+const faders = document.querySelectorAll(".element");
+faders.forEach(fader => {
+	appearOnScroll.observe(fader);
 });

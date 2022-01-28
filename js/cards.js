@@ -47,10 +47,6 @@ function color_change() {
 	$("img.png").toggleClass("cursor");
 }
 
-$(".png").click(function() {
-	color_change();
-});
-
 $(document).keyup(function(e) {
 	if (event.key === "Escape") {
 		$("#modal").hide("fast");

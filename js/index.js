@@ -23,6 +23,7 @@ function generateUniqueRandom(maxNr) {
 <!-- Chooses quote and prints it in iframe -->
 $("#bird_container").click(function() {
 	var myArray = [
+		"❝The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.❞",
 		"❝A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila.❞",
 		"❝Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.❞",
 		"❝Any sufficiently advanced bug is indistinguishable from a feature.❞",

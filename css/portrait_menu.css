@@ -1,13 +1,7 @@
-@charset "UTF-8";
-
-html, body {
-	overflow: hidden; 
-	scrollbar-width: none;
-}
-
 .nav_toggle {
 	position: absolute;
 	z-index: 3;
+	visibility: hidden;
 	background-color: rgba(24, 24, 24, 0.4);
 	top: 20px;
 	left: 20px;
@@ -20,24 +14,15 @@ html, body {
 	background-color: rgba(24, 24, 24, 1);
 }
 
-.nav_menu:focus {
+#nav_menu {
+	display: block;
+}
+
+#nav_menu:focus {
 	outline: none;
 }
 
-.nav_menu {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-	z-index: 2;
-	visibility: hidden;
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
-}
-
-.nav_menu::after {
+#nav_menu::after {
 	z-index: -1;
 	content: "";
 	display: block;
@@ -54,8 +39,8 @@ html, body {
 	background-color: black;
 }
 
-.nav:target > .nav_menu::after,
-.nav--open > .nav_menu::after {
+.nav:target > #nav_menu::after,
+.nav--open > #nav_menu::after {
   transform: scale(1);
 }
 
@@ -63,7 +48,7 @@ html, body {
 	display: block;
 	-webkit-transform: rotate(0deg);
 			transform: rotate(0deg);
-	transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), visibility 0ms;
 	cursor: url("../cursors/blue.cur"), auto;
 }
 
@@ -121,63 +106,35 @@ html, body {
 	transform: rotate(-45deg);
 }
 
-.nav:target .nav_menu, .nav--open .nav_menu {
+.nav:target #nav_menu, .nav--open #nav_menu {
 	visibility: visible;
-}
-
-#profile_pic_full {
-	width: 135px;
-	height: 135px;
-
-	margin-top: 8vh;
-	margin-bottom: 1vh;
-	margin-left: 30px;
-	margin-right: 30px;
-
-	border: 6px solid black;
-	box-shadow: 0px 0px 10px 0px white;
-	border-radius: 50%;
-}
-
-#profile_pic_full:hover {
-	animation: cycle 2s infinite;
-	animation-direction: alternate;
-	cursor: url("../cursors/blue.cur"), auto;
-	box-shadow: 0px 0px 23px 0px aqua;
-}
-
-#profile_pic_full:active {
-	animation: cycle 2s infinite;
-	animation-direction: alternate;
-	cursor: url("../cursors/blue.cur"), auto;
-	box-shadow: 0px 0px 30px 0px aqua;
-}
-
-#profile_pic_full:hover ~ #name_full {
-	color: aqua;
-	text-shadow: 0px 0px 10px aqua;
-}
-
-#profile_pic_full:active ~ #name_full {
-	color: aqua;
-	text-shadow: 0px 0px 10px red;
-}
-
-#name_full {
-	text-align: center;
-	margin-bottom: 15px;
-	font-size: 25px;
-	font-weight: 800;
-	color: white;
-}
-
-.fade_down {
-	opacity: 0;
-	transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 
 .nav:target .fade_down, .nav--open .fade_down {
 	opacity: 1;
 	-webkit-transform: translateY(0);
 			transform: translateY(0);
+}
+
+@media screen and (orientation: portrait) {
+	.nav_toggle {
+		visibility: visible;
+	}
+
+	#nav_menu {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	.fade_down {
+		opacity: 0;
+		transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06), visibility 0ms;
+	}
 }

@@ -1,5 +1,5 @@
-const nav = document.querySelector('#menu_full');
-const menu = document.querySelector('#menu');
+const nav = document.querySelector('#menu');
+const menu = document.querySelector('#nav_menu');
 const menuToggle = document.querySelector('.nav_toggle');
 const entries = document.getElementsByClassName('close_menu');
 let isMenuOpen = false;

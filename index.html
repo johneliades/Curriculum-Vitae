@@ -31,93 +31,62 @@
 		gtag('config', 'UA-158250593-1');
 	</script>
 
+	<script defer src="js/index.js"></script>
+	<script defer src="js/portrait_menu.js"></script>
+
 	<title>[John@Portfolio]-[~]</title>
 </head>
 
 <body>
 	<div id="main_screen">
-		<iframe id="iframe_main" name="iframe_main"></iframe>
+		<iframe id="iframe_main" name="iframe_main" tabindex="-1"></iframe>
 
 		<div id="bird_container" class="bird-container">
 			<div id="bird" class="bird"></div>
 		</div>
 	</div>
 	
-	<div id="menu_left" class="outer">
-		<div class="middle">
-			<img src="images/profile.jpg" draggable="false" id="profile_pic" class="clear_frame" alt="Home Screen">
+	<div id="menu" class="nav">
+		<div id="nav_menu">
+			<img src="images/profile.jpg" draggable="false" id="profile_pic" class="fade_down close_menu clear_frame" alt="Home Screen">
 
-			<div id="name" class="custom_font"> John Eliades </div>
+			<div id="name" class="fade_down"> John Eliades </div>
 
-			<div id="entry_wrapper" style="width: 100%">
-				<a href="about.html" target="iframe_main" class="custom_font entry hide_bird"> About </a>
-				<a href="projects.html" target="iframe_main" class="custom_font entry hide_bird"> Projects </a>
-				<a href="events.html" target="iframe_main" class="custom_font entry hide_bird"> Events </a>
+			<div id="entry_wrapper" class="fade_down" style="width: 100%">
+				<a href="about.html" target="iframe_main" class="entry close_menu hide_bird"> About </a>
+				<a href="projects.html" target="iframe_main" class="entry close_menu hide_bird"> Projects </a>
+				<a href="events.html" target="iframe_main" class="entry close_menu hide_bird"> Events </a>
 			</div>
 
-			<div id="icon_wrapper">
-				<a href="https://www.facebook.com/jon.bon.johny" class="icon" target="_blank">
-					<img src="images/facebook.png" alt="Facebook">
+			<div id="icon_wrapper" class="fade_down">
+				<a href="https://github.com/johneliades" class="icon close_menu" target="_blank">
+					<img src="images/github.webp" alt="Github">
 				</a>
 				
-				<a href="https://github.com/johneliades" class="icon" target="_blank">
-					<img src="images/github.webp" alt="Github">
+				<a href="" class="icon close_menu" target="_blank">
+					<img src="images/gep.jpg" alt="Military Certification">
 				</a>
-			
-				<a href="documents/degree.pdf" target="iframe_main" class="icon hide_bird">
-					<img src="images/uth.png" alt="Uth">
+				
+				<a href="documents/degree.pdf" target="iframe_main" class="icon close_menu hide_bird">
+					<img src="images/uth.png" alt="UTH">
 				</a>
 			</div>
+
+			<!-- nav_menu TOGGLE BUTTON -->
+			<a href="#nav_menu" class="nav_toggle" role="button" aria-expanded="false" aria-controls="nav_menu">
+				<svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+					<title>Toggle nav_menu</title>
+					<g>
+						<line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+						<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+						<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+						<line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+						<circle class="menuicon__circle" r="23" cx="25" cy="25" />
+					</g>
+				</svg>
+			</a>
 		</div>
 	</div>
-
-	<div id="menu_full" class="nav">
-		<div class="nav_menu fade_down" id="menu" tabindex="-1">
-			<img src="images/profile.jpg" draggable="false" id="profile_pic_full" class="close_menu clear_frame"
-				style="margin: auto; margin-top: 0; margin-bottom: 10px;" alt="Home Screen">
-
-			<div id="name_full" class="custom_font fade_down"> John Eliades </div>
-
-			<div class="fade_down" style="text-align: center; width: 150px; margin: auto; margin-top: 0px; margin-bottom: 0px;">
-				<a href="about.html" target="iframe_main" class="custom_font entry close_menu hide_bird"> About </a>
-
-				<a href="projects.html" target="iframe_main" class="custom_font entry close_menu hide_bird"> Projects </a>
-
-				<a href="events.html" target="iframe_main" class="custom_font entry close_menu hide_bird"> Events </a>
-			</div>
-
-			<div id="icon_wrapper_full">
-				<a href="https://www.facebook.com/jon.bon.johny" class="fade_down icon" target="_blank" >
-					<img src="images/facebook.png" alt="Facebook">
-				</a>
-	
-				<a href="https://github.com/johneliades" class="fade_down icon" target="_blank" >
-					<img src="images/github.webp" alt="Github">
-				</a>
-
-				<a href="documents/degree.pdf" target="iframe_main" class="fade_down close_menu icon hide_bird">
-					<img src="images/uth.png" alt="Uth">
-				</a>
-			</div>
-		</div>
-
-<!-- MENU TOGGLE BUTTON -->
-		<a href="#menu_full" class="nav_toggle" role="button" aria-expanded="false" aria-controls="menu">
-			<svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-				<title>Toggle Menu</title>
-				<g>
-					<line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
-					<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
-					<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
-					<line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
-					<circle class="menuicon__circle" r="23" cx="25" cy="25" />
-				</g>
-			</svg>
-		</a>
-	</div>
-
-	<script src="js/index.js"></script>
-	<script src="js/portrait_menu.js"></script>
 </body>
 
 </html>

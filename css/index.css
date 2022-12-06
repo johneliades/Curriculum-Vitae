@@ -23,6 +23,11 @@ body, html, #menu, #main_screen {
 	cursor: url('../cursors/white.cur'), auto;
 }
 
+html {
+	font-family: "Charm";
+	font-size: 62.5%;
+}
+
 #iframe_main { 
 	float: left;
 	width: 100%;
@@ -122,10 +127,8 @@ iframe {
 	text-align: center;
 	margin-bottom: 4vh;
 
-	font-size: 30px;
+	font-size: 3rem;
 	color: white;
-
-	font-family: "Charm";
 }
 
 .entry {
@@ -136,11 +139,9 @@ iframe {
 	margin-right: 30px;
 	margin-bottom: 1vh;
 
-	font-family: "Charm";
-
 	cursor: url("../cursors/blue.cur"), auto;
 
-	font-size: 30px;
+	font-size: 3rem;
 	color: grey;
 	transition: all 0.2s linear;
 }
@@ -151,7 +152,7 @@ iframe {
 
 .entry:focus {
 	color: aqua;
-	font-size: 35px;
+	font-size: 3.5rem;
 	box-shadow: 0px 0px 15px 0px aqua;
 	border-radius: 15px;
 	border: 2px solid aqua;
@@ -261,18 +262,18 @@ iframe {
 
 	#name {
 		margin-bottom: 15px;
-		font-size: 25px;
+		font-size: 2.5rem;
 		font-weight: 800;
 	}
 
 	.entry {
 		margin-left: 38%;
 		margin-right: 38%;
-		font-size: 25px;
+		font-size: 2.5rem;
 	}
 
 	.entry:focus {
-		font-size: 28px;
+		font-size: 2.8rem;
 	}
 
 	#icon_wrapper {
@@ -320,7 +321,7 @@ iframe {
 	}
 
 	#name {
-		font-size: 24px;
+		font-size: 2.4rem;
 		margin-bottom: 3vh;
 	}
 
@@ -328,11 +329,11 @@ iframe {
 		margin-bottom: 1vh;
 		margin-right: 50px;
 		margin-left: 50px;
-		font-size: 22px;
+		font-size: 2.2rem;
 	}
 
 	.entry:focus {
-		font-size: 26px;
+		font-size: 2.6rem;
 	}
 
 	#icon_wrapper {
@@ -391,17 +392,17 @@ iframe {
 	}
 
 	#name {
-		font-size: 2.5vw;
+		font-size: 2.5rem;
 		margin-bottom: 4vh;
 	}
 
 	.entry {
 		margin-bottom: 1vh;
-		font-size: 2.5vw;
+		font-size: 2.5rem;
 	}
 
 	.entry:focus {
-		font-size: 2.7vw;
+		font-size: 2.7rem;
 	}
 
 	#icon_wrapper {
@@ -462,17 +463,17 @@ iframe {
 	}
 
 	#name {
-		font-size: 2vw;
+		font-size: 2rem;
 		margin-bottom: 3vh;
 	}
 
 	.entry {
 		margin-bottom: 0vh;
-		font-size: 2vw;
+		font-size: 2rem;
 	}
 
 	.entry:focus {
-		font-size: 2.5vw;
+		font-size: 2.5rem;
 	}
 
 	#icon_wrapper {
@@ -529,17 +530,17 @@ iframe {
 	}
 
 	#name {
-		font-size: 17px;
+		font-size: 1.7rem;
 		margin-bottom: 3vh;
 	}
 
 	.entry {
 		margin-bottom: 0vh;
-		font-size: 17px;
+		font-size: 1.7rem;
 	}
 
 	.entry:focus {
-		font-size: 20px;
+		font-size: 2rem;
 	}
 
 	#icon_wrapper {
@@ -601,17 +602,17 @@ iframe {
 	}
 
 	#name {
-		font-size: 15px;
+		font-size: 1.5rem;
 		margin-bottom: 1.5vh;
 	}
 
 	.entry {
 		margin-bottom: 0vh;
-		font-size: 15px;
+		font-size: 1.5rem;
 	}
 
 	.entry:focus {
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 
 	#icon_wrapper {

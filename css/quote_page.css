@@ -7,6 +7,11 @@ body, html {
 	cursor: url('../cursors/crosshair.cur'), crosshair;
 }
 
+html {
+	font-family: "Roboto";
+	font-size: 62.5%;
+}
+
 ::-webkit-scrollbar { 
 	display: none; 
 }
@@ -40,8 +45,7 @@ body, html {
 }
 
 p.custom_font {
-	font-family: "Roboto";
-	font-size: 22px;
+	font-size: 2.2rem;
 	text-align: center;
 	text-shadow: 0 0 1.5px #4B6364, 1px 1px 5px white;
 	font-weight: bold;
@@ -63,7 +67,7 @@ p.animation {
 
 @media screen and (max-width: 800px) {
 	p.custom_font {
-		font-size: 18px;
+		font-size: 1.8rem;
 	}
 }
 

@@ -44,9 +44,13 @@ iframe {
 	width: 220px;
 
 	background-color: black;
-	overflow-y: auto;
+	overflow: hidden;
 
 	animation: opac 0.8s;
+}
+
+#nav_menu {
+	height: 100%;
 }
 
 #main_screen {
@@ -143,7 +147,7 @@ iframe {
 
 	font-size: 3rem;
 	color: grey;
-	transition: all 0.2s linear;
+	transition: all 0.2s linear, visibility 0ms;
 }
 
 .entry:hover {
@@ -182,7 +186,7 @@ iframe {
 }
 
 .icon {
-	transition: box-shadow 0.2s linear;
+	transition: box-shadow 0.2s linear, visibility 0ms;
 	outline: none;
 }
 

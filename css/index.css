@@ -300,3 +300,352 @@ iframe {
 		width: 46px;
 	}
 }
+
+/* Max Menu - Small Screen */
+@media screen and (min-width: 1201px) and (max-height: 500px) and (orientation: landscape) {
+	.nav {
+		display: table;
+	}
+
+	#main_screen {
+		height: calc(100% - 30px);
+		width: calc(100% - 220px - 15px);
+		margin-right: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	#profile_pic {
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-top: 4vh;
+		width: 130px;
+		height: 130px;
+		border-width: 5px;
+	}
+
+	#name {
+		font-size: 2.4rem;
+		margin-bottom: 3vh;
+	}
+
+	.entry {
+		margin-bottom: 1vh;
+		margin-right: 50px;
+		margin-left: 50px;
+		font-size: 2.2rem;
+	}
+
+	.entry:focus {
+		font-size: 2.6rem;
+	}
+
+	#icon_wrapper {
+		position: static;
+		margin-top: 3vh;
+
+		height: 42px;
+	}
+
+	#icon_wrapper a {
+		height: 42px;
+		width: 42px;
+	}
+
+	.icon img {
+		height: 36px;
+		width: 36px;
+
+		border-style: solid;
+		border-width: 3px;
+	}
+
+	.icon img:hover {
+		height: 30px;
+		width: 30px;
+
+		border-style: double;
+		border-color: aqua;
+		border-width: 6px;
+	}
+}
+
+/* Changing Menu Size */
+@media screen and (min-width: 801px) and (max-width: 1200px) and (orientation: landscape) {
+	#menu {
+		width: 18vw;
+	}
+
+	#main_screen {
+		width: calc(82% - 15px);
+		height: calc(100% - 30px);
+
+		margin: 15px;
+		margin-left: 18vw;
+	}
+
+	#profile_pic {
+		width: 12vw;
+		height: 12vw;
+
+		border-width: 0.5vw;
+		margin-top: 9vh;
+		margin-bottom: 1vh;
+		margin-left: 2.5vw;
+		margin-right: 2.5vw;
+	}
+
+	#name {
+		font-size: 2.5rem;
+		margin-bottom: 4vh;
+	}
+
+	.entry {
+		margin-bottom: 1vh;
+		font-size: 2.5rem;
+	}
+
+	.entry:focus {
+		font-size: 2.7rem;
+	}
+
+	#icon_wrapper {
+		bottom: 15px;
+		height: 3.8vw;
+	}
+
+	#icon_wrapper a {
+		margin-left: 0.7vw;
+		margin-right: 0.7vw;
+
+		height: 3.8vw;
+		width: 3.8vw;
+	}
+
+	.icon img {
+		height: 3.4vw;
+		width: 3.4vw;
+
+		border-width: 0.2vw;
+	}
+
+	.icon img:hover {
+		height: 3vw;
+		width: 3vw;
+
+		border-color: aqua;
+		border-width: 0.4vw;
+	}
+}
+
+/* Changing Menu Size - Small Screen */
+@media screen and (min-width: 801px) and (max-width: 1200px) and (max-height: 500px) and (orientation: landscape) {
+	.nav {
+		display: table;
+	}
+
+	#menu {
+		width: 18vw;
+	}
+
+	#main_screen {
+		width: calc(82vw - 12px);
+		height: calc(100% - 24px);
+
+		margin: 12px;
+		margin-left: 18vw;
+	}
+
+	#profile_pic {
+		width: 11vw;
+		height: 11vw;
+
+		margin-top: 4vh;
+		margin-bottom: 2vh;
+		margin-left: 3vw;
+		margin-right: 3vw;
+	}
+
+	#name {
+		font-size: 2rem;
+		margin-bottom: 3vh;
+	}
+
+	.entry {
+		margin-bottom: 0vh;
+		font-size: 2rem;
+	}
+
+	.entry:focus {
+		font-size: 2.5rem;
+	}
+
+	#icon_wrapper {
+		position: static;
+		margin-top: 4vh;
+
+		height: 3.6vw;
+	}
+
+	#icon_wrapper a {
+		height: 3.6vw;
+		width: 3.6vw;
+	}
+
+	.icon img {
+		height: 3.2vw;
+		width: 3.2vw;
+
+		border-width: 0.2vw;
+	}
+
+	.icon img:hover {
+		height: 2.4vw;
+		width: 2.4vw;
+
+		border-color: aqua;
+		border-width: 0.6vw;
+	}
+}
+
+/* Min Menu */
+@media screen and (max-width: 800px) and (orientation: landscape) {
+	#menu {
+		width: 140px;
+	}
+
+	#main_screen {
+		width: calc(100% - 140px - 10px);
+		height: calc(100% - 20px);
+
+		margin: 10px;
+		margin-left: 140px;
+	}
+
+	#profile_pic {
+		width: 100px;
+		height: 100px;
+
+		border-width: 3px;
+		margin-top: 14vh;
+		margin-bottom: 2vh;
+		margin-left: 17px;
+		margin-right: 17px;
+	}
+
+	#name {
+		font-size: 1.7rem;
+		margin-bottom: 3vh;
+	}
+
+	.entry {
+		margin-bottom: 0vh;
+		font-size: 1.7rem;
+	}
+
+	.entry:focus {
+		font-size: 2rem;
+	}
+
+	#icon_wrapper {
+		margin-top: 6vh;
+
+		bottom: 10px;
+
+		height: 34px;
+	}
+
+	#icon_wrapper a{
+		margin-left: 2px;
+		margin-right: 2px;
+
+		height: 34px;
+		width: 34px;
+	}
+
+	.icon img {
+		height: 30px;
+		width: 30px;
+
+		border-width: 2px;
+	}
+
+	.icon img:hover {
+		height: 26px;
+		width: 26px;
+
+		border-color: aqua;
+		border-width: 4px;
+	}
+}
+
+/* Min Menu - Small Screen */
+@media screen and (max-width: 800px) and (max-height: 340px) and (orientation: landscape) {
+	.nav {
+		display: table;
+	}
+
+	#menu {
+		width: 140px;
+	}
+
+	#main_screen {
+		width: calc(100% - 140px - 10px);
+		height: calc(100% - 20px);
+
+		margin: 10px;
+		margin-left: 140px;
+	}
+
+	#profile_pic {
+		width: 90px;
+		height: 90px;
+		margin-left: 19px;
+		margin-right: 19px;
+		margin-top: 4vh;
+	}
+
+	#name {
+		font-size: 1.5rem;
+		margin-bottom: 1.5vh;
+	}
+
+	.entry {
+		margin-bottom: 0vh;
+		font-size: 1.5rem;
+	}
+
+	.entry:focus {
+		font-size: 1.6rem;
+	}
+
+	#icon_wrapper {
+		position: static;
+		margin-top: 2.5vh;
+
+		height: 26px;
+	}
+
+	#icon_wrapper a {
+		margin-left: 5px;
+		margin-right: 5px;	
+
+		height: 26px;
+		width: 26px;	
+	}
+
+	.icon img {
+		height: 22px;
+		width: 22px;
+
+		border-width: 2px;
+	}
+
+	.icon img:hover {
+		height: 18px;
+		width: 18px;
+
+		border-color: aqua;
+		border-width: 4px;
+	}
+}

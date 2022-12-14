@@ -22,6 +22,17 @@ function generateUniqueRandom(maxNr) {
 
 <!-- Chooses quote and prints it in iframe -->
 $("#bird_container").click(function() {
+	var birdElement = document.getElementById('bird');
+	birdElement.classList.add('falling');
+
+	setTimeout(() => {
+		birdElement.classList.remove('falling');
+		var bird_container = document.getElementById("bird_container");
+		bird_container.style.animation = 'none';
+		bird_container.offsetHeight; /* trigger reflow */
+		bird_container.style.animation = null; 
+	}, 1000);
+
 	var myArray = [
 		"❝The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.❞",
 		"❝A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila.❞",
@@ -55,7 +66,8 @@ $("#bird_container").click(function() {
 		"❝Knock knock. Race condition. Who's there?❞",
 		"❝What's the best thing thing about UDP jokes? I don't care if you get them.❞",
 		"❝A UDP packet walks into a bar, no one acknowledges him.❞",
-		"❝A UDP packet walks into...❞"
+		"❝A UDP packet walks into...❞",
+		"❝The best way to predict the future is to invent it.❞"
 	];
 
 	var randomItem = myArray[generateUniqueRandom(myArray.length-1)];
@@ -128,6 +140,13 @@ function initFrame() {
 	var bird_container = document.getElementById("bird_container");
 	if(bird_container)
 		bird_container.style.zIndex = 0;
+
+	var birdElement = document.getElementById('bird');
+	birdElement.classList.remove('falling');
+
+	bird_container.style.animation = 'none';
+	bird_container.offsetHeight; /* trigger reflow */
+	bird_container.style.animation = null; 
 
 	iframe=document.getElementById('iframe_main');
 	iframe.src = "quote_page.html";

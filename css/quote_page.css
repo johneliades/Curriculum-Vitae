@@ -3,7 +3,7 @@ body, html {
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
- 	scrollbar-width: none;
+	scrollbar-width: none;
 	cursor: url('../cursors/crosshair.cur'), crosshair;
 }
 

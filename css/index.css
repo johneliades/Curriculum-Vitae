@@ -16,9 +16,8 @@ body, html, #menu, #main_screen {
 	margin: 0;
 	height: 100%;
 	width: 100%;
-	scrollbar-width: none;
 	overflow-x: hidden;
-
+	scrollbar-width: none;
 	background-color: black;
 	cursor: url('../cursors/white.cur'), auto;
 }

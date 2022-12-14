@@ -1,7 +1,7 @@
-.bird-container {
+#bird_container {
 	position: absolute;
 	top: 0px;
-	left:-40%;
+	left: -40%;
 	animation-name: fly-right;
 	width: 88px;
 	height: 125px;
@@ -30,7 +30,7 @@
 	100% {transform: translateY(0vh) translateX(131vw) scale(0);}
 }
 
-.bird {
+#bird {
 	position: relative;
 	background-image: url(../images/bird-cells.svg);
 	background-size: auto 100%;
@@ -45,6 +45,12 @@
 	animation-duration: 1s;
 	animation-delay: 1s;	
 	z-index: 0;
+}
+
+#bird.falling {
+	transform: translateY(150vh) rotate(45deg);
+	transition: all 1s ease-in-out;
+	animation-play-state: paused;
 }
 
 @keyframes fly-cycle {

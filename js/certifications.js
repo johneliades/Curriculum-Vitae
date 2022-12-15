@@ -29,9 +29,12 @@ function nextCertificate() {
 }
 
 function updateCertificate() {
-	var certificateFrame = document.querySelector('#certificate-image');
-	certificateFrame.src = certificateFiles[currentCertificate];
-	
+	var certificateImage = document.querySelector('#certificate-image');
+	var $img = $('#certificate-image');
+	$img.fadeOut(0); 
+	certificateImage.src = certificateFiles[currentCertificate];
+	$img.fadeIn(800); 
+
 	var certificateCounter = document.querySelector('#certificate-counter');
 	certificateCounter.textContent = "" + (currentCertificate + 1) + "/" + certificateFiles.length;
 

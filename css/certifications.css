@@ -3,6 +3,18 @@
 	--main-font-color: aqua;
 }
 
+html, body {
+	margin: 0;
+	width: 100%;
+
+	cursor: url('../cursors/white.cur'), auto;
+}
+
+body {
+	overflow: hidden;
+	min-height: 100%;
+}
+
 html {
 	height: 100%;
 	background-color: var(--main-bg-color);
@@ -15,24 +27,26 @@ html {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
 }
 
 #certificate-frame {
-	width: 92%;
-	height: 70vh;
+	width: 85%;
+	height: 60vh;
 	border: 5px solid white;
 	border-radius: 1em;
 	margin: 15px;
 }
 
 #certificate-title {
+	text-align: center;
 	color: var(--main-font-color);
 	margin: 0;
 }
 
 #certificate-counter {
-	font-size: 2em;
-	margin: 15px;
+	font-size: 1.5em;
+	margin: 10px;
 	color: var(--main-font-color);
 	font-weight: bold;
 	font-family: "Charm";
@@ -45,9 +59,9 @@ html {
 
 #certificate-nav button {
 	display: inline-block;
-	padding: 0.35em 1.2em;
+	padding: 0.25em 1.2em;
 	border: 0.1em solid var(--main-font-color);
-	margin: 0.3em 0.5em 0.3em 0.5em;
+	margin: 0em 0.5em 0.3em 0.5em;
 	border-radius: 1em;
 	box-sizing: border-box;
 	text-decoration: none;

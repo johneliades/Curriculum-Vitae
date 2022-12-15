@@ -1,6 +1,6 @@
 var certificateList = [
-	{ file: "documents/degree.pdf", title: 'Degree of Electrical and Computer Engineering' },
-	{ file: "documents/gep.pdf", title: '80th National Guard Higher Command' },
+	{ file: "images/degree.png", title: 'Degree of Electrical and Computer Engineering' },
+	{ file: "images/gep.png", title: '80th National Guard Higher Command' },
 ];
 
 const certificateFiles = certificateList.map(certificate => certificate.file);
@@ -29,7 +29,7 @@ function nextCertificate() {
 }
 
 function updateCertificate() {
-	var certificateFrame = document.querySelector('#certificate-frame');
+	var certificateFrame = document.querySelector('#certificate-image');
 	certificateFrame.src = certificateFiles[currentCertificate];
 	
 	var certificateCounter = document.querySelector('#certificate-counter');

@@ -36,6 +36,12 @@ html {
 	border: 5px solid white;
 	border-radius: 1em;
 	margin: 15px;
+	overflow-x: hidden;
+}
+
+#certificate-image {
+	width: 100%;
+	height: auto;
 }
 
 #certificate-title {

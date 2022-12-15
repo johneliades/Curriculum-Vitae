@@ -55,7 +55,7 @@ html {
 }
 
 #certificate-frame {
-	width: 85%;
+	width: 92%;
 	height: auto;
 	max-height: 75vh;
 	border: 2px solid var(--main-font-color);

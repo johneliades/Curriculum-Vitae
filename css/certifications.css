@@ -65,7 +65,7 @@ html {
 }
 
 #certificate-image {
-	width: 60%;
+	width: 100%;
 	height: auto;
 
 	display: block;  /* This is needed to center the image */

@@ -14,6 +14,9 @@ certificateCounter.textContent = "" + (currentCertificate + 1) + "/" + certifica
 var certificateTitle = document.querySelector('#certificate-title');
 certificateTitle.textContent = certificateTitles[0];
 
+const imgElement = new Image();
+imgElement.src = "images/gep.png";
+
 function previousCertificate() {
 	if (currentCertificate > 0) {
 		currentCertificate--;

@@ -1,3 +1,9 @@
+:root {
+	--main-bg-color: black;
+	--main-font-color: aqua;
+	--light-blue: rgb(13, 14, 33);
+}
+
 ::-webkit-scrollbar { 
 	display: none; 
 }
@@ -42,7 +48,7 @@ iframe {
 
 	width: 220px;
 
-	background-color: black;
+	background-color: var(--main-bg-color);
 	overflow: hidden;
 
 	animation: opac 0.8s;
@@ -65,7 +71,7 @@ iframe {
 	box-shadow: inset 0px 0px 10px 0px white;
 
 	background-image: url('../images/background.jpg');
-	background-color: black;
+	background-color: var(--main-bg-color);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -82,7 +88,7 @@ iframe {
 	margin-left: 30px;
 	margin-right: 30px;
 
-	border: 6px solid black;
+	border: 6px solid var(--main-bg-color);
 	box-shadow: 0px 0px 10px 0px white;
 	border-radius: 50%;
 
@@ -93,37 +99,37 @@ iframe {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
 	cursor: url("../cursors/blue.cur"), auto;
-	box-shadow: 0px 0px 23px 0px aqua;
+	box-shadow: 0px 0px 23px 0px var(--main-font-color);
 }
 
 #profile_pic:active {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
 	cursor: url("../cursors/blue.cur"), auto;
-	box-shadow: 0px 0px 30px 0px aqua;
+	box-shadow: 0px 0px 30px 0px var(--main-font-color);
 }
 
 #profile_pic:hover ~ #name {
-	color: aqua;
-	text-shadow: 0px 0px 20px aqua;
+	color: var(--main-font-color);
+	text-shadow: 0px 0px 20px var(--main-font-color);
 }
 
 #profile_pic:active ~ #name {
-	color: aqua;
+	color: var(--main-font-color);
 	text-shadow: 0px 0px 20px red;
 }
 
 @keyframes cycle {
-	0% { border-color: aqua; }
-   	12.5% { border-right-color: aqua; }
-	25% { border-top-color: aqua; }
-	37.5% { border-left-color: aqua; }
-	50% { border-bottom-color: aqua; }
+	0% { border-color: var(--main-font-color); }
+   	12.5% { border-right-color: var(--main-font-color); }
+	25% { border-top-color: var(--main-font-color); }
+	37.5% { border-left-color: var(--main-font-color); }
+	50% { border-bottom-color: var(--main-font-color); }
    	62.5% { border-right-color: lightgreen; }
 	75% { border-top-color: lightgreen; }
 	87.5% { border-left-color: lightgreen; }
 	99% { border-bottom-color: lightgreen ; }
-	100% { border-color: aqua; }
+	100% { border-color: var(--main-font-color); }
 }
 
 #name {
@@ -150,15 +156,17 @@ iframe {
 }
 
 .entry:hover {
-	color: aqua;
+	color: var(--main-font-color);
 }
 
 .entry:focus {
-	color: aqua;
+	color: var(--main-font-color);
+	background-color: var(--light-blue);
+
 	font-size: 3.5rem;
-	box-shadow: 0px 0px 15px 0px aqua;
+	box-shadow: 0px 0px 15px 0px var(--main-font-color);
 	border-radius: 15px;
-	border: 2px solid aqua;
+	border: 2px solid var(--main-font-color);
 	outline: none;
 }
 
@@ -195,7 +203,7 @@ iframe {
 	height: 40px;
 	width: 40px;
 
-	border: 3px solid black;
+	border: 3px solid var(--main-bg-color);
 	box-shadow: 0px 0px 5px 0px white;
 }
 
@@ -204,9 +212,9 @@ iframe {
 	width: 34px;
 
 	border-style: double;
-	border-color: aqua;
+	border-color: var(--main-font-color);
 	border-width: 6px;
-	box-shadow: 0px 0px 15px 0px aqua;
+	box-shadow: 0px 0px 15px 0px var(--main-font-color);
 }
 
 .nav {
@@ -254,12 +262,12 @@ iframe {
 	}
 
 	#profile_pic:hover ~ #name {
-		color: aqua;
-		text-shadow: 0px 0px 10px aqua;
+		color: var(--main-font-color);
+		text-shadow: 0px 0px 10px var(--main-font-color);
 	}
 
 	#profile_pic:active ~ #name {
-		color: aqua;
+		color: var(--main-font-color);
 		text-shadow: 0px 0px 10px red;
 	}
 
@@ -310,7 +318,7 @@ iframe {
 		height: 9.2vw;
 		width: 9.2vw;
 
-		border-color: aqua;
+		border-color: var(--main-font-color);
 		border-width: 0.4vw;
 	}
 }
@@ -379,7 +387,7 @@ iframe {
 		width: 30px;
 
 		border-style: double;
-		border-color: aqua;
+		border-color: var(--main-font-color);
 		border-width: 6px;
 	}
 }
@@ -447,7 +455,7 @@ iframe {
 		height: 3vw;
 		width: 3vw;
 
-		border-color: aqua;
+		border-color: var(--main-font-color);
 		border-width: 0.4vw;
 	}
 }
@@ -517,7 +525,7 @@ iframe {
 		height: 2.4vw;
 		width: 2.4vw;
 
-		border-color: aqua;
+		border-color: var(--main-font-color);
 		border-width: 0.6vw;
 	}
 }
@@ -588,7 +596,7 @@ iframe {
 		height: 26px;
 		width: 26px;
 
-		border-color: aqua;
+		border-color: var(--main-font-color);
 		border-width: 4px;
 	}
 }
@@ -659,7 +667,7 @@ iframe {
 		height: 18px;
 		width: 18px;
 
-		border-color: aqua;
+		border-color: var(--main-font-color);
 		border-width: 4px;
 	}
 }

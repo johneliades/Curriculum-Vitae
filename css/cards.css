@@ -1,6 +1,7 @@
 :root {
 	--main-bg-color: black;
 	--main-font-color: aqua;
+	--light-blue: rgb(13, 14, 33);
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -115,7 +116,7 @@ a.button {
 	text-decoration: none;
 	font-size: 1.6rem;
 	color: var(--main-font-color);
-	background-color: rgb(13, 14, 33);
+	background-color: var(--light-blue);
 	text-align: center;
 	transition: all 0.2s;
 	cursor: url("../cursors/blue.cur"), auto;

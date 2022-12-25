@@ -56,7 +56,8 @@ html {
 
 #certificate-frame {
 	width: 92%;
-	height: 75vh;
+	height: auto;
+	max-height: 75vh;
 	border: 2px solid var(--main-font-color);
 	border-radius: 1em;
 	margin: 15px;

@@ -34,7 +34,7 @@ function nextCertificate() {
 function updateCertificate() {
 	var certificateImage = document.querySelector('#certificate-image');
 	var $img = $('#certificate-image');
-	$img.fadeOut(0); 
+	$img.hide(); 
 	certificateImage.src = certificateFiles[currentCertificate];
 	$img.fadeIn(800); 
 

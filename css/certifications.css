@@ -73,8 +73,6 @@ html {
 	margin: 0 auto;  /* This will center the image horizontally */
 	margin-top: auto;  /* This will center the image vertically */
 	margin-bottom: auto;  /* This will center the image vertically */
-
-	opacity: 1;
 }
 
 #certificate-title {

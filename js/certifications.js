@@ -15,11 +15,26 @@ certificateTitle.textContent = certificateTitles[0] + " ("
 const imgElement = new Image();
 imgElement.src = "images/gep.png";
 
+const previousButton = document.querySelector('#previous-button');
+const nextButton = document.querySelector('#next-button');
+
+if (currentCertificate === 0) {
+	previousButton.disabled = true;
+}
+
+if (currentCertificate === certificateFiles.length - 1) {
+	nextButton.disabled = true;
+}
+
 function previousCertificate() {
 	if (currentCertificate > 0) {
 		currentCertificate--;
 		updateCertificate();
 	}
+	if (currentCertificate === 0) {
+		previousButton.disabled = true;
+	}
+	nextButton.disabled = false;
 }
 
 function nextCertificate() {
@@ -27,6 +42,10 @@ function nextCertificate() {
 		currentCertificate++;
 		updateCertificate();
 	}
+	if (currentCertificate === certificateFiles.length - 1) {
+		nextButton.disabled = true;
+	}
+	previousButton.disabled = false;
 }
 
 function updateCertificate() {

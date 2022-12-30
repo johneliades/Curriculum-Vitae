@@ -120,6 +120,19 @@ html {
 	box-shadow: 0 0 0 10px var(--main-bg-color);
 }
 
+#certificate-nav button[disabled] {
+	opacity: 0.25;
+	pointer-events: none;
+}
+
+#certificate-nav button:hover, #certificate-nav button:focus {
+	background-color: rgb(13, 14, 33);
+	border-color: var(--main-font-color);
+	color: var(--main-font-color);
+	box-shadow: 0px 0px 6px 0px var(--main-font-color);
+	cursor: default;
+}
+
 #certificate-nav.cursor {
 	cursor: url("../cursors/blue.cur"), auto;
 }

@@ -131,8 +131,5 @@ html {
 	color: var(--main-font-color);
 	box-shadow: 0px 0px 6px 0px var(--main-font-color);
 	cursor: default;
-}
-
-#certificate-nav.cursor {
 	cursor: url("../cursors/blue.cur"), auto;
 }

@@ -8,10 +8,6 @@ const certificateTitles = certificateList.map(certificate => certificate.title);
 
 var currentCertificate = 0;
 
-var certificateTitle = document.querySelector('#certificate-title');
-certificateTitle.textContent = certificateTitles[0] + " (" 
-	+ (currentCertificate + 1) + "/" + certificateFiles.length + ")";
-
 const imgElement = new Image();
 imgElement.src = "images/gep.png";
 
@@ -54,10 +50,6 @@ function updateCertificate() {
 	$img.hide(); 
 	certificateImage.src = certificateFiles[currentCertificate];
 	$img.fadeIn(800); 
-
-	var certificateTitle = document.querySelector('#certificate-title');
-	certificateTitle.textContent = certificateTitles[currentCertificate] + " (" 
-		+ (currentCertificate + 1) + "/" + certificateFiles.length + ")";;
 }
 
 document.addEventListener('keydown', function(event) {

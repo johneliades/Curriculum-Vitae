@@ -72,7 +72,7 @@ html {
 
 #certificate-nav {
 	position: fixed;
-	bottom: 20px;
+	bottom: 15px;
 	width: 100%;
 	display: flex;
 	justify-content: center;

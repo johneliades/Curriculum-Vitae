@@ -47,9 +47,11 @@ function nextCertificate() {
 function updateCertificate() {
 	var certificateImage = document.querySelector('#certificate-image');
 	var $img = $('#certificate-image');
-	$img.hide(); 
-	certificateImage.src = certificateFiles[currentCertificate];
-	$img.fadeIn(800); 
+	$img.addClass('fading');
+	setTimeout(function(){
+		certificateImage.src = certificateFiles[currentCertificate];
+		$img.removeClass('fading')
+	}, 300)
 }
 
 document.addEventListener('keydown', function(event) {

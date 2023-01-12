@@ -65,8 +65,18 @@ html {
 	padding: 20px;
 	margin: 0 auto;
 
+	opacity: 1;
+
 	border: 1px solid #e5e5e5;
 	border-radius: 1em;
+
+	transition: all 0.3s ease-in-out; /* this sets the transition effect */
+}
+
+#certificate-image.fading {
+	opacity: 0;
+	box-shadow: inset 0 0 0 25px var(--main-font-color);
+	border-radius: 15%;
 }
 
 #certificate-nav {

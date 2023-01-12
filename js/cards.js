@@ -80,3 +80,10 @@ const faders = document.querySelectorAll(".card");
 faders.forEach(fader => {
 	appearOnScroll.observe(fader);
 });
+
+$(document).ready(function(){
+	$("#notification").addClass("show").text("Tap/hover a project for preview");
+	setTimeout(function(){
+		$("#notification").removeClass("show");
+	}, 3000);
+});

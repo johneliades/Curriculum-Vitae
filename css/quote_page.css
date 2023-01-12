@@ -55,16 +55,6 @@ p.custom_font {
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 }
 
-p.animation {
-	animation: wrap 1s steps(100, end);
-}
-
-/* The typing effect */
-@keyframes wrap {
-	from { width: 0 }
-	to { width: 100% }
-}
-
 @media screen and (max-width: 800px) {
 	p.custom_font {
 		font-size: 1.8rem;

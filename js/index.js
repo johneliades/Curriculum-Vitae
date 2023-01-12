@@ -20,6 +20,27 @@ function generateUniqueRandom(maxNr) {
 	}
 }
 
+var timer = null; 
+
+function typewritter(randomItem) {
+	iframe = document.getElementById('iframe_main');
+	element = iframe.contentWindow.document.getElementById("quote")
+	element.innerText = "";
+
+	var i = 0;
+	var currentText = "";
+
+	function type() {
+		if (i < randomItem.length) {
+			currentText += randomItem.charAt(i)
+			element.innerText = currentText;
+			i++;
+			timer = setTimeout(type, 50);
+		}
+	}
+	type();
+}
+
 <!-- Chooses quote and prints it in iframe -->
 $("#bird_container").click(function() {
 	var birdElement = document.getElementById('bird');
@@ -72,16 +93,8 @@ $("#bird_container").click(function() {
 
 	var randomItem = myArray[generateUniqueRandom(myArray.length-1)];
 
-	iframe = document.getElementById('iframe_main');
-	element = iframe.contentWindow.document.getElementById("quote")
-	element.innerText = randomItem;
-
-	element.classList.remove("animation");
-
-	// -> triggering reflow /* The actual magic */
-	void element.offsetWidth;
-
-	element.classList.add("animation");
+	clearTimeout(timer);
+	typewritter(randomItem);
 })
 
 <!-- Disables the bird -->
@@ -148,11 +161,16 @@ function initFrame() {
 	bird_container.offsetHeight; /* trigger reflow */
 	bird_container.style.animation = null; 
 
-	iframe=document.getElementById('iframe_main');
+	iframe = document.getElementById('iframe_main');
 	iframe.src = "quote_page.html";
 
 	$('#main_screen').fadeIn("slow");
 	$("#iframe_main").focus();
+
+	$('#iframe_main').on('load', function(){
+		clearTimeout(timer);
+		typewritter("Shoot the bird & enjoy the quote ;)");
+	});
 }
 
 $(".clear_frame").click(initFrame);

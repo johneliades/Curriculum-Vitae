@@ -35,7 +35,7 @@ function typewritter(randomItem) {
 			currentText += randomItem.charAt(i)
 			element.innerText = currentText;
 			i++;
-			timer = setTimeout(type, 50);
+			timer = setTimeout(type, 40);
 		}
 	}
 	type();

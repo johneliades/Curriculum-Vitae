@@ -62,8 +62,7 @@ html.color {
 body {
 	overflow: visible;
 	min-height: 100%;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin: 0px;
 	padding-bottom: 6px;
 	background-color: var(--main-bg-color);
 }
@@ -303,12 +302,15 @@ img.modal_loading {
 }
 
 .card_container > .card {
-	margin: 13px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	margin-left: 10px;
+	margin-right: 10px;
 
 	text-align: center;
 
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 
 	border: thick solid black;
 	border-radius: 25px;
@@ -340,7 +342,7 @@ video.webm {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
-	border: 3px solid var(--main-font-color);
+	border: 2.5px solid var(--main-font-color);
 	border-radius: 10px;
 	object-fit: fill;
 	z-index: 5;
@@ -352,7 +354,7 @@ img.png {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
-	border: 5px solid var(--main-font-color);
+	border: 5.5px solid var(--main-font-color);
 	border-radius: 10px;
 
 	background: var(--main-bg-color);
@@ -395,7 +397,7 @@ img.png:hover ~ video.webm {
 	width: 44vw;
 	height: 28vw;
 	min-height: 250px;
-	border: 5px solid var(--main-font-color);
+	border: 5.5px solid var(--main-font-color);
 	border-radius: 10px;
 
 	background: var(--main-bg-color);

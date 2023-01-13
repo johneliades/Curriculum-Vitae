@@ -29,7 +29,16 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-158250593-1');
 	</script>
-
+<!-- 
+	<script>
+		window.addEventListener('DOMContentLoaded', function() {
+			$("#iframe_main").on('load',function() {
+				document.title = document.getElementById("iframe_main").contentDocument.title;
+				$("#iframe_main").focus();
+			});
+		});
+	</script>
+ -->
 	<script defer src="js/index.js"></script>
 	<script defer src="js/portrait_menu.js"></script>
 
@@ -46,22 +55,22 @@
 			<div id="name" class="fade_down"> John Eliades </div>
 
 			<div id="entry_wrapper" class="fade_down" style="width: 100%">
-				<a href="about.html" target="iframe_main" class="entry close_menu change_title"> About </a>
-				<a href="portfolio.html" target="iframe_main" class="entry close_menu change_title"> Portfolio </a>
-				<a href="certifications.html" target="iframe_main" class="entry close_menu change_title"> Certif. </a>
+				<a href="about.html" target="iframe_main" class="entry close_menu" draggable="false"> About </a>
+				<a href="portfolio.html" target="iframe_main" class="entry close_menu" draggable="false"> Portfolio </a>
+				<a href="certifications.html" target="iframe_main" class="entry close_menu" draggable="false"> Certif. </a>
 			</div>
 
 			<div id="icon_wrapper" class="fade_down">
-				<a href="https://github.com/johneliades" target="_blank" class="icon close_menu">
-					<img src="images/github.webp" alt="Github">
+				<a href="https://github.com/johneliades" target="_blank" class="icon close_menu" draggable="false">
+					<img src="images/github.webp" alt="Github" draggable="false">
 				</a>
 				
-				<a href="https://stackoverflow.com/users/12780243/john-eliades" target="_blank" class="icon close_menu">
-					<img src="images/stackoverflow.jpg" alt="Stack Overflow">
+				<a href="https://stackoverflow.com/users/12780243/john-eliades" target="_blank" class="icon close_menu" draggable="false">
+					<img src="images/stackoverflow.jpg" alt="Stack Overflow" draggable="false">
 				</a>
 				
-				<a href="documents/CV.pdf" target="iframe_main" class="icon close_menu change_title">
-					<img src="images/cv.png" alt="CV">
+				<a href="documents/CV.pdf" target="iframe_main" class="icon close_menu" draggable="false">
+					<img src="images/cv.png" alt="CV" draggable="false">
 				</a>
 			</div>
 

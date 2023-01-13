@@ -50,6 +50,7 @@ function updateCertificate() {
 	$img.addClass('fading');
 	setTimeout(function(){
 		certificateImage.src = certificateFiles[currentCertificate];
+		document.getElementById("certificate-frame").scrollTop = 0;
 		$img.removeClass('fading')
 	}, 300)
 }

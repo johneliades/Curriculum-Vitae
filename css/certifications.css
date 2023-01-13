@@ -63,7 +63,7 @@ html {
 
 	width: 100%;
 	height: auto;
-	max-height: 90vh;
+	max-height: 95vh;
 
 	overflow-x: hidden;
 	background-color: var(--main-bg-color);

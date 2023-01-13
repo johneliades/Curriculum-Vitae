@@ -45,15 +45,25 @@ html {
 	height: 100%;
 	font-family: "Roboto";
 	font-size: 62.5%;
+
+	animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 #certificate-frame {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
 	width: 100%;
 	height: auto;
 	max-height: 90vh;
-
-	margin-top: 20px;
-	margin-bottom: 20px;
 
 	overflow-x: hidden;
 	background-color: var(--main-bg-color);

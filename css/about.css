@@ -39,6 +39,13 @@ body, html {
 html {
 	font-size: 62.5%;
 	font-family: "Roboto";
+	
+	animation: fade-in 0.8s;
+}
+
+@keyframes fade-in {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 p {
@@ -72,7 +79,7 @@ h3 {
 }
 
 .container {
-	text-align:center;
+	text-align: center;
 	margin: auto;
 }
 
@@ -82,18 +89,6 @@ h3 {
 	vertical-align: top;
 	margin-left: 30px;
 	margin-right: 30px;
-}
-
-.outer {
-	display: table;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-}
-
-.middle {
-	display: table-cell;
-	vertical-align: middle;
 }
 
 .wrapper {

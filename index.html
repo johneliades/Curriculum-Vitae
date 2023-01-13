@@ -18,7 +18,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/portrait_menu.css">
-	<link rel="stylesheet" href="css/bird.css">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -38,24 +37,18 @@
 </head>
 
 <body>
-	<div id="main_screen">
-		<iframe id="iframe_main" name="iframe_main"></iframe>
-
-		<div id="bird_container" class="bird_container">
-			<div id="bird" class="bird"></div>
-		</div>
-	</div>
+	<iframe id="iframe_main" name="iframe_main" src="quote_page.html"></iframe>
 
 	<div id="menu" class="nav">
 		<div id="nav_menu">
-			<img src="images/profile.jpg" draggable="false" id="profile_pic" class="fade_down close_menu clear_frame" alt="Home Screen">
+			<img src="images/profile.jpg" draggable="false" id="profile_pic" class="fade_down close_menu" alt="Home Screen">
 
 			<div id="name" class="fade_down"> John Eliades </div>
 
 			<div id="entry_wrapper" class="fade_down" style="width: 100%">
-				<a href="about.html" target="iframe_main" class="entry close_menu hide_bird"> About </a>
-				<a href="portfolio.html" target="iframe_main" class="entry close_menu hide_bird"> Portfolio </a>
-				<a href="certifications.html" target="iframe_main" class="entry close_menu hide_bird"> Certif. </a>
+				<a href="about.html" target="iframe_main" class="entry close_menu change_title"> About </a>
+				<a href="portfolio.html" target="iframe_main" class="entry close_menu change_title"> Portfolio </a>
+				<a href="certifications.html" target="iframe_main" class="entry close_menu change_title"> Certif. </a>
 			</div>
 
 			<div id="icon_wrapper" class="fade_down">
@@ -67,7 +60,7 @@
 					<img src="images/stackoverflow.jpg" alt="Stack Overflow">
 				</a>
 				
-				<a href="documents/CV.pdf" target="iframe_main" class="icon close_menu hide_bird">
+				<a href="documents/CV.pdf" target="iframe_main" class="icon close_menu change_title">
 					<img src="images/cv.png" alt="CV">
 				</a>
 			</div>

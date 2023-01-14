@@ -75,7 +75,7 @@ p.custom_font {
 #bird_container {
 	position: absolute;
 	top: 0px;
-	left: 0;
+	left: -10%;
 	animation-name: fly-right;
 	width: 88px;
 	height: 125px;

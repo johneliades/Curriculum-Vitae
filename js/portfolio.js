@@ -87,3 +87,7 @@ $(document).ready(function(){
 		$("#notification").removeClass("show");
 	}, 3000);
 });
+
+window.onscroll = function() {
+	$("#img_scroll").fadeOut(800);
+}

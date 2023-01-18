@@ -88,6 +88,7 @@ $(document).ready(function(){
 	}, 3000);
 });
 
-window.onscroll = function() {
+$(window).on("scroll", function(){
 	$("#img_scroll").fadeOut(800);
-}
+	$(window).off("scroll");
+});

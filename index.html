@@ -50,32 +50,34 @@
 
 	<div id="menu" class="nav">
 		<div id="nav_menu">
-			<img src="images/profile.jpg" draggable="false" id="profile_pic" class="fade_down close_menu" alt="Home Screen">
+			<a href="quote_page.html" id="profile_pic" target="iframe_main" class="fade_down close_menu" draggable="false">
+				<img src="images/profile.jpg" alt="Home Screen" draggable="false">
+			</a>
 
 			<div id="name" class="fade_down"> John Eliades </div>
 
 			<div id="entry_wrapper" class="fade_down" style="width: 100%">
-				<a href="about.html" target="iframe_main" class="entry close_menu" draggable="false"> About </a>
-				<a href="portfolio.html" target="iframe_main" class="entry close_menu" draggable="false"> Portfolio </a>
-				<a href="certifications.html" target="iframe_main" class="entry close_menu" draggable="false"> Certif. </a>
+				<a href="about.html" target="iframe_main" class="close_menu" draggable="false"> About </a>
+				<a href="portfolio.html" target="iframe_main" class="close_menu" draggable="false"> Portfolio </a>
+				<a href="certifications.html" target="iframe_main" class="close_menu" draggable="false"> Certif. </a>
 			</div>
 
 			<div id="icon_wrapper" class="fade_down">
-				<a href="https://github.com/johneliades" target="_blank" class="icon close_menu" draggable="false">
+				<a href="https://github.com/johneliades" target="_blank" class="close_menu" draggable="false">
 					<img src="images/github.webp" alt="Github" draggable="false">
 				</a>
 				
-				<a href="https://stackoverflow.com/users/12780243/john-eliades" target="_blank" class="icon close_menu" draggable="false">
+				<a href="https://stackoverflow.com/users/12780243/john-eliades" target="_blank" class="close_menu" draggable="false">
 					<img src="images/stackoverflow.jpg" alt="Stack Overflow" draggable="false">
 				</a>
 				
-				<a href="documents/CV.pdf" target="iframe_main" class="icon close_menu" draggable="false">
+				<a href="documents/CV.pdf" target="iframe_main" class="close_menu" draggable="false">
 					<img src="images/cv.png" alt="CV" draggable="false">
 				</a>
 			</div>
 
 			<!-- nav_menu TOGGLE BUTTON -->
-			<a href="#nav_menu" class="nav_toggle" role="button" aria-expanded="false" aria-controls="nav_menu">
+			<a href="#nav_menu" class="nav_toggle" role="button" aria-expanded="false" aria-controls="nav_menu" draggable="false">
 				<svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 					<title>Toggle nav_menu</title>
 					<g>

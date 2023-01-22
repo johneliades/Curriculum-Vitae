@@ -8,7 +8,7 @@
 	display: none; 
 }
 
-img, .entry, #icon_wrapper, #name {
+img, #entry_wrapper a, #icon_wrapper, #name {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -22,7 +22,7 @@ body, html, #menu {
 	margin: 0px;
 	height: 100%;
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 	scrollbar-width: none;
 	background-color: black;
 	cursor: url('../cursors/white.cur'), auto;
@@ -64,33 +64,45 @@ iframe {
 
 #nav_menu {
 	height: 100%;
+	text-align: center;
 }
 
 #profile_pic {
-	display: block;
+	display: inline-block;
+	
+	margin: 0 auto;
+	margin-top: 20px;
 
+	width: 162px;
+	height: 162px;
+
+	outline: none;
+	border-radius: 50%;
+
+	cursor: url("../cursors/blue.cur"), auto;;
+}
+
+#profile_pic img {
 	width: 150px;
 	height: 150px;
-
-	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 1vh;
 
 	border: 6px solid var(--main-bg-color);
 	box-shadow: 0px 0px 10px 0px white;
 	border-radius: 50%;
+	
+	cursor: url("../cursors/blue.cur"), auto;
 
 	transition: all box-shadow 300ms linear, visibility 0ms;
 }
 
-#profile_pic:hover {
+#profile_pic img:hover, #profile_pic:focus > img {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
 	cursor: url("../cursors/blue.cur"), auto;
 	box-shadow: 0px 0px 23px 0px var(--main-font-color);
 }
 
-#profile_pic:active {
+#profile_pic img:active {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
 	cursor: url("../cursors/blue.cur"), auto;
@@ -104,7 +116,7 @@ iframe {
 
 #profile_pic:active ~ #name {
 	color: var(--main-font-color);
-	text-shadow: 0px 0px 20px red;
+	text-shadow: 0px 0px 30px red;
 }
 
 @keyframes cycle {
@@ -128,7 +140,7 @@ iframe {
 	color: white;
 }
 
-.entry {
+#entry_wrapper a {
 	display: block;
 	
 	text-align: center;
@@ -145,11 +157,11 @@ iframe {
 	transition: all 0.2s linear, visibility 0ms;
 }
 
-.entry:hover {
+#entry_wrapper a:hover {
 	color: var(--main-font-color);
 }
 
-.entry:focus {
+#entry_wrapper a:focus {
 	color: var(--main-font-color);
 	background-color: var(--light-blue);
 	box-shadow: 0px 0px 15px 0px var(--main-font-color);
@@ -177,14 +189,12 @@ iframe {
 
 	height: 46px;
 	width: 46px;
-}
 
-.icon {
 	transition: box-shadow 0.2s linear, visibility 0ms;
 	outline: none;
 }
 
-.icon img {
+#icon_wrapper a img {
 	border-radius: 50%;
 
 	height: 40px;
@@ -194,7 +204,7 @@ iframe {
 	box-shadow: 0px 0px 5px 0px white;
 }
 
-.icon img:hover, .icon:focus > img {
+#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
 	height: 34px;
 	width: 34px;
 
@@ -239,11 +249,16 @@ iframe {
 	}
 
 	#profile_pic {
-		width: 27vw;
-		height: 27vw;
-
 		margin-top: 15px;
 		margin-bottom: 2vh;
+
+		width: calc(27vw + 12px);
+		height: calc(27vw + 12px);
+	}
+
+	#profile_pic img {
+		width: 27vw;
+		height: 27vw;
 	}
 
 	#profile_pic:hover ~ #name {
@@ -262,7 +277,7 @@ iframe {
 		font-weight: 800;
 	}
 
-	.entry {
+	#entry_wrapper a {
 		width: 30%;
 		font-size: 5vw;
 	}
@@ -286,14 +301,14 @@ iframe {
 		width: 10vw;
 	}
 
-	.icon img {
+	#icon_wrapper a img {
 		height: 9.6vw;
 		width: 9.6vw;
 
 		border-width: 0.2vw;
 	}
 
-	.icon img:hover, .icon:focus > img {
+	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
 		height: 9.2vw;
 		width: 9.2vw;
 
@@ -318,9 +333,14 @@ iframe {
 
 	#profile_pic {
 		margin-top: 15px;
+
+		width: calc(130px + 12px);
+		height: calc(130px + 12px);
+	}
+
+	#profile_pic img {
 		width: 130px;
 		height: 130px;
-		border-width: 5px;
 	}
 
 	#name {
@@ -328,7 +348,7 @@ iframe {
 		margin-bottom: 3vh;
 	}
 
-	.entry {
+	#entry_wrapper a {
 		font-size: 2.2rem;
 	}
 
@@ -344,7 +364,7 @@ iframe {
 		width: 42px;
 	}
 
-	.icon img {
+	#icon_wrapper a img {
 		height: 36px;
 		width: 36px;
 
@@ -352,7 +372,7 @@ iframe {
 		border-width: 3px;
 	}
 
-	.icon img:hover, .icon:focus > img {
+	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
 		height: 30px;
 		width: 30px;
 
@@ -377,12 +397,18 @@ iframe {
 	}
 
 	#profile_pic {
+		margin-top: 15px;
+		margin-bottom: 1vh;
+
+		width: calc(12vw + 1vw);
+		height: calc(12vw + 1vw);
+	}
+
+	#profile_pic img {
 		width: 12vw;
 		height: 12vw;
 
 		border-width: 0.5vw;
-		margin-top: 15px;
-		margin-bottom: 1vh;
 	}
 
 	#name {
@@ -390,7 +416,7 @@ iframe {
 		margin-bottom: 4vh;
 	}
 
-	.entry {
+	#entry_wrapper a {
 		font-size: 2.5rem;
 	}
 
@@ -407,14 +433,14 @@ iframe {
 		width: 3.8vw;
 	}
 
-	.icon img {
+	#icon_wrapper a img {
 		height: 3.4vw;
 		width: 3.4vw;
 
 		border-width: 0.2vw;
 	}
 
-	.icon img:hover, .icon:focus > img {
+	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
 		height: 3vw;
 		width: 3vw;
 
@@ -442,11 +468,18 @@ iframe {
 	}
 
 	#profile_pic {
+		margin-top: 12px;
+		margin-bottom: 2vh;
+
+		width: calc(11vw + 1vw);
+		height: calc(11vw + 1vw);
+	}
+
+	#profile_pic img {
 		width: 11vw;
 		height: 11vw;
 
-		margin-top: 12px;
-		margin-bottom: 2vh;
+		border-width: 0.5vw;
 	}
 
 	#name {
@@ -454,7 +487,7 @@ iframe {
 		margin-bottom: 3vh;
 	}
 
-	.entry {
+	#entry_wrapper a {
 		font-size: 2rem;
 	}
 
@@ -470,14 +503,14 @@ iframe {
 		width: 3.6vw;
 	}
 
-	.icon img {
+	#icon_wrapper a img {
 		height: 3.2vw;
 		width: 3.2vw;
 
 		border-width: 0.2vw;
 	}
 
-	.icon img:hover, .icon:focus > img {
+	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
 		height: 2.4vw;
 		width: 2.4vw;
 
@@ -501,12 +534,18 @@ iframe {
 	}
 
 	#profile_pic {
+		margin-top: 10px;
+		margin-bottom: 2vh;
+
+		width: calc(100px + 6px);
+		height: calc(100px + 6px);
+	}
+
+	#profile_pic img {
 		width: 100px;
 		height: 100px;
 
 		border-width: 3px;
-		margin-top: 10px;
-		margin-bottom: 2vh;
 	}
 
 	#name {
@@ -514,7 +553,7 @@ iframe {
 		margin-bottom: 3vh;
 	}
 
-	.entry {
+	#entry_wrapper a {
 		font-size: 1.7rem;
 	}
 
@@ -526,7 +565,7 @@ iframe {
 		height: 34px;
 	}
 
-	#icon_wrapper a{
+	#icon_wrapper a {
 		margin-left: 2px;
 		margin-right: 2px;
 
@@ -534,14 +573,14 @@ iframe {
 		width: 34px;
 	}
 
-	.icon img {
+	#icon_wrapper a img {
 		height: 30px;
 		width: 30px;
 
 		border-width: 2px;
 	}
 
-	.icon img:hover, .icon:focus > img {
+	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
 		height: 26px;
 		width: 26px;
 
@@ -569,9 +608,15 @@ iframe {
 	}
 
 	#profile_pic {
+		margin-top: 10px;
+
+		width: calc(90px + 12px);
+		height: calc(90px + 12px);
+	}
+
+	#profile_pic img {
 		width: 90px;
 		height: 90px;
-		margin-top: 10px;
 	}
 
 	#name {
@@ -579,7 +624,7 @@ iframe {
 		margin-bottom: 1.5vh;
 	}
 
-	.entry {
+	#entry_wrapper a {
 		font-size: 1.5rem;
 	}
 
@@ -598,14 +643,14 @@ iframe {
 		width: 26px;	
 	}
 
-	.icon img {
+	#icon_wrapper a img {
 		height: 22px;
 		width: 22px;
 
 		border-width: 2px;
 	}
 
-	.icon img:hover, .icon:focus > img {
+	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
 		height: 18px;
 		width: 18px;
 

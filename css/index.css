@@ -22,7 +22,7 @@ body, html, #menu {
 	margin: 0px;
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 	scrollbar-width: none;
 	background-color: black;
 	cursor: url('../cursors/white.cur'), auto;

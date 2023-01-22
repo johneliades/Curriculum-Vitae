@@ -148,7 +148,7 @@ iframe {
 
 	width: 50%; /* adjust as needed */
 	margin: 0 auto; /* center the div horizontally */
-	padding: 5px; /* creates space inside the border and text */
+	padding: 6px; /* creates space inside the border and text */
 
 	cursor: url("../cursors/blue.cur"), auto;
 
@@ -610,13 +610,13 @@ iframe {
 	#profile_pic {
 		margin-top: 10px;
 
-		width: calc(90px + 12px);
-		height: calc(90px + 12px);
+		width: calc(80px + 12px);
+		height: calc(80px + 12px);
 	}
 
 	#profile_pic img {
-		width: 90px;
-		height: 90px;
+		width: 80px;
+		height: 80px;
 	}
 
 	#name {
@@ -626,6 +626,7 @@ iframe {
 
 	#entry_wrapper a {
 		font-size: 1.5rem;
+		padding: 3px; /* creates space inside the border and text */
 	}
 
 	#icon_wrapper {

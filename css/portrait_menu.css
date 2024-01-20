@@ -69,7 +69,7 @@
 }
 
 .menuicon__bar, .menuicon__circle {
-	animation: blinker infinite linear 3s alternate;
+	animation: blinker infinite linear 2s alternate;
 }
 
 @keyframes blinker {

@@ -54,8 +54,43 @@
 	cursor: url("../cursors/blue.cur"), auto;
 }
 
+.nav--open .menuicon__bar, .nav--open .menuicon__circle, .nav--open .menuicon {
+	color: #FF003A;
+	animation: none
+}
+
+.nav--open .menuicon:hover .menuicon__bar, .nav--open .menuicon:hover .menuicon__circle {
+	color: darkred;
+}
+
 .menuicon:hover .menuicon__bar, .menuicon:hover .menuicon__circle {
 	color: aqua;
+	animation: none;
+}
+
+.menuicon__bar, .menuicon__circle {
+	animation: blinker infinite linear 3s alternate;
+}
+
+@keyframes blinker {
+	0% {
+		color: #0192FF;
+	}
+	20% {
+		color: #00FFF9;
+	}
+	40% {
+		color: #6AFF05;
+	}
+	60% {
+		color: #FFF000;
+	}
+	80% {
+		color: #FFAA02;
+	}
+	100% {
+		color: #FF003A;
+	}
 }
 
 .menuicon__bar, .menuicon__circle {
@@ -83,8 +118,6 @@
 }
 
 .nav:target .menuicon, .nav--open .menuicon {
-	color: white;
-
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
 }

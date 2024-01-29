@@ -1,3 +1,5 @@
 
 debug.log
 server.lnk
+.venv
+requirements.txt

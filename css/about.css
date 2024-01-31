@@ -27,8 +27,7 @@
 }
 
 body, html {
-	scrollbar-color: aqua black;
-	scrollbar-width: thin;
+	scrollbar-color: aqua inherit;
 	-ms-overflow-style: none;
 
  	background-color: black;

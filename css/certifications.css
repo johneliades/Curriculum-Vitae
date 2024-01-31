@@ -33,6 +33,11 @@ html, body {
 
 	background-color: var(--main-bg-color);
 
+	scrollbar-color: var(--main-font-color) black;
+	scrollbar-width: thin;
+
+	-ms-overflow-style: none;
+
 	cursor: url('../cursors/white.cur'), auto;
 }
 
@@ -97,6 +102,7 @@ html {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	pointer-events: none; 
 }
 
 #certificate-nav button {
@@ -114,6 +120,7 @@ html {
 	transition: all 0.2s;
 	cursor: url("../cursors/blue.cur"), auto;
 	box-shadow: 0px 0px 6px 0px var(--main-font-color);
+	pointer-events: auto; 
 }
 
 #certificate-nav button:hover {

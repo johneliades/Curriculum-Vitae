@@ -41,7 +41,6 @@ html, body {
 	width: 100%;
 
 	scrollbar-color: var(--main-font-color) inherit;
-	scrollbar-width: thin;
 	-ms-overflow-style: none;
  	overflow-x: hidden;
 

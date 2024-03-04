@@ -4,7 +4,8 @@
 	--light-blue: rgb(13, 14, 33);
 }
 
-body, html {
+body,
+html {
 	margin: 0;
 	height: 100%;
 	width: 100%;
@@ -28,8 +29,8 @@ html {
 	box-shadow: inset 0px 0px 10px 0px white;
 }
 
-::-webkit-scrollbar { 
-	display: none; 
+::-webkit-scrollbar {
+	display: none;
 }
 
 .unselectable {
@@ -47,7 +48,7 @@ html {
 	height: 100%;
 	width: 100%;
 
-	animation:opac 0.2s;
+	animation: opac 0.2s;
 }
 
 .middle {
@@ -67,8 +68,10 @@ p.custom_font {
 	font-weight: bold;
 	color: transparent;
 
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	overflow: hidden;
+	/* Ensures the content is not revealed until the animation */
+	margin: 0 auto;
+	/* Gives that scrolling effect as the typing happens */
 }
 
 /* Bird CSS */
@@ -91,17 +94,49 @@ p.custom_font {
 }
 
 @keyframes fly-right {
-	0% {transform: scale(0.4) translateX(-20vw);}
-	10% {transform: translateY(0vh) translateX(-5vw) scale(0.7);}
-	20% {transform: translateY(2vh) translateX(10vw) scale(0.6);}
-	30% {transform: translateY(4vh) translateX(25vw) scale(0.7);}
-	40% {transform: translateY(3vh) translateX(40vw) scale(0.8);}
-	50% {transform: translateY(4vh) translateX(55vw) scale(0.7);}
-	60% {transform: translateY(2vh) translateX(70vw) scale(0.6);}
-	70% {transform: translateY(2vh) translateX(85vw) scale(0.7);}
-	80% {transform: translateY(2vh) translateX(100vw) scale(0.8);}
-	90% {transform: translateY(2vh) translateX(130vw) scale(0.8);}
-	100% {transform: translateY(0vh) translateX(131vw) scale(0);}
+	0% {
+		transform: scale(0.4) translateX(-20vw);
+	}
+
+	10% {
+		transform: translateY(0vh) translateX(-5vw) scale(0.7);
+	}
+
+	20% {
+		transform: translateY(2vh) translateX(10vw) scale(0.6);
+	}
+
+	30% {
+		transform: translateY(4vh) translateX(25vw) scale(0.7);
+	}
+
+	40% {
+		transform: translateY(3vh) translateX(40vw) scale(0.8);
+	}
+
+	50% {
+		transform: translateY(4vh) translateX(55vw) scale(0.7);
+	}
+
+	60% {
+		transform: translateY(2vh) translateX(70vw) scale(0.6);
+	}
+
+	70% {
+		transform: translateY(2vh) translateX(85vw) scale(0.7);
+	}
+
+	80% {
+		transform: translateY(2vh) translateX(100vw) scale(0.8);
+	}
+
+	90% {
+		transform: translateY(2vh) translateX(130vw) scale(0.8);
+	}
+
+	100% {
+		transform: translateY(0vh) translateX(131vw) scale(0);
+	}
 }
 
 #bird {
@@ -117,7 +152,7 @@ p.custom_font {
 	animation-timing-function: steps(10);
 	animation-iteration-count: infinite;
 	animation-duration: 1s;
-	animation-delay: 1s;	
+	animation-delay: 1s;
 }
 
 #bird.falling {
@@ -138,10 +173,12 @@ p.custom_font {
 	}
 }
 
-@keyframes opac{
-	from{
-		opacity:0
-	} to{
-		opacity:1
+@keyframes opac {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
 	}
 }

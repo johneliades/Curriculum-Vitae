@@ -4,11 +4,14 @@
 	--light-blue: rgb(13, 14, 33);
 }
 
-::-webkit-scrollbar { 
-	display: none; 
+::-webkit-scrollbar {
+	display: none;
 }
 
-img, #entry_wrapper a, #icon_wrapper, #name {
+img,
+#entry_wrapper a,
+#icon_wrapper,
+#name {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -17,7 +20,9 @@ img, #entry_wrapper a, #icon_wrapper, #name {
 	user-select: none;
 }
 
-body, html, #menu {
+body,
+html,
+#menu {
 	position: fixed;
 	margin: 0px;
 	height: 100%;
@@ -33,7 +38,7 @@ html {
 	font-size: 62.5%;
 }
 
-#iframe_main { 
+#iframe_main {
 	position: absolute;
 
 	height: calc(100% - 40px);
@@ -41,7 +46,7 @@ html {
 
 	margin: 20px;
 	margin-left: 220px;
-	
+
 	border-radius: 10px;
 
 	overflow-y: auto;
@@ -69,7 +74,7 @@ iframe {
 
 #profile_pic {
 	display: inline-block;
-	
+
 	margin: 0 auto;
 	margin-top: 20px;
 
@@ -79,7 +84,8 @@ iframe {
 	outline: none;
 	border-radius: 50%;
 
-	cursor: url("../cursors/blue.cur"), auto;;
+	cursor: url("../cursors/blue.cur"), auto;
+	;
 }
 
 #profile_pic img {
@@ -89,13 +95,14 @@ iframe {
 	border: 6px solid var(--main-bg-color);
 	box-shadow: 0px 0px 10px 0px white;
 	border-radius: 50%;
-	
+
 	cursor: url("../cursors/blue.cur"), auto;
 
 	transition: all box-shadow 300ms linear, visibility 0ms;
 }
 
-#profile_pic img:hover, #profile_pic:focus > img {
+#profile_pic img:hover,
+#profile_pic:focus>img {
 	animation: cycle 2s infinite;
 	animation-direction: alternate;
 	cursor: url("../cursors/blue.cur"), auto;
@@ -109,27 +116,56 @@ iframe {
 	box-shadow: 0px 0px 30px 0px var(--main-font-color);
 }
 
-#profile_pic:hover ~ #name {
+#profile_pic:hover~#name {
 	color: var(--main-font-color);
 	text-shadow: 0px 0px 20px var(--main-font-color);
 }
 
-#profile_pic:active ~ #name {
+#profile_pic:active~#name {
 	color: var(--main-font-color);
 	text-shadow: 0px 0px 30px red;
 }
 
 @keyframes cycle {
-	0% { border-color: var(--main-font-color); }
-   	12.5% { border-right-color: var(--main-font-color); }
-	25% { border-top-color: var(--main-font-color); }
-	37.5% { border-left-color: var(--main-font-color); }
-	50% { border-bottom-color: var(--main-font-color); }
-   	62.5% { border-right-color: lightgreen; }
-	75% { border-top-color: lightgreen; }
-	87.5% { border-left-color: lightgreen; }
-	99% { border-bottom-color: lightgreen ; }
-	100% { border-color: var(--main-font-color); }
+	0% {
+		border-color: var(--main-font-color);
+	}
+
+	12.5% {
+		border-right-color: var(--main-font-color);
+	}
+
+	25% {
+		border-top-color: var(--main-font-color);
+	}
+
+	37.5% {
+		border-left-color: var(--main-font-color);
+	}
+
+	50% {
+		border-bottom-color: var(--main-font-color);
+	}
+
+	62.5% {
+		border-right-color: lightgreen;
+	}
+
+	75% {
+		border-top-color: lightgreen;
+	}
+
+	87.5% {
+		border-left-color: lightgreen;
+	}
+
+	99% {
+		border-bottom-color: lightgreen;
+	}
+
+	100% {
+		border-color: var(--main-font-color);
+	}
 }
 
 #name {
@@ -142,13 +178,16 @@ iframe {
 
 #entry_wrapper a {
 	display: block;
-	
+
 	text-align: center;
 	text-decoration: none;
 
-	width: 50%; /* adjust as needed */
-	margin: 0 auto; /* center the div horizontally */
-	padding: 6px; /* creates space inside the border and text */
+	width: 50%;
+	/* adjust as needed */
+	margin: 0 auto;
+	/* center the div horizontally */
+	padding: 6px;
+	/* creates space inside the border and text */
 
 	cursor: url("../cursors/blue.cur"), auto;
 
@@ -172,7 +211,7 @@ iframe {
 #icon_wrapper {
 	position: absolute;
 	bottom: 20px;
-	
+
 	height: 46px;
 	width: 100%;
 
@@ -204,7 +243,8 @@ iframe {
 	box-shadow: 0px 0px 5px 0px white;
 }
 
-#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
+#icon_wrapper a img:hover,
+#icon_wrapper a:focus>img {
 	height: 34px;
 	width: 34px;
 
@@ -223,10 +263,11 @@ iframe {
 
 @keyframes opac {
 	from {
-		opacity:0
-	} 
+		opacity: 0
+	}
+
 	to {
-		opacity:1
+		opacity: 1
 	}
 }
 
@@ -261,12 +302,12 @@ iframe {
 		height: 27vw;
 	}
 
-	#profile_pic:hover ~ #name {
+	#profile_pic:hover~#name {
 		color: var(--main-font-color);
 		text-shadow: 0px 0px 10px var(--main-font-color);
 	}
 
-	#profile_pic:active ~ #name {
+	#profile_pic:active~#name {
 		color: var(--main-font-color);
 		text-shadow: 0px 0px 10px red;
 	}
@@ -286,14 +327,14 @@ iframe {
 		position: absolute;
 		left: 20px;
 		bottom: 20px;
-		
+
 		height: 37vw;
 		width: 10vw;
 	}
 
 	#icon_wrapper a {
 		display: block;
-		
+
 		margin: 0;
 		margin-top: 2.5vw;
 
@@ -308,7 +349,8 @@ iframe {
 		border-width: 0.2vw;
 	}
 
-	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
+	#icon_wrapper a img:hover,
+	#icon_wrapper a:focus>img {
 		height: 9.2vw;
 		width: 9.2vw;
 
@@ -373,7 +415,8 @@ iframe {
 		border-width: 3px;
 	}
 
-	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
+	#icon_wrapper a img:hover,
+	#icon_wrapper a:focus>img {
 		height: 30px;
 		width: 30px;
 
@@ -441,7 +484,8 @@ iframe {
 		border-width: 0.2vw;
 	}
 
-	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
+	#icon_wrapper a img:hover,
+	#icon_wrapper a:focus>img {
 		height: 3vw;
 		width: 3vw;
 
@@ -512,7 +556,8 @@ iframe {
 		border-width: 0.2vw;
 	}
 
-	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
+	#icon_wrapper a img:hover,
+	#icon_wrapper a:focus>img {
 		height: 2.4vw;
 		width: 2.4vw;
 
@@ -582,7 +627,8 @@ iframe {
 		border-width: 2px;
 	}
 
-	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
+	#icon_wrapper a img:hover,
+	#icon_wrapper a:focus>img {
 		height: 26px;
 		width: 26px;
 
@@ -640,10 +686,10 @@ iframe {
 
 	#icon_wrapper a {
 		margin-left: 5px;
-		margin-right: 5px;	
+		margin-right: 5px;
 
 		height: 26px;
-		width: 26px;	
+		width: 26px;
 	}
 
 	#icon_wrapper a img {
@@ -653,7 +699,8 @@ iframe {
 		border-width: 2px;
 	}
 
-	#icon_wrapper a img:hover, #icon_wrapper a:focus > img {
+	#icon_wrapper a img:hover,
+	#icon_wrapper a:focus>img {
 		height: 18px;
 		width: 18px;
 

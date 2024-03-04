@@ -41,34 +41,39 @@
 	will-change: transform;
 }
 
-.nav:target > #nav_menu::after,
-.nav--open > #nav_menu::after {
-  transform: scale(1);
+.nav:target>#nav_menu::after,
+.nav--open>#nav_menu::after {
+	transform: scale(1);
 }
 
 .menuicon {
 	display: block;
 	-webkit-transform: rotate(0deg);
-			transform: rotate(0deg);
+	transform: rotate(0deg);
 	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), visibility 0ms;
 	cursor: url("../cursors/blue.cur"), auto;
 }
 
-.nav--open .menuicon__bar, .nav--open .menuicon__circle, .nav--open .menuicon {
+.nav--open .menuicon__bar,
+.nav--open .menuicon__circle,
+.nav--open .menuicon {
 	color: #FF003A;
 	animation: none
 }
 
-.nav--open .menuicon:hover .menuicon__bar, .nav--open .menuicon:hover .menuicon__circle {
+.nav--open .menuicon:hover .menuicon__bar,
+.nav--open .menuicon:hover .menuicon__circle {
 	color: darkred;
 }
 
-.menuicon:hover .menuicon__bar, .menuicon:hover .menuicon__circle {
+.menuicon:hover .menuicon__bar,
+.menuicon:hover .menuicon__circle {
 	color: aqua;
 	animation: none;
 }
 
-.menuicon__bar, .menuicon__circle {
+.menuicon__bar,
+.menuicon__circle {
 	animation: blinker infinite linear 2s alternate;
 }
 
@@ -76,24 +81,30 @@
 	0% {
 		color: #0192FF;
 	}
+
 	20% {
 		color: #00FFF9;
 	}
+
 	40% {
 		color: #6AFF05;
 	}
+
 	60% {
 		color: #FFF000;
 	}
+
 	80% {
 		color: #FFAA02;
 	}
+
 	100% {
 		color: #FF003A;
 	}
 }
 
-.menuicon__bar, .menuicon__circle {
+.menuicon__bar,
+.menuicon__circle {
 	fill: none;
 	stroke: currentColor;
 	stroke-width: 3;
@@ -103,9 +114,9 @@
 
 .menuicon__bar {
 	-webkit-transform: rotate(0deg);
-			transform: rotate(0deg);
+	transform: rotate(0deg);
 	-webkit-transform-origin: 50% 50%;
-			transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
 	transition: -webkit-transform .25s ease-in-out;
 	transition: transform .25s ease-in-out;
 	transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
@@ -117,38 +128,46 @@
 	stroke-dasharray: 144.513262038;
 }
 
-.nav:target .menuicon, .nav--open .menuicon {
+.nav:target .menuicon,
+.nav--open .menuicon {
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
 
-.nav:target .menuicon__circle, .nav--open .menuicon__circle {
+.nav:target .menuicon__circle,
+.nav--open .menuicon__circle {
 	stroke-dashoffset: 0;
 }
 
-.nav:target .menuicon__bar:nth-child(1), .nav:target .menuicon__bar:nth-child(4),
-	.nav--open .menuicon__bar:nth-child(1), .nav--open .menuicon__bar:nth-child(4) {
-		opacity: 0;
+.nav:target .menuicon__bar:nth-child(1),
+.nav:target .menuicon__bar:nth-child(4),
+.nav--open .menuicon__bar:nth-child(1),
+.nav--open .menuicon__bar:nth-child(4) {
+	opacity: 0;
 }
 
-.nav:target .menuicon__bar:nth-child(2), .nav--open .menuicon__bar:nth-child(2) {
+.nav:target .menuicon__bar:nth-child(2),
+.nav--open .menuicon__bar:nth-child(2) {
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
-.nav:target .menuicon__bar:nth-child(3), .nav--open .menuicon__bar:nth-child(3) {
+.nav:target .menuicon__bar:nth-child(3),
+.nav--open .menuicon__bar:nth-child(3) {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
-.nav:target #nav_menu, .nav--open #nav_menu {
+.nav:target #nav_menu,
+.nav--open #nav_menu {
 	visibility: visible;
 }
 
-.nav:target .fade_down, .nav--open .fade_down {
+.nav:target .fade_down,
+.nav--open .fade_down {
 	opacity: 1;
 	-webkit-transform: translateY(0);
-			transform: translateY(0);
+	transform: translateY(0);
 }
 
 @media screen and (orientation: portrait) {

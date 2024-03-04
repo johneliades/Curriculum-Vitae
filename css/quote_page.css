@@ -1,184 +1,184 @@
 :root {
-	--main-bg-color: black;
-	--main-font-color: aqua;
-	--light-blue: rgb(13, 14, 33);
+  --main-bg-color: black;
+  --main-font-color: aqua;
+  --light-blue: rgb(13, 14, 33);
 }
 
 body,
 html {
-	margin: 0;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	scrollbar-width: none;
-	cursor: url('../cursors/crosshair.cur'), crosshair;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  scrollbar-width: none;
+  cursor: url("../cursors/crosshair.cur"), crosshair;
 }
 
 html {
-	font-family: "Roboto";
-	font-size: 62.5%;
+  font-family: "Roboto";
+  font-size: 62.5%;
 
-	background-image: url('../images/background.jpg');
+  background-image: url("../images/background.jpg");
 
-	background-color: var(--main-bg-color);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-color: var(--main-bg-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-	border-radius: 10px;
-	box-shadow: inset 0px 0px 10px 0px white;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px 0px white;
 }
 
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 .unselectable {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .outer {
-	display: table;
-	position: absolute;
-	height: 100%;
-	width: 100%;
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 
-	animation: opac 0.2s;
+  animation: opac 0.2s;
 }
 
 .middle {
-	display: table-cell;
-	vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .margin {
-	margin-right: 20vw;
-	margin-left: 20vw;
+  margin-right: 20vw;
+  margin-left: 20vw;
 }
 
 p.custom_font {
-	font-size: 2.2rem;
-	text-align: center;
-	text-shadow: 0 0 1.5px #4B6364, 1px 1px 5px white;
-	font-weight: bold;
-	color: transparent;
+  font-size: 2.2rem;
+  text-align: center;
+  text-shadow: 0 0 1.5px #4b6364, 1px 1px 5px white;
+  font-weight: bold;
+  color: transparent;
 
-	overflow: hidden;
-	/* Ensures the content is not revealed until the animation */
-	margin: 0 auto;
-	/* Gives that scrolling effect as the typing happens */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
 }
 
 /* Bird CSS */
 #bird_container {
-	position: absolute;
-	top: 0px;
-	left: -10%;
-	animation-name: fly-right;
-	width: 88px;
-	height: 125px;
+  position: absolute;
+  top: 0px;
+  left: -10%;
+  animation-name: fly-right;
+  width: 88px;
+  height: 125px;
 
-	transform: scale(0) translateX(-20vw);
-	will-change: transform;
+  transform: scale(0) translateX(-20vw);
+  will-change: transform;
 
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-duration: 13s;
-	animation-delay: 1s;
-	z-index: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 13s;
+  animation-delay: 1s;
+  z-index: 1;
 }
 
 @keyframes fly-right {
-	0% {
-		transform: scale(0.4) translateX(-20vw);
-	}
+  0% {
+    transform: scale(0.4) translateX(-20vw);
+  }
 
-	10% {
-		transform: translateY(0vh) translateX(-5vw) scale(0.7);
-	}
+  10% {
+    transform: translateY(0vh) translateX(-5vw) scale(0.7);
+  }
 
-	20% {
-		transform: translateY(2vh) translateX(10vw) scale(0.6);
-	}
+  20% {
+    transform: translateY(2vh) translateX(10vw) scale(0.6);
+  }
 
-	30% {
-		transform: translateY(4vh) translateX(25vw) scale(0.7);
-	}
+  30% {
+    transform: translateY(4vh) translateX(25vw) scale(0.7);
+  }
 
-	40% {
-		transform: translateY(3vh) translateX(40vw) scale(0.8);
-	}
+  40% {
+    transform: translateY(3vh) translateX(40vw) scale(0.8);
+  }
 
-	50% {
-		transform: translateY(4vh) translateX(55vw) scale(0.7);
-	}
+  50% {
+    transform: translateY(4vh) translateX(55vw) scale(0.7);
+  }
 
-	60% {
-		transform: translateY(2vh) translateX(70vw) scale(0.6);
-	}
+  60% {
+    transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
 
-	70% {
-		transform: translateY(2vh) translateX(85vw) scale(0.7);
-	}
+  70% {
+    transform: translateY(2vh) translateX(85vw) scale(0.7);
+  }
 
-	80% {
-		transform: translateY(2vh) translateX(100vw) scale(0.8);
-	}
+  80% {
+    transform: translateY(2vh) translateX(100vw) scale(0.8);
+  }
 
-	90% {
-		transform: translateY(2vh) translateX(130vw) scale(0.8);
-	}
+  90% {
+    transform: translateY(2vh) translateX(130vw) scale(0.8);
+  }
 
-	100% {
-		transform: translateY(0vh) translateX(131vw) scale(0);
-	}
+  100% {
+    transform: translateY(0vh) translateX(131vw) scale(0);
+  }
 }
 
 #bird {
-	position: relative;
-	background-image: url(../images/bird-cells.svg);
-	background-size: auto 100%;
-	width: 88px;
-	height: 125px;
-	will-change: background-position;
+  position: relative;
+  background-image: url(../images/bird-cells.svg);
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+  will-change: background-position;
 
-	cursor: url('../cursors/crosshair-blue.cur'), crosshair;
-	animation-name: fly-cycle;
-	animation-timing-function: steps(10);
-	animation-iteration-count: infinite;
-	animation-duration: 1s;
-	animation-delay: 1s;
+  cursor: url("../cursors/crosshair-blue.cur"), crosshair;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 1s;
 }
 
 #bird.falling {
-	transform: translateY(150vh) rotate(45deg);
-	transition: all 1s ease-in-out;
-	animation-play-state: paused;
+  transform: translateY(150vh) rotate(45deg);
+  transition: all 1s ease-in-out;
+  animation-play-state: paused;
 }
 
 @keyframes fly-cycle {
-	100% {
-		background-position: -900px 0;
-	}
+  100% {
+    background-position: -900px 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
-	p.custom_font {
-		font-size: 1.8rem;
-	}
+  p.custom_font {
+    font-size: 1.8rem;
+  }
 }
 
 @keyframes opac {
-	from {
-		opacity: 0
-	}
+  from {
+    opacity: 0;
+  }
 
-	to {
-		opacity: 1
-	}
+  to {
+    opacity: 1;
+  }
 }

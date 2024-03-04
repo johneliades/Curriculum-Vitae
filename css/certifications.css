@@ -1,165 +1,165 @@
 :root {
-	--main-bg-color: black;
-	--main-font-color: aqua;
+  --main-bg-color: black;
+  --main-font-color: aqua;
 }
 
 ::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-	border-radius: 10px;
-	background-color: black;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: black;
 }
 
 ::-webkit-scrollbar {
-	width: 7px;
-	background-color: black
+  width: 7px;
+  background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-	background-color: var(--main-font-color);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--main-font-color);
 }
 
 ::-webkit-scrollbar-button {
-	background-color: var(--main-font-color);
-	border: 1px solid var(--main-font-color);
-	border-radius: 20%;
-	height: 25px;
+  background-color: var(--main-font-color);
+  border: 1px solid var(--main-font-color);
+  border-radius: 20%;
+  height: 25px;
 }
 
 html,
 body {
-	margin: 0;
-	width: 100%;
+  margin: 0;
+  width: 100%;
 
-	background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
 
-	scrollbar-color: var(--main-font-color) black;
-	scrollbar-width: thin;
+  scrollbar-color: var(--main-font-color) black;
+  scrollbar-width: thin;
 
-	-ms-overflow-style: none;
+  -ms-overflow-style: none;
 
-	cursor: url('../cursors/white.cur'), auto;
+  cursor: url("../cursors/white.cur"), auto;
 }
 
 body {
-	overflow: hidden;
-	min-height: 100%;
+  overflow: hidden;
+  min-height: 100%;
 }
 
 html {
-	height: 100%;
-	font-family: "Roboto";
-	font-size: 62.5%;
+  height: 100%;
+  font-family: "Roboto";
+  font-size: 62.5%;
 
-	animation: fade-in 2s;
+  animation: fade-in 2s;
 }
 
 @keyframes fade-in {
-	from {
-		opacity: 0;
-	}
+  from {
+    opacity: 0;
+  }
 
-	to {
-		opacity: 1;
-	}
+  to {
+    opacity: 1;
+  }
 }
 
 #certificate-frame {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 
-	width: 100%;
-	height: auto;
-	max-height: 95vh;
+  width: 100%;
+  height: auto;
+  max-height: 95vh;
 
-	overflow-x: hidden;
-	background-color: var(--main-bg-color);
+  overflow-x: hidden;
+  background-color: var(--main-bg-color);
 }
 
 #certificate-image {
-	display: block;
-	/* This is needed to center the image */
+  display: block;
+  /* This is needed to center the image */
 
-	width: 80%;
-	height: auto;
-	padding: 20px;
-	margin: 0 auto;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
 
-	opacity: 1;
+  opacity: 1;
 
-	border: 1px solid #e5e5e5;
-	border-radius: 1em;
+  border: 1px solid #e5e5e5;
+  border-radius: 1em;
 
-	transition: all 0.3s ease-in-out;
-	/* this sets the transition effect */
+  transition: all 0.3s ease-in-out;
+  /* this sets the transition effect */
 }
 
 #certificate-image.fading {
-	opacity: 0;
-	box-shadow: inset 0 0 0 25px var(--main-font-color);
-	border-radius: 15%;
+  opacity: 0;
+  box-shadow: inset 0 0 0 25px var(--main-font-color);
+  border-radius: 15%;
 }
 
 #certificate-nav {
-	position: fixed;
-	bottom: 15px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	pointer-events: none;
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
 }
 
 #certificate-nav button {
-	display: inline-block;
-	padding: 0.25em 1.2em;
-	border: 0.1em solid var(--main-font-color);
-	margin: 0em 0.5em 0em 0.5em;
-	border-radius: 1em;
-	box-sizing: border-box;
-	text-decoration: none;
-	font-size: 1.6rem;
-	color: var(--main-font-color);
-	background-color: rgb(13, 14, 33);
-	text-align: center;
-	transition: all 0.2s;
-	cursor: url("../cursors/blue.cur"), auto;
-	box-shadow: 0px 0px 6px 0px var(--main-font-color);
-	pointer-events: auto;
+  display: inline-block;
+  padding: 0.25em 1.2em;
+  border: 0.1em solid var(--main-font-color);
+  margin: 0em 0.5em 0em 0.5em;
+  border-radius: 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--main-font-color);
+  background-color: rgb(13, 14, 33);
+  text-align: center;
+  transition: all 0.2s;
+  cursor: url("../cursors/blue.cur"), auto;
+  box-shadow: 0px 0px 6px 0px var(--main-font-color);
+  pointer-events: auto;
 }
 
 #certificate-nav button:hover {
-	color: var(--main-bg-color);
-	border-color: var(--main-font-color);
-	background-color: var(--main-font-color);
-	box-shadow: 0px 0px 12px 0px var(--main-font-color);
-	animation: blinker 2s linear infinite;
+  color: var(--main-bg-color);
+  border-color: var(--main-font-color);
+  background-color: var(--main-font-color);
+  box-shadow: 0px 0px 12px 0px var(--main-font-color);
+  animation: blinker 2s linear infinite;
 }
 
 #certificate-nav button:active {
-	color: white;
+  color: white;
 }
 
 #certificate-nav button:focus-visible {
-	outline: 3px solid var(--main-font-color);
-	outline-offset: 7px;
-	box-shadow: 0 0 0 10px var(--main-bg-color);
+  outline: 3px solid var(--main-font-color);
+  outline-offset: 7px;
+  box-shadow: 0 0 0 10px var(--main-bg-color);
 }
 
 #certificate-nav button[disabled] {
-	opacity: 0.25;
-	pointer-events: none;
+  opacity: 0.25;
+  pointer-events: none;
 }
 
 #certificate-nav button:hover,
 #certificate-nav button:focus {
-	background-color: rgb(13, 14, 33);
-	border-color: var(--main-font-color);
-	color: var(--main-font-color);
-	box-shadow: 0px 0px 6px 0px var(--main-font-color);
-	cursor: default;
-	cursor: url("../cursors/blue.cur"), auto;
+  background-color: rgb(13, 14, 33);
+  border-color: var(--main-font-color);
+  color: var(--main-font-color);
+  box-shadow: 0px 0px 6px 0px var(--main-font-color);
+  cursor: default;
+  cursor: url("../cursors/blue.cur"), auto;
 }

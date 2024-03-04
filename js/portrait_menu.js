@@ -1,27 +1,27 @@
-const nav = document.querySelector('#menu');
-const menu = document.querySelector('#nav_menu');
-const menuToggle = document.querySelector('.nav_toggle');
-const entries = document.getElementsByClassName('close_menu');
+const nav = document.querySelector("#menu");
+const menu = document.querySelector("#nav_menu");
+const menuToggle = document.querySelector(".nav_toggle");
+const entries = document.getElementsByClassName("close_menu");
 let isMenuOpen = false;
 
 // TOGGLE MENU ACTIVE STATE
-menuToggle.addEventListener('click', e => {
-	e.preventDefault();
-	isMenuOpen = !isMenuOpen;
+menuToggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  isMenuOpen = !isMenuOpen;
 
-	// toggle a11y attributes and active class
-	menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
-	menu.hidden = !isMenuOpen;
-	nav.classList.toggle('nav--open');
+  // toggle a11y attributes and active class
+  menuToggle.setAttribute("aria-expanded", String(isMenuOpen));
+  menu.hidden = !isMenuOpen;
+  nav.classList.toggle("nav--open");
 });
 
-for(var i=0; i<entries.length; i++) {
-	entries[i].addEventListener('click', e => {
-		isMenuOpen = !isMenuOpen;
+for (var i = 0; i < entries.length; i++) {
+  entries[i].addEventListener("click", (e) => {
+    isMenuOpen = !isMenuOpen;
 
-		// toggle a11y attributes and active class
-		menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
-		menu.hidden = !isMenuOpen;
-		nav.classList.toggle('nav--open');
-	});
+    // toggle a11y attributes and active class
+    menuToggle.setAttribute("aria-expanded", String(isMenuOpen));
+    menu.hidden = !isMenuOpen;
+    nav.classList.toggle("nav--open");
+  });
 }

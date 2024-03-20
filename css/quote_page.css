@@ -18,7 +18,7 @@ html {
   font-family: "Roboto";
   font-size: 62.5%;
 
-  background-image: url("../images/background.jpg");
+  background-image: url("../media/background.jpg");
 
   background-color: var(--main-bg-color);
   background-position: center;
@@ -141,7 +141,7 @@ p.custom_font {
 
 #bird {
   position: relative;
-  background-image: url(../images/bird-cells.svg);
+  background-image: url(../media/bird-cells.svg);
   background-size: auto 100%;
   width: 88px;
   height: 125px;

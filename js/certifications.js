@@ -1,9 +1,9 @@
 var certificateList = [
   {
-    file: "images/degree.png",
+    file: "media/degree.png",
     title: "Degree of Electrical and Computer Engineering",
   },
-  { file: "images/gep.png", title: "80th National Guard Higher Command" },
+  { file: "media/gep.png", title: "80th National Guard Higher Command" },
 ];
 
 const certificateFiles = certificateList.map((certificate) => certificate.file);
@@ -14,7 +14,7 @@ const certificateTitles = certificateList.map(
 var currentCertificate = 0;
 
 const imgElement = new Image();
-imgElement.src = "images/gep.png";
+imgElement.src = "media/gep.png";
 
 const previousButton = document.querySelector("#previous-button");
 const nextButton = document.querySelector("#next-button");

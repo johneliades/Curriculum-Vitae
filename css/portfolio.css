@@ -224,7 +224,7 @@ img.png.cursor {
   touch-action: none;
   cursor: nwse-resize;
 
-  background-image: url("../images/resize.png");
+  background-image: url("../media/resize.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,324 +1,461 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-	<link rel="stylesheet" href="css/portfolio.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPZB7FTGRX"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-XPZB7FTGRX');
-	</script>
-
-	<script defer src="js/portfolio.js"></script>
-
-	<title>[John@Portfolio]-[Portfolio]</title>
-</head>
-
-<body>
-	<div id="notification"></div>
-
-	<img src="images/scroll.gif" id="img_scroll" draggable="false">
-
-	<div id="modal">
-		<span id="close_modal">&times;</span>
-
-		<img src="images/loading.gif" class="modal_loading" alt="loading">
-
-		<div id="modal_content">
-			<iframe id="iframe_modal" name="iframe_modal"></iframe>
-		</div>
-	</div>
-
-	<div class="card_container">
-		<div class="card">
-			<img class="png" src="images/file_explorer.png" draggable="false" alt="">
-
-			<video class="webm" autoplay loop muted playsinline>
-				<source src="images/file_explorer.webm" type="video/webm">
-			</video>
-
-			<b>
-				<h2> File Explorer </h2>
-			</b>
-
-			<p class="custom_font">
-				A file explorer written in <span class="mark">Java</span> using <span class="mark">Swing</span> and
-				<span class="mark">DefaultMutableTreeNode</span> aiming to achieve cross-platform functionality in a
-				visually appealing way.
-			</p>
-
-			<a href="https://github.com/johneliades/file_explorer" target="_blank" class="button bouncy">View Repo in
-				Github</a>
-		</div>
-
-		<div class="card">
-			<img class="png" src="images/code_crawler.png" draggable="false" alt="">
-
-			<video class="webm" autoplay loop muted playsinline>
-				<source src="images/code_crawler.webm" type="video/webm">
-			</video>
-
-			<b>
-				<h2> Code Crawler </h2>
-			</b>
-
-			<p class="custom_font">
-				A simple <span class="mark">code crawler</span> written in <span class="mark">Python</span> to avoid
-				visiting <span class="mark">stackoverflow</span>, <span class="mark">w3schools</span>, <span
-					class="mark">tutorialspoint</span>, <span class="mark">geeksforgeeks</span>, <span
-					class="mark">pyp</span>, <span class="mark">askubuntu</span> and <span class="mark">mathworks</span>
-				ever again.
-			</p>
-
-			<a href="https://github.com/johneliades/code_crawler" target="_blank" class="button bouncy">View Repo in
-				Github</a>
-		</div>
-
-		<div class="card">
-			<img class="png" src="images/portal_UE5.jpg" draggable="false" alt="">
-
-			<video class="webm" autoplay loop muted playsinline>
-				<source src="images/portal_UE5.webm" type="video/webm">
-			</video>
-
-			<b>
-				<h2> Definitely Not Portal </h2>
-			</b>
-
-			<p class="custom_font">
-				The Portal game mechanics ported to <span class="mark">Unreal Engine 5</span>, programmed from scratch
-				using blueprint visual scripting. <span class="mark">Blender</span> and <span
-					class="mark">SketchUp</span> was used for animation and retexturing.
-			</p>
-
-			<a href="https://github.com/johneliades/portal" target="_blank" class="button bouncy">View Repo in
-				Github</a>
-		</div>
-
-		<div class="card">
-			<img class="png" src="images/village_crawler.jpg" draggable="false" alt="">
-
-			<video class="webm" autoplay loop muted playsinline>
-				<source src="images/village_crawler.webm" type="video/webm">
-			</video>
-
-			<b>
-				<h2> Village Cinemas Crawler </h2>
-			</b>
-
-			<p class="custom_font">
-				A <span class="mark">python</span> script that uses the village cinemas reverse engineered <span
-					class="mark">WebTicketing API</span> to retrieve a list of currently playing movies and the <span
-					class="mark">ticket availability</span> and showtimes, and sorts them according to <span
-					class="mark">imdb rating</span>.
-			</p>
-
-			<a href="https://github.com/johneliades/village_crawler" target="_blank" class="button bouncy">View Repo in
-				Github</a>
-		</div>
-
-		<div class="card">
-			<img class="png" src="images/chess_cv.png" draggable="false" alt="">
-
-			<video class="webm" autoplay loop muted playsinline>
-				<source src="images/chess_cv.webm" type="video/webm">
-			</video>
-
-			<b>
-				<h2> chess_cv </h2>
-			</b>
-
-			<p class="custom_font">
-				A <span class="mark">python</span> script that finds the on-screen <span class="mark">chessboard</span>,
-				runs a custom <span class="mark">image classification keras</span> model to identify the pieces and then
-				plays the best move using the latest local version of <span class="mark">stockfish</span> while also
-				providing a <span class="mark">lichess</span> link for further gui analysis.
-			</p>
-
-			<a href="https://github.com/johneliades/chess_cv" target="_blank" class="button bouncy">View Repo in
-				Github</a>
-		</div>
-
-		<div class="card">
-			<img class="placeholder" src="images/unicode_chess.png" draggable="false" alt="">
-
-			<b>
-				<h2> unicode_chess </h2>
-			</b>
-
-			<p class="custom_font">
-				A fully functional <span class="mark">chess library</span> for <span class="mark">Python</span> from
-				scratch, with move <span class="mark">generation</span>, move <span class="mark">validation</span>, and
-				support for common formats, similar to <span class="mark">python-chess</span>.
-			</p>
-
-			<a href="https://github.com/johneliades/unicode_chess" target="_blank" class="button bouncy">View Repo in
-				Github</a>
-		</div>
-
-		<div class="card">
-			<img class="png" src="images/opencv.jpg" draggable="false" alt="">
-
-			<video class="webm" autoplay loop muted playsinline>
-				<source src="images/opencv.webm" type="video/webm">
-			</video>
-
-			<b>
-				<h2> GTAV openCV </h2>
-			</b>
-
-			<p class="custom_font">
-				A project based on <span class="mark">openCV</span> and written in <span class="mark">Python</span> used
-				on GTA V. It uses the <span class="mark">YOLO</span> realtime <span class="mark">object detection</span>
-				algorithm to detect the in-game humans and act as an aimbot.
-			</p>
-
-			<a href="https://github.com/johneliades/gta_cv" target="_blank" class="button bouncy">View Repo in
-				Github</a>
-		</div>
-
-		<div class="card">
-			<img class="png" src="images/thesis.png" draggable="false" alt="">
-
-			<video class="webm" autoplay loop muted playsinline>
-				<source src="images/thesis.webm" type="video/webm">
-			</video>
-
-			<b>
-				<h2> Flash Torrent </h2>
-			</b>
-
-			<p class="custom_font">
-				A <span class="mark">BitTorrent</span> client made in <span class="mark">golang</span> as a Diploma
-				Thesis.
-			</p>
-
-			<a href="https://github.com/johneliades/flash" target="_blank" class="button bouncy">View Repo in Github</a>
-
-			<a href="documents/Thesis.pdf" target="iframe_modal" class="button bouncy modal_link">View Thesis</a>
-		</div>
-
-		<div class="card">
-			<img class="placeholder" src="images/asynxy.png" draggable="false" alt="">
-
-			<b>
-				<h2> Asynxy: Asynchronous Proxy RCE </h2>
-			</b>
-
-			<p class="custom_font">
-				Asynxy implements a <span class="mark">Master-Proxy-Slave</span> formation using <span class="mark">REST
-					API</span> calls, allowing control of slaves without the need for public IP. The web application is
-				acting as a <span class="mark">middleware</span>, receiving commands from <span
-					class="mark">masters</span>, informing online <span class="mark">slaves</span> of commands and
-				collecting their results to show back to the masters' <span class="mark">web interface</span>. The web
-				application is written in <span class="mark">Javascript</span> and the Slaves in <span
-					class="mark">Python</span>.
-			</p>
-
-			<a href="https://github.com/EvangelouSotiris/async_proxy_rce" target="_blank" class="button bouncy">View
-				Repo in Github</a>
-		</div>
-
-		<div class="card">
-			<img class="placeholder" src="images/windows_server.jpg" draggable="false" alt="">
-
-			<b>
-				<h2> Windows Server 2019 </h2>
-			</b>
-
-			<p class="custom_font">
-				A <span class="mark">Batch Script</span> for <span class="mark">mass user creation</span> on a <span
-					class="mark">windows server 2019</span> with group policy (<span class="mark">GPO</span>)
-				restrictions on the clients adequate for use in a school environment.
-			</p>
-
-			<a href="https://github.com/johneliades/windows_server_2019" target="_blank" class="button bouncy">View Repo
-				in Github</a>
-		</div>
-
-		<div class="card">
-			<img class="png" src="images/portfolio.png" draggable="false" alt="">
-
-			<video class="webm" autoplay loop muted playsinline>
-				<source src="images/portfolio.webm" type="video/webm">
-			</video>
-
-			<b>
-				<h2> Portfolio </h2>
-			</b>
-
-			<p class="custom_font">
-				A website made with the use of <span class="mark">HTML</span>, <span class="mark">CSS</span> and <span
-					class="mark">Javascript</span> from scratch for personal use as a portfolio depicting my projects,
-				events I have participated in and the skills acquired in the process.
-			</p>
-
-			<a href="https://github.com/johneliades/johneliades.github.io" target="_blank" class="button bouncy">View
-				Repo in Github</a>
-		</div>
-
-		<div class="card">
-			<img class="placeholder" src="images/panoptis.jpg" draggable="false" alt="">
-
-			<b>
-				<h2>Panoptis 2019 Military Cybersecurity Exercise</h2>
-			</b>
-
-			<p class="custom_font">
-				Participated in a <span class="mark">Cybersecurity</span> Team that represented the University of
-				Thessaly in Volos, as part of the GFOSS Team. The team solved in their entirety the Data Exfiltration
-				and Social Network Communication Analysis episodes, which contained <span
-					class="mark">cryptography</span> and <span class="mark">steganography</span> problems and were
-				simulations on real situations. Volos UTH team was the only one who solved the second episode, and wrote
-				the GFOSS report.
-			</p>
-			<a href="https://privacy.ellak.gr/2019/06/19/apologismos-tis-simmetochis-tou-organismou-anichton-technologion-stin-askisi-kivernoaminas-panoptis-2019/"
-				class="bouncy button" target="_blank">View GFOSS article</a>
-
-			<a href="documents/Panoptis2019_VolosTEAM.pdf" target="iframe_modal" class="button bouncy modal_link">View
-				Ep.7 Report</a>
-		</div>
-
-		<div class="card">
-			<img class="png" src="images/deloitte.png" draggable="false" alt="">
-
-			<video class="webm" autoplay loop muted playsinline>
-				<source src="images/deloitte.webm" type="video/webm">
-			</video>
-
-			<b>
-				<h2>Deloitte Greece Hacking Challenge 2019</h2>
-			</b>
-
-			<p class="custom_font">
-				Participated and reached the final round of this Cybersecurity challenge that involved various problems
-				including <span class="mark">web exploitation</span>, <span class="mark">cryptography</span>, <span
-					class="mark">reverse engineering</span>, <span class="mark">network forensics</span>, <span
-					class="mark">steganography</span> and generally a big spectrum of the <span
-					class="mark">security</span> field. Finished <span class="mark">23rd</span> out of <span
-					class="mark">178</span> contestants.
-			</p>
-
-			<a href="https://www2.deloitte.com/gr/en/pages/careers/events/Deloitte-Greece-Student-Hacking-Contest.html"
-				class="bouncy button" target="_blank">View Deloitte's Article</a>
-		</div>
-	</div>
-
-	<div class="coffee_btn">
-		<a target="iframe_modal"
-			href="https://www.buymeacoffee.com/widget/page/johneliades?description=Support%20me%20on%20Buy%20me%20a%20coffee!&color=%235F7FFF"
-			class="modal_link"></a>
-	</div>
-</body>
-
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/portfolio.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XPZB7FTGRX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XPZB7FTGRX");
+    </script>
+
+    <script defer src="js/portfolio.js"></script>
+
+    <title>[John@Portfolio]-[Portfolio]</title>
+  </head>
+
+  <body>
+    <div id="notification"></div>
+
+    <img src="media/scroll.gif" id="img_scroll" draggable="false" />
+
+    <div id="modal">
+      <span id="close_modal">&times;</span>
+
+      <img src="media/loading.gif" class="modal_loading" alt="loading" />
+
+      <div id="modal_content">
+        <iframe id="iframe_modal" name="iframe_modal"></iframe>
+      </div>
+    </div>
+
+    <div class="card_container">
+      <div class="card">
+        <img
+          class="png"
+          src="media/file_explorer.png"
+          draggable="false"
+          alt=""
+        />
+
+        <video class="webm" autoplay loop muted playsinline>
+          <source src="media/file_explorer.webm" type="video/webm" />
+        </video>
+
+        <b>
+          <h2>File Explorer</h2>
+        </b>
+
+        <p class="custom_font">
+          A file explorer written in <span class="mark">Java</span> using
+          <span class="mark">Swing</span> and
+          <span class="mark">DefaultMutableTreeNode</span> aiming to achieve
+          cross-platform functionality in a visually appealing way.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/file_explorer"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img
+          class="png"
+          src="media/code_crawler.png"
+          draggable="false"
+          alt=""
+        />
+
+        <video class="webm" autoplay loop muted playsinline>
+          <source src="media/code_crawler.webm" type="video/webm" />
+        </video>
+
+        <b>
+          <h2>Code Crawler</h2>
+        </b>
+
+        <p class="custom_font">
+          A simple <span class="mark">code crawler</span> written in
+          <span class="mark">Python</span> to avoid visiting
+          <span class="mark">stackoverflow</span>,
+          <span class="mark">w3schools</span>,
+          <span class="mark">tutorialspoint</span>,
+          <span class="mark">geeksforgeeks</span>,
+          <span class="mark">pyp</span>, <span class="mark">askubuntu</span> and
+          <span class="mark">mathworks</span>
+          ever again.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/code_crawler"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img class="png" src="media/portal_UE5.jpg" draggable="false" alt="" />
+
+        <video class="webm" autoplay loop muted playsinline>
+          <source src="media/portal_UE5.webm" type="video/webm" />
+        </video>
+
+        <b>
+          <h2>Definitely Not Portal</h2>
+        </b>
+
+        <p class="custom_font">
+          The Portal game mechanics ported to
+          <span class="mark">Unreal Engine 5</span>, programmed from scratch
+          using blueprint visual scripting.
+          <span class="mark">Blender</span> and
+          <span class="mark">SketchUp</span> was used for animation and
+          retexturing.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/portal"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img
+          class="png"
+          src="media/village_crawler.jpg"
+          draggable="false"
+          alt=""
+        />
+
+        <video class="webm" autoplay loop muted playsinline>
+          <source src="media/village_crawler.webm" type="video/webm" />
+        </video>
+
+        <b>
+          <h2>Village Cinemas Crawler</h2>
+        </b>
+
+        <p class="custom_font">
+          A <span class="mark">python</span> script that uses the village
+          cinemas reverse engineered
+          <span class="mark">WebTicketing API</span> to retrieve a list of
+          currently playing movies and the
+          <span class="mark">ticket availability</span> and showtimes, and sorts
+          them according to <span class="mark">imdb rating</span>.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/village_crawler"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img class="png" src="media/chess_cv.png" draggable="false" alt="" />
+
+        <video class="webm" autoplay loop muted playsinline>
+          <source src="media/chess_cv.webm" type="video/webm" />
+        </video>
+
+        <b>
+          <h2>chess_cv</h2>
+        </b>
+
+        <p class="custom_font">
+          A <span class="mark">python</span> script that finds the on-screen
+          <span class="mark">chessboard</span>, runs a custom
+          <span class="mark">image classification keras</span> model to identify
+          the pieces and then plays the best move using the latest local version
+          of <span class="mark">stockfish</span> while also providing a
+          <span class="mark">lichess</span> link for further gui analysis.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/chess_cv"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img
+          class="placeholder"
+          src="media/unicode_chess.png"
+          draggable="false"
+          alt=""
+        />
+
+        <b>
+          <h2>unicode_chess</h2>
+        </b>
+
+        <p class="custom_font">
+          A fully functional <span class="mark">chess library</span> for
+          <span class="mark">Python</span> from scratch, with move
+          <span class="mark">generation</span>, move
+          <span class="mark">validation</span>, and support for common formats,
+          similar to <span class="mark">python-chess</span>.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/unicode_chess"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img class="png" src="media/opencv.jpg" draggable="false" alt="" />
+
+        <video class="webm" autoplay loop muted playsinline>
+          <source src="media/opencv.webm" type="video/webm" />
+        </video>
+
+        <b>
+          <h2>GTAV openCV</h2>
+        </b>
+
+        <p class="custom_font">
+          A project based on <span class="mark">openCV</span> and written in
+          <span class="mark">Python</span> used on GTA V. It uses the
+          <span class="mark">YOLO</span> realtime
+          <span class="mark">object detection</span>
+          algorithm to detect the in-game humans and act as an aimbot.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/gta_cv"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img class="png" src="media/thesis.png" draggable="false" alt="" />
+
+        <video class="webm" autoplay loop muted playsinline>
+          <source src="media/thesis.webm" type="video/webm" />
+        </video>
+
+        <b>
+          <h2>Flash Torrent</h2>
+        </b>
+
+        <p class="custom_font">
+          A <span class="mark">BitTorrent</span> client made in
+          <span class="mark">golang</span> as a Diploma Thesis.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/flash"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+
+        <a
+          href="documents/Thesis.pdf"
+          target="iframe_modal"
+          class="button bouncy modal_link"
+          >View Thesis</a
+        >
+      </div>
+
+      <div class="card">
+        <img
+          class="placeholder"
+          src="media/asynxy.png"
+          draggable="false"
+          alt=""
+        />
+
+        <b>
+          <h2>Asynxy: Asynchronous Proxy RCE</h2>
+        </b>
+
+        <p class="custom_font">
+          Asynxy implements a
+          <span class="mark">Master-Proxy-Slave</span> formation using
+          <span class="mark">REST API</span> calls, allowing control of slaves
+          without the need for public IP. The web application is acting as a
+          <span class="mark">middleware</span>, receiving commands from
+          <span class="mark">masters</span>, informing online
+          <span class="mark">slaves</span> of commands and collecting their
+          results to show back to the masters'
+          <span class="mark">web interface</span>. The web application is
+          written in <span class="mark">Javascript</span> and the Slaves in
+          <span class="mark">Python</span>.
+        </p>
+
+        <a
+          href="https://github.com/EvangelouSotiris/async_proxy_rce"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img
+          class="placeholder"
+          src="media/windows_server.jpg"
+          draggable="false"
+          alt=""
+        />
+
+        <b>
+          <h2>Windows Server 2019</h2>
+        </b>
+
+        <p class="custom_font">
+          A <span class="mark">Batch Script</span> for
+          <span class="mark">mass user creation</span> on a
+          <span class="mark">windows server 2019</span> with group policy (<span
+            class="mark"
+            >GPO</span
+          >) restrictions on the clients adequate for use in a school
+          environment.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/windows_server_2019"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img class="png" src="media/portfolio.png" draggable="false" alt="" />
+
+        <video class="webm" autoplay loop muted playsinline>
+          <source src="media/portfolio.webm" type="video/webm" />
+        </video>
+
+        <b>
+          <h2>Portfolio</h2>
+        </b>
+
+        <p class="custom_font">
+          A website made with the use of <span class="mark">HTML</span>,
+          <span class="mark">CSS</span> and
+          <span class="mark">Javascript</span> from scratch for personal use as
+          a portfolio depicting my projects, events I have participated in and
+          the skills acquired in the process.
+        </p>
+
+        <a
+          href="https://github.com/johneliades/johneliades.github.io"
+          target="_blank"
+          class="button bouncy"
+          >View Repo in Github</a
+        >
+      </div>
+
+      <div class="card">
+        <img
+          class="placeholder"
+          src="media/panoptis.jpg"
+          draggable="false"
+          alt=""
+        />
+
+        <b>
+          <h2>Panoptis 2019 Military Cybersecurity Exercise</h2>
+        </b>
+
+        <p class="custom_font">
+          Participated in a <span class="mark">Cybersecurity</span> Team that
+          represented the University of Thessaly in Volos, as part of the GFOSS
+          Team. The team solved in their entirety the Data Exfiltration and
+          Social Network Communication Analysis episodes, which contained
+          <span class="mark">cryptography</span> and
+          <span class="mark">steganography</span> problems and were simulations
+          on real situations. Volos UTH team was the only one who solved the
+          second episode, and wrote the GFOSS report.
+        </p>
+        <a
+          href="https://privacy.ellak.gr/2019/06/19/apologismos-tis-simmetochis-tou-organismou-anichton-technologion-stin-askisi-kivernoaminas-panoptis-2019/"
+          class="bouncy button"
+          target="_blank"
+          >View GFOSS article</a
+        >
+
+        <a
+          href="documents/Panoptis2019_VolosTEAM.pdf"
+          target="iframe_modal"
+          class="button bouncy modal_link"
+          >View Ep.7 Report</a
+        >
+      </div>
+
+      <div class="card">
+        <img class="png" src="media/deloitte.png" draggable="false" alt="" />
+
+        <video class="webm" autoplay loop muted playsinline>
+          <source src="media/deloitte.webm" type="video/webm" />
+        </video>
+
+        <b>
+          <h2>Deloitte Greece Hacking Challenge 2019</h2>
+        </b>
+
+        <p class="custom_font">
+          Participated and reached the final round of this Cybersecurity
+          challenge that involved various problems including
+          <span class="mark">web exploitation</span>,
+          <span class="mark">cryptography</span>,
+          <span class="mark">reverse engineering</span>,
+          <span class="mark">network forensics</span>,
+          <span class="mark">steganography</span> and generally a big spectrum
+          of the <span class="mark">security</span> field. Finished
+          <span class="mark">23rd</span> out of
+          <span class="mark">178</span> contestants.
+        </p>
+
+        <a
+          href="https://www2.deloitte.com/gr/en/pages/careers/events/Deloitte-Greece-Student-Hacking-Contest.html"
+          class="bouncy button"
+          target="_blank"
+          >View Deloitte's Article</a
+        >
+      </div>
+    </div>
+
+    <div class="coffee_btn">
+      <a
+        target="iframe_modal"
+        href="https://www.buymeacoffee.com/widget/page/johneliades?description=Support%20me%20on%20Buy%20me%20a%20coffee!&color=%235F7FFF"
+        class="modal_link"
+      ></a>
+    </div>
+  </body>
 </html>

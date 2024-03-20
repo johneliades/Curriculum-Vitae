@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Eliades" />
+    <meta
+      name="keywords"
+      content="cv, curriculum, vitae, biography, john, eliades, portfolio"
+    />
+    <!-- Chrome, Firefox OS and Opera Bars -->
+    <meta name="theme-color" content="#000000" />
+    <!-- Windows Phone Bars -->
+    <meta name="msapplication-navbutton-color" content="#000000 " />
+    <!-- iOS Safari Bars -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000 " />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="John Eliades">
-	<meta name="keywords" content="cv, curriculum, vitae, biography, john, eliades, portfolio">
-	<!-- Chrome, Firefox OS and Opera Bars -->
-	<meta name="theme-color" content="#000000">
-	<!-- Windows Phone Bars -->
-	<meta name="msapplication-navbutton-color" content="#000000 ">
-	<!-- iOS Safari Bars -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000000 ">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Charm&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/portrait_menu.css" />
 
-	<link rel='icon' type='image/x-icon' href='images/favicon.ico'>
-	<link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/portrait_menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XPZB7FTGRX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPZB7FTGRX"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-XPZB7FTGRX');
-	</script>
-	<!-- 
+      gtag("config", "G-XPZB7FTGRX");
+    </script>
+    <!-- 
 	<script>
 		window.addEventListener('DOMContentLoaded', function() {
 			$("#iframe_main").on('load',function() {
@@ -40,61 +50,116 @@
 		});
 	</script>
  -->
-	<script defer src="js/index.js"></script>
-	<script defer src="js/portrait_menu.js"></script>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/portrait_menu.js"></script>
 
-	<title>[John@Portfolio]-[~]</title>
-</head>
+    <title>[John@Portfolio]-[~]</title>
+  </head>
 
-<body>
-	<iframe id="iframe_main" name="iframe_main" src="quote_page.html"></iframe>
+  <body>
+    <iframe id="iframe_main" name="iframe_main" src="quote_page.html"></iframe>
 
-	<div id="menu" class="nav">
-		<div id="nav_menu">
-			<a href="quote_page.html" id="profile_pic" target="iframe_main" class="fade_down close_menu"
-				draggable="false">
-				<img src="images/profile.jpg" alt="Home Screen" draggable="false">
-			</a>
+    <div id="menu" class="nav">
+      <div id="nav_menu">
+        <a
+          href="quote_page.html"
+          id="profile_pic"
+          target="iframe_main"
+          class="fade_down close_menu"
+          draggable="false"
+        >
+          <img src="media/profile.jpg" alt="Home Screen" draggable="false" />
+        </a>
 
-			<div id="name" class="fade_down"> John Eliades </div>
+        <div id="name" class="fade_down">John Eliades</div>
 
-			<div id="entry_wrapper" class="fade_down" style="width: 100%">
-				<a href="about.html" target="iframe_main" class="close_menu" draggable="false"> About </a>
-				<a href="portfolio.html" target="iframe_main" class="close_menu" draggable="false"> Portfolio </a>
-				<a href="certifications.html" target="iframe_main" class="close_menu" draggable="false"> Certif. </a>
-			</div>
+        <div id="entry_wrapper" class="fade_down" style="width: 100%">
+          <a
+            href="about.html"
+            target="iframe_main"
+            class="close_menu"
+            draggable="false"
+          >
+            About
+          </a>
+          <a
+            href="portfolio.html"
+            target="iframe_main"
+            class="close_menu"
+            draggable="false"
+          >
+            Portfolio
+          </a>
+          <a
+            href="certifications.html"
+            target="iframe_main"
+            class="close_menu"
+            draggable="false"
+          >
+            Certif.
+          </a>
+        </div>
 
-			<div id="icon_wrapper" class="fade_down">
-				<a href="https://github.com/johneliades" target="_blank" class="close_menu" draggable="false">
-					<img src="images/github.webp" alt="Github" draggable="false">
-				</a>
+        <div id="icon_wrapper" class="fade_down">
+          <a
+            href="https://github.com/johneliades"
+            target="_blank"
+            class="close_menu"
+            draggable="false"
+          >
+            <img src="media/github.webp" alt="Github" draggable="false" />
+          </a>
 
-				<a href="https://stackoverflow.com/users/12780243/john-eliades" target="_blank" class="close_menu"
-					draggable="false">
-					<img src="images/stackoverflow.jpg" alt="Stack Overflow" draggable="false">
-				</a>
+          <a
+            href="https://stackoverflow.com/users/12780243/john-eliades"
+            target="_blank"
+            class="close_menu"
+            draggable="false"
+          >
+            <img
+              src="media/stackoverflow.jpg"
+              alt="Stack Overflow"
+              draggable="false"
+            />
+          </a>
 
-				<a href="documents/CV.pdf" target="iframe_main" class="close_menu" draggable="false">
-					<img src="images/cv.png" alt="CV" draggable="false">
-				</a>
-			</div>
+          <a
+            href="documents/CV.pdf"
+            target="iframe_main"
+            class="close_menu"
+            draggable="false"
+          >
+            <img src="media/cv.png" alt="CV" draggable="false" />
+          </a>
+        </div>
 
-			<!-- nav_menu TOGGLE BUTTON -->
-			<a href="#nav_menu" class="nav_toggle" role="button" aria-expanded="false" aria-controls="nav_menu"
-				draggable="false">
-				<svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-					<title>Toggle nav_menu</title>
-					<g>
-						<line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
-						<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
-						<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
-						<line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
-						<circle class="menuicon__circle" r="23" cx="25" cy="25" />
-					</g>
-				</svg>
-			</a>
-		</div>
-	</div>
-</body>
-
+        <!-- nav_menu TOGGLE BUTTON -->
+        <a
+          href="#nav_menu"
+          class="nav_toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="nav_menu"
+          draggable="false"
+        >
+          <svg
+            class="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <title>Toggle nav_menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </body>
 </html>

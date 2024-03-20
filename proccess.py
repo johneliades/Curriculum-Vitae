@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 
 # This script creates the webm videos and the png images used in portfolio page
 
-input_video_path = "chess_cv.mkv"
-video_cut_range = (0, 21)
+input_video_path = "test.mp4"
+video_cut_range = (0, 36)
 gif_cut_range = (5, 9)
-frame_time = 13
+frame_time = 28
 
 # Variables to store cropping coordinates
 crop_coordinates = None
@@ -139,4 +139,4 @@ if __name__ == "__main__":
 
     convert_video_to_webm(input_video_path, output_video_path, crop_coordinates)
 
-    convert_video_to_gif(input_video_path, output_gif_path, crop_coordinates)
+    # convert_video_to_gif(input_video_path, output_gif_path, crop_coordinates)

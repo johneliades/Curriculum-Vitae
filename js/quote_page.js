@@ -21,7 +21,7 @@ function generateUniqueRandom(maxNr) {
 
 var timer = null;
 
-function typewritter(randomItem) {
+function typewriter(randomItem) {
   element = document.getElementById("quote");
   element.innerText = "";
 
@@ -87,15 +87,16 @@ $("#bird_container").click(function () {
     "❝A UDP packet walks into a bar, no one acknowledges him.❞",
     "❝A UDP packet walks into...❞",
     "❝The best way to predict the future is to invent it.❞",
+    "Why are you killing innocent virtual birds when you could be exploring this cool portfolio?",
   ];
 
   var randomItem = myArray[generateUniqueRandom(myArray.length - 1)];
 
   clearTimeout(timer);
-  typewritter(randomItem);
+  typewriter(randomItem);
 });
 
 window.onload = function () {
   clearTimeout(timer);
-  typewritter("Shoot the bird & enjoy the quote ;)");
+  typewriter("Shoot the bird & enjoy the quote ;)");
 };

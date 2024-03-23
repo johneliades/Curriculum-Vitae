@@ -111,6 +111,9 @@ $(window).on("touchmove", function (event) {
     $("#img_scroll").fadeOut(800);
     $(window).off("touchmove");
   }
+  else {
+    startY = touch.clientY;
+  }  
 });
 
 $(window).on("touchend", function () {

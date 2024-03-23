@@ -30,7 +30,7 @@ $(window).on("touchmove", function (event) {
   var touch = event.originalEvent.touches[0];
   var deltaY = touch.clientY - startY;
 
-  if (deltaY > 0) {
+  if (deltaY < 0) {
     $("#img_scroll").fadeOut(800);
     $(window).off("touchmove");
   }

@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="css/certifications.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Charm&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-	<link rel="stylesheet" href="css/certifications.css">
-	<link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="js/certifications.js"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script defer src="js/certifications.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XPZB7FTGRX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPZB7FTGRX"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+      gtag("config", "G-XPZB7FTGRX");
+    </script>
 
-		gtag('config', 'G-XPZB7FTGRX');
-	</script>
+    <title>[John@Portfolio]-[Certifications]</title>
+  </head>
 
-	<title>[John@Portfolio]-[Certifications]</title>
-</head>
-
-<body>
-	<div id="certificate-frame">
-		<img id="certificate-image" src="media/degree.png"></iframe>
-	</div>
-	<div id="certificate-nav">
-		<button id="previous-button" onclick="previousCertificate()">Previous</button>
-		<button id="next-button" onclick="nextCertificate()">Next</button>
-	</div>
-</body>
-
+  <body>
+    <div id="certificate-frame">
+      <img id="certificate-image" src="media/degree.png" />
+    </div>
+    <div id="certificate-nav">
+      <button id="previous-button" onclick="previousCertificate()">
+        Previous
+      </button>
+      <button id="next-button" onclick="nextCertificate()">Next</button>
+    </div>
+  </body>
 </html>

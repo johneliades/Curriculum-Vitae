@@ -85,7 +85,9 @@ $(document).ready(function () {
   }, 3000);
 });
 
-$(window).on("scroll", function () {
-  $("#img_scroll").fadeOut(800);
-  $(window).off("scroll");
+$(window).on("wheel", function () {
+  if (event.deltaY > 0) {
+    $("#img_scroll").fadeOut(800);
+    $(window).off("wheel");
+  }
 });

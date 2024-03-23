@@ -24,6 +24,7 @@ $("#iframe_modal").on("load", function () {
 $("#close_modal").click(function () {
   if ($("#modal").is(":visible")) {
     $("#modal").hide("fast");
+    $("#iframe_modal").attr("src", "about: blank;");
   }
 });
 

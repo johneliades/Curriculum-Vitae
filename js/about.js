@@ -1,3 +1,5 @@
+// The code here handles when the img_scroll icon disappears
+
 (function ($) {
   $.fn.hasScrollBar = function () {
     return this.get(0).scrollHeight > this.get(0).clientHeight;
@@ -33,10 +35,9 @@ $(window).on("touchmove", function (event) {
   if (deltaY < 0) {
     $("#img_scroll").fadeOut(800);
     $(window).off("touchmove");
-  }
-  else {
+  } else {
     startY = touch.clientY;
-  } 
+  }
 });
 
 $(window).on("touchend", function () {

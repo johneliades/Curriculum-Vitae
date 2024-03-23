@@ -85,6 +85,8 @@ $(document).ready(function () {
   }, 3000);
 });
 
+// The code here handles when the img_scroll icon disappears
+
 $(window).on("wheel", function () {
   if (event.deltaY > 0) {
     $("#img_scroll").fadeOut(800);
@@ -110,10 +112,9 @@ $(window).on("touchmove", function (event) {
   if (deltaY < 0) {
     $("#img_scroll").fadeOut(800);
     $(window).off("touchmove");
-  }
-  else {
+  } else {
     startY = touch.clientY;
-  }  
+  }
 });
 
 $(window).on("touchend", function () {

@@ -29,5 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!page || page == "index.html") {
     page = "quote_page.html";
   }
+
+  $(".iframe-link").each(function (index) {
+    if ($(this).attr("href") == page) {
+      document.title = "[John@Portfolio]-" + this.getAttribute("data-name");
+    }
+  });
+
   iframe.src = page;
 });

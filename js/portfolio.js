@@ -121,3 +121,42 @@ $(window).on("touchmove", function (event) {
 $(window).on("touchend", function () {
   startY = null;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach((card) => {
+    const video = card.querySelector("video");
+    if (video) {
+      // Create the loading layer
+      const loadingLayer = document.createElement("div");
+      loadingLayer.className = "loading-layer";
+
+      // Create the spinner element
+      const spinner = document.createElement("div");
+      spinner.className = "spinner";
+
+      // Create the text element
+      const text = document.createElement("div");
+      text.textContent = "Loading...";
+
+      // Append the spinner and text to the loading layer
+      loadingLayer.appendChild(spinner);
+      loadingLayer.appendChild(text);
+
+      // Insert the loading layer into the card
+      card.appendChild(loadingLayer);
+
+      if (video.readyState >= video.HAVE_ENOUGH_DATA) {
+        loadingLayer.classList.add("hidden");
+      }
+      video.addEventListener("canplaythrough", () => {
+        loadingLayer.classList.add("hidden");
+      });
+
+      video.addEventListener("error", () => {
+        text.textContent = "Failed to load video";
+      });
+    }
+  });
+});

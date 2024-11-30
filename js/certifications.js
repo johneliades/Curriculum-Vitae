@@ -51,12 +51,11 @@ function nextCertificate() {
 
 function updateCertificate() {
   var certificateImage = document.querySelector("#certificate-image");
-  var $img = $("#certificate-image");
-  $img.addClass("fading");
+  certificateImage.classList.add("fading");
   setTimeout(function () {
     certificateImage.src = certificateFiles[currentCertificate];
     document.getElementById("certificate-frame").scrollTop = 0;
-    $img.removeClass("fading");
+    certificateImage.classList.remove("fading");
   }, 300);
 }
 
